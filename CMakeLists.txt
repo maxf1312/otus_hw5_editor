@@ -77,11 +77,13 @@ if(WITH_GTEST)
     target_link_libraries(test_versiong
         gtest
         libeditor
+        pthread
     )
 
     target_link_libraries(test_editor
         gtest
         libeditor
+        pthread
     )
 endif()
 
