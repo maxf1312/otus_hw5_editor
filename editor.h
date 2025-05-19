@@ -13,13 +13,6 @@
 #include <memory>
 
 namespace otus_hw5{
-<<<<<<< HEAD
-
-    struct IDisplay;
-    struct IDocument;
-    struct IShape;
-    struct IDocView;
-=======
     struct IDocument;
     struct IDocStorage;
     struct IShape;
@@ -39,7 +32,11 @@ namespace otus_hw5{
         virtual void add_shape(shape_ptr_t& shp) = 0;
         virtual void remove_shape(shape_ptr_t& shp) = 0;
     };
->>>>>>> 395275a (feature: draft of IEditor)
+
+    struct IDisplay;
+    struct IDocument;
+    struct IShape;
+    struct IDocView;
 
     struct IDocument{};
     struct IShape{};
