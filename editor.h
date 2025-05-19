@@ -13,9 +13,10 @@
 #include <memory>
 
 namespace otus_hw5{
-    struct IDocument;
     struct IDocStorage;
+    struct IRenderer;
     struct IShape;
+    struct IDocument;
     
     struct IEditor
     {
