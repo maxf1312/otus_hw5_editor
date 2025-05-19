@@ -16,12 +16,15 @@ namespace otus_hw5{
     struct IDocument;
     struct IDocStorage;
     struct IShape;
-    
+    struct IDisplay;
+    struct IDocView;
+
+    using doc_ptr_t = std::shared_ptr<IDocument>;
+    using docstg_ptr_t = std::unique_ptr<IDocStorage>;
+    using shape_ptr_t = std::unique_ptr<IShape>;
+
     struct IEditor
     {
-        using doc_ptr_t = std::shared_ptr<IDocument>;
-        using docstg_ptr_t = std::unique_ptr<IDocStorage>;
-        using shape_ptr_t = std::unique_ptr<IShape>;
         
         virtual ~IEditor() = default;
         virtual doc_ptr_t doc() = 0;
@@ -32,11 +35,6 @@ namespace otus_hw5{
         virtual void add_shape(shape_ptr_t& shp) = 0;
         virtual void remove_shape(shape_ptr_t& shp) = 0;
     };
-
-    struct IDisplay;
-    struct IDocument;
-    struct IShape;
-    struct IDocView;
 
     struct IDocument{};
     struct IShape{};
