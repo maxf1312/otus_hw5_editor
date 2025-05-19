@@ -1,5 +1,7 @@
 #include <iostream>
 #include <map>
+#include <string>
+
 #include "vers.h"
 #include "editor.h"
 
@@ -9,7 +11,6 @@ int main(int, char **)
 {
 	using namespace otus_hw5;
 	try
-
 	{
 	}	
 	catch(const std::exception &e)
