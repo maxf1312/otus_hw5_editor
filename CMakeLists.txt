@@ -12,7 +12,7 @@ configure_file(version.h.in version.h)
 
 add_definitions(-D USE_PRETTY)
 
-add_executable(editor main.cpp observer.cpp)
+add_executable(editor main.cpp observer.cpp document.cpp)
 add_library(libeditor vers.cpp)
 
 set_target_properties(editor PROPERTIES

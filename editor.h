@@ -30,14 +30,22 @@ namespace otus_hw5{
 
     struct IEditor
     {
+        enum class ShapeTypes : uint8_t
+        {
+            Point,
+            Line,
+            Rectangle,
+            Square,
+            Circle,
+            Ellipse
+        };  
         
         virtual ~IEditor() = default;
         virtual doc_ptr_t doc() = 0;
         virtual void create_new_doc() = 0;
         virtual void import_doc_from(docstg_ptr_t const& stg) = 0;
         virtual void export_doc_to(docstg_ptr_t& stg) = 0;
-        virtual shape_ptr_t create_shape() = 0;
-
+        virtual shape_ptr_t create_shape(ShapeTypes shape_type) = 0;
     };
 
     struct ISubject
