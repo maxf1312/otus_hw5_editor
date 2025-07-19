@@ -26,6 +26,7 @@ namespace otus_hw5{
 
     using editor_ptr_t = std::unique_ptr<IEditor>;
     using doc_ptr_t = std::shared_ptr<IDocument>;
+    using doc_wptr_t = std::weak_ptr<IDocument>;
     using config_ptr_t = std::unique_ptr<IConfig>;
     using docstg_ptr_t = std::unique_ptr<IDocStorage>;
     using shape_ptr_t = std::unique_ptr<IShape>;
@@ -85,38 +86,52 @@ namespace otus_hw5{
         virtual void subject_changed(subject_wptr_t p_subject, ISubject::Events event_code) const = 0;
     };
 
-    struct IDocument : public ISubject
+    struct IDocument 
     {
         virtual ~IDocument() = default;
         virtual void import_from(docstg_ptr_t const stg) = 0;
         virtual void export_to(docstg_ptr_t stg) = 0;
-        virtual void add_shape(shape_ptr_t shp) = 0;
-        virtual void remove_shape(shape_ptr_t shp) = 0;
+        virtual void add_shape(shape_ptr_t&& shp) = 0;
+        virtual void remove_shape(shape_ptr_t const& shp) = 0;
         virtual shape_ptr_coll_t& shapes() = 0;        
         virtual void add_view(view_ptr_t v) = 0;
         virtual void remove_view(view_ptr_t v) = 0;
+        virtual ISubject& as_subject() = 0;
     };
     
     struct IShape
-    {
-        virtual ~IShape() = default;
-        virtual void draw(display_ptr_t display) const = 0; 
-    };
-    
-    struct IDocView : public IObserver
-    {
-        virtual ~IDocView() = default;
-    };
-
-    struct IDisplay 
     {
         using coord_t = long long;
         using sz_t = unsigned long long;
 
         #pragma pack(push, 1)
         struct rgb_struct_t{ uint8_t r, g, b, alpha; };
-        union  rgb_t{ uint32_t rgba_n;  rgb_struct_t rgba_s; };
+        union  rgb_t{
+            uint32_t rgba_n;  rgb_struct_t rgba_s; 
+            operator uint32_t() const {  return rgba_n; } 
+        };
         #pragma pack(pop)
+
+        virtual ~IShape() = default;
+        virtual void draw(display_ptr_t display) const = 0; 
+        virtual sz_t area() const = 0; 
+        virtual rgb_t color() const = 0; 
+        virtual IShape& color(rgb_t clr) = 0;
+        virtual sz_t line_width() const = 0; 
+        virtual IShape& line_width(sz_t w) = 0; 
+    };
+    
+    struct IDocView : public IObserver
+    {
+        virtual ~IDocView() = default;
+        virtual void set_doc(doc_wptr_t p_doc) = 0;
+    };
+
+    struct IDisplay 
+    {
+        using coord_t = IShape::coord_t;
+        using sz_t    = IShape::sz_t;
+        using rgb_t   = IShape::rgb_t;
 
         virtual ~IDisplay() = default;
         virtual IDisplay& point(coord_t x, coord_t y) = 0;
@@ -127,7 +142,7 @@ namespace otus_hw5{
         virtual IDisplay& rect(coord_t xLT, coord_t yLT, coord_t xRB, coord_t yRB) = 0;
         virtual IDisplay& circle(coord_t x, coord_t y, sz_t radius) = 0;
         virtual IDisplay& color(const rgb_t clr) = 0;
-        virtual IDisplay& line_width(const sz_t clr) = 0;
+        virtual IDisplay& line_width(const sz_t w) = 0;
     };
 
     struct IDocStorage

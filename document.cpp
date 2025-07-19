@@ -16,38 +16,23 @@ Document::~Document()
 {
 }
 
-void Document::subscribe(observer_ptr_t observer)
+ISubject& Document::as_subject()
 {
-    subj_impl_->subscribe(observer);
-}
+    return *subj_impl_;
+} 
 
-void Document::unsubscribe(observer_ptr_t observer)
-{
-    subj_impl_->unsubscribe(observer);
-}
-
-void Document::set_changed(bool was_changed)
-{
-    subj_impl_->set_changed(was_changed);
-}
-
-void Document::notify_all()
-{
-    subj_impl_->notify_all();
-}
-
-void Document::add_shape(shape_ptr_t shp)
+void Document::add_shape(shape_ptr_t&& shp)
 {
     shapes_.add(std::move(shp));
-    set_changed(true);
-    notify_all();
+    as_subject().set_changed(true);
+    as_subject().notify_all();
 }
 
-void Document::remove_shape(shape_ptr_t shp)
+void Document::remove_shape(shape_ptr_t const& shp)
 {
     shapes_.remove(shp);
-    set_changed(true);    
-    notify_all();
+    as_subject().set_changed(true);    
+    as_subject().notify_all();
 }
 
 shape_ptr_coll_t& Document::shapes()
@@ -57,12 +42,14 @@ shape_ptr_coll_t& Document::shapes()
 
 void Document::add_view(view_ptr_t v)
 {
-    subscribe(v);
+    v->set_doc( this->weak_from_this() );
+    as_subject().subscribe(v);
 }
 
 void Document::remove_view(view_ptr_t v)
 {
-    unsubscribe(v);
+    v->set_doc( doc_wptr_t{} );
+    as_subject().unsubscribe(v);
 }
 
 void Document::import_from(docstg_ptr_t const stg)

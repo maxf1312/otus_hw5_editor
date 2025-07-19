@@ -9,10 +9,12 @@
  * 
  */
 
+#include <iostream> 
 #include "editor.h" 
 #include "document.h" 
 #include "docview.h" 
-#include "smartptrcoll.h"
+#include "display.h"
+#include "shape.h"
 
 namespace otus_hw5{
 
@@ -46,13 +48,12 @@ namespace otus_hw5{
 
         virtual shape_ptr_t create_shape(ShapeTypes shape_type) override
         {
-            std::ignore = shape_type;
-            return shape_ptr_t{};
+            return shape_creator_->create_shape(shape_type) ;
         }
         
         virtual view_ptr_t& create_new_view(IConfig const&) override 
         {
-            auto p = std::make_shared<DocView>();
+            auto p = std::make_shared<DocView>(display());
             return views_.add(p);
         }
         virtual view_ptr_coll_t& views() override
@@ -62,7 +63,9 @@ namespace otus_hw5{
 
         virtual display_ptr_t display() const override
         {
-            return display_ptr_t{};
+            if( !display_ )
+                display_ = std::make_shared<OStreamDisplay>(std::cout);
+            return display_;
         }
 
         static IEditor& Instance()
@@ -73,13 +76,15 @@ namespace otus_hw5{
 
 
     private:
-        SimpleEditor(IConfig const& )
+        SimpleEditor(IConfig const& cfg) : shape_creator_(get_shape_creator(cfg))
         {
 
         }
 
         SmartPtrCollection<doc_ptr_t> docs_;
         SmartPtrCollection<view_ptr_t> views_;
+        mutable display_ptr_t   display_;
+        shape_creator_ptr_t shape_creator_;
     };
 
     /// @brief глобальный доступ к синглтону редактора 

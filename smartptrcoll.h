@@ -55,7 +55,7 @@ namespace otus_hw5{
 
         void remove_all() 
         {
-            for(size_t i = pointers_.size(); --i >= 0 ;)
+            for(size_t i = pointers_.size(); i-- > 0 ;)
                 remove(i);
         }
 
