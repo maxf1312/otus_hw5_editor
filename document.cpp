@@ -38,23 +38,31 @@ void Document::notify_all()
 
 void Document::add_shape(shape_ptr_t shp)
 {
-    using namespace std;
-    if( find(begin(shapes_), end(shapes_), shp) != end(shapes_) )
-        return;
-    shapes_.emplace_back(std::move(shp));
+    shapes_.add(std::move(shp));
     set_changed(true);
     notify_all();
 }
 
 void Document::remove_shape(shape_ptr_t shp)
 {
-    using namespace std;
-    auto p = remove(begin(shapes_), end(shapes_), shp);
-    if( p == end(shapes_) )
-        return;
-    shapes_.erase(p, end(shapes_));
+    shapes_.remove(shp);
     set_changed(true);    
     notify_all();
+}
+
+shape_ptr_coll_t& Document::shapes()
+{
+    return shapes_;    
+}
+
+void Document::add_view(view_ptr_t v)
+{
+    subscribe(v);
+}
+
+void Document::remove_view(view_ptr_t v)
+{
+    unsubscribe(v);
 }
 
 void Document::import_from(docstg_ptr_t const stg)

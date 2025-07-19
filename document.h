@@ -23,6 +23,10 @@ namespace otus_hw5
         virtual void export_to(docstg_ptr_t stg) override;        
         virtual void add_shape(shape_ptr_t shp) override;
         virtual void remove_shape(shape_ptr_t shp) override;
+        virtual shape_ptr_coll_t& shapes() override;
+        virtual void add_view(view_ptr_t v) override;
+        virtual void remove_view(view_ptr_t v) override;
+ 
 
         void on_subscribe(observer_ptr_t ){}
         void on_unsubscribe(observer_ptr_t ){}
@@ -34,7 +38,7 @@ namespace otus_hw5
         using subject_t = Subject<Document>;
         using subject_ptr_t = std::unique_ptr<subject_t>;
 
-        shape_cont_t shapes_;
+        shape_ptr_coll_t shapes_;
         subject_ptr_t subj_impl_;
     };
 

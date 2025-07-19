@@ -20,40 +20,40 @@ using namespace otus_hw5;
 TEST(test_editor, test_create)
 {
     auto& editor = the_editor();
-    EXPECT_EQ( editor.doc_count(), 0 );
-    EXPECT_EQ( editor.view_count(), 0 );
+    EXPECT_EQ( editor.docs().count(), 0 );
+    EXPECT_EQ( editor.views().count(), 0 );
     
     auto doc = editor.create_new_doc(the_config());
-    EXPECT_EQ( editor.doc_count(), 1 );
+    EXPECT_EQ( editor.docs().count(), 1 );
 
     auto view = editor.create_new_view(the_config());
-    EXPECT_EQ( editor.view_count(), 1 );
+    EXPECT_EQ( editor.views().count(), 1 );
 
-    editor.del_doc_at(0);
-    EXPECT_EQ( editor.doc_count(), 0 );
+    editor.docs().remove(0);
+    EXPECT_EQ( editor.docs().count(), 0 );
 
-    editor.del_view_at(0);
-    EXPECT_EQ( editor.view_count(), 0 );
+    editor.views().remove(0);
+    EXPECT_EQ( editor.views().count(), 0 );
 }
 
 TEST(test_editor, test_doc_view)
 {
     auto& editor = the_editor();
-    EXPECT_EQ( editor.doc_count(), 0 );
-    EXPECT_EQ( editor.view_count(), 0 );
+    EXPECT_EQ( editor.docs().count(), 0 );
+    EXPECT_EQ( editor.views().count(), 0 );
     
     auto doc = editor.create_new_doc(the_config());
-    EXPECT_EQ( editor.doc_count(), 1 );
+    EXPECT_EQ( editor.docs().count(), 1 );
 
     auto view = editor.create_new_view(the_config());
-    EXPECT_EQ( editor.view_count(), 1 );
+    EXPECT_EQ( editor.views().count(), 1 );
 
     doc->subscribe(view);
 
     view = editor.create_new_view(the_config());
-    EXPECT_EQ( editor.view_count(), 2 );
+    EXPECT_EQ( editor.views().count(), 2 );
 
-    doc->subscribe(view);
+    doc->add_view(view);
 
     doc->set_changed(true);
     doc->notify_all();

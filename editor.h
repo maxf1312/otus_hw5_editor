@@ -11,6 +11,7 @@
  */
 
 #include <memory>
+#include "smartptrcoll.h"
 
 namespace otus_hw5{
     struct IEditor;
@@ -34,6 +35,10 @@ namespace otus_hw5{
     using subject_ptr_t = std::shared_ptr<ISubject>;
     using subject_wptr_t = std::weak_ptr<ISubject>;
 
+    using doc_ptr_coll_t = SmartPtrCollection<doc_ptr_t>;
+    using view_ptr_coll_t = SmartPtrCollection<view_ptr_t>;
+    using shape_ptr_coll_t = SmartPtrCollection<shape_ptr_t>;
+
     struct IEditor
     {
         enum class ShapeTypes : uint8_t
@@ -47,18 +52,14 @@ namespace otus_hw5{
         };  
         
         virtual ~IEditor() = default;
-        virtual size_t doc_count() const = 0;
-        virtual doc_ptr_t doc_at(size_t i) const = 0;
-        virtual doc_ptr_t create_new_doc(IConfig const& cfg) = 0;
-        virtual void del_doc_at(size_t i) = 0;
+        virtual doc_ptr_t& create_new_doc(IConfig const& cfg) = 0;
+        virtual doc_ptr_coll_t& docs() = 0;
 
         virtual doc_ptr_t import_doc_from(docstg_ptr_t const& stg) = 0;
         virtual void export_doc_to(doc_ptr_t const& doc, docstg_ptr_t& stg) = 0;
         virtual shape_ptr_t create_shape(ShapeTypes shape_type) = 0;
-        virtual size_t view_count() const = 0;
-        virtual view_ptr_t view_at(size_t i) const = 0;
-        virtual view_ptr_t create_new_view(IConfig const& cfg) = 0;
-        virtual void del_view_at(size_t i) = 0;
+        virtual view_ptr_t& create_new_view(IConfig const& cfg) = 0;
+        virtual view_ptr_coll_t& views() = 0;
 
         virtual display_ptr_t display() const = 0;
     };
@@ -90,7 +91,10 @@ namespace otus_hw5{
         virtual void import_from(docstg_ptr_t const stg) = 0;
         virtual void export_to(docstg_ptr_t stg) = 0;
         virtual void add_shape(shape_ptr_t shp) = 0;
-        virtual void remove_shape(shape_ptr_t shp) = 0;        
+        virtual void remove_shape(shape_ptr_t shp) = 0;
+        virtual shape_ptr_coll_t& shapes() = 0;        
+        virtual void add_view(view_ptr_t v) = 0;
+        virtual void remove_view(view_ptr_t v) = 0;
     };
     
     struct IShape
