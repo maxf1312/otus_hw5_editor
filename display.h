@@ -2,7 +2,7 @@
 /**
  * @file display.h
  * @author MaximF (maxf1312@yandex.ru)
- * @brief 
+ * @brief Дисплеи 
  * @version 0.1
  * @date 2025-07-19
  * 
@@ -15,6 +15,7 @@
 
 namespace otus_hw5{
 
+    /// @brief Простой отладочный дисплей - вывод в STL-поток
     class OStreamDisplay : public IDisplay 
     {
     public:

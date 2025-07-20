@@ -1,7 +1,7 @@
 /**
  * @file display.cpp
  * @author MaximF (maxf1312@yandex.ru)
- * @brief
+ * @brief Реализация дисплеев
  * @version 0.1
  * @date 2025-07-19
  *

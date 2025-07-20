@@ -1,3 +1,14 @@
+/**
+ * @file docview.cpp
+ * @author MaximF (maxf1312@yandex.ru)
+ * @brief Представление документа базовое 
+ * @version 0.1
+ * @date 2025-07-21
+ * 
+ * @copyright Copyright (c) 2025
+ * 
+ */
+
 #include <iostream>
 #include <vector>
 #include <algorithm>

@@ -1,7 +1,19 @@
+/**
+ * @file document.cpp
+ * @author MaximF (maxf1312@yandex.ru)
+ * @brief Документ - реализация  
+ * @version 0.1
+ * @date 2025-07-21
+ * 
+ * @copyright Copyright (c) 2025
+ * 
+ */
+
 #include <vector>
 #include <algorithm>
 #include "editor.h"
 #include "document.h"
+#include "docserializer.h"
 
 
 namespace otus_hw5
@@ -21,11 +33,12 @@ ISubject& Document::as_subject()
     return *subj_impl_;
 } 
 
-void Document::add_shape(shape_ptr_t&& shp)
+shape_ptr_t& Document::add_shape(shape_ptr_t&& shp)
 {
-    shapes_.add(std::move(shp));
+    auto& rp_shp = shapes_.add(std::move(shp));
     as_subject().set_changed(true);
     as_subject().notify_all();
+    return rp_shp;
 }
 
 void Document::remove_shape(shape_ptr_t const& shp)
@@ -52,14 +65,24 @@ void Document::remove_view(view_ptr_t v)
     as_subject().unsubscribe(v);
 }
 
-void Document::import_from(docstg_ptr_t const stg)
+void Document::import_from(docstg_ptr_t const& stg, docser_ptr_t const& serializer)
 {
-    std::ignore = stg;
+    deserialize(stg, serializer);
 }
 
-void Document::export_to(docstg_ptr_t stg)
+void Document::export_to(docstg_ptr_t& stg, docser_ptr_t const& serializer)
 {
-    std::ignore = stg;
+    serialize(stg, serializer);
 }      
+
+void Document::deserialize(docstg_ptr_t const& stg, docser_ptr_t const& serializer) 
+{
+    serializer->deserialize_obj(*static_cast<IDocument*>(this), stg);
+}
+
+void Document::serialize(docstg_ptr_t& stg, docser_ptr_t const& serializer) 
+{
+    serializer->serialize_obj(*static_cast<IDocument*>(this), stg);
+}
 
 };

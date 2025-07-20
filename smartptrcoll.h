@@ -2,7 +2,7 @@
 /**
  * @file smartptrcoll.h
  * @author MaximF (maxf1312@yandex.ru)
- * @brief 
+ * @brief Коллекция указателей
  * @version 0.1
  * @date 2025-07-19
  * 

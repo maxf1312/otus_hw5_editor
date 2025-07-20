@@ -1,9 +1,20 @@
 #pragma once
-
+/**
+ * @file subject.h
+ * @author MaximF (maxf1312@yandex.ru)
+ * @brief Наблюдаемый объект - шаблон базовой реализации
+ * @version 0.1
+ * @date 2025-07-21
+ * 
+ * @copyright Copyright (c) 2025
+ * 
+ */
 #include "editor.h"
 
 namespace otus_hw5
 {
+    /// @brief brief Наблюдаемый объект - шаблон базовой реализации
+    /// @tparam SubjectImplT - тип владельца или наследника, если используется в CRTP
     template <typename SubjectImplT>
     class Subject : public ISubject
     {
