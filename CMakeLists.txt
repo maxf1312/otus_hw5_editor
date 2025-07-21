@@ -13,7 +13,7 @@ configure_file(version.h.in version.h)
 add_definitions(-D USE_PRETTY)
 
 add_executable(editor main.cpp)
-add_library(libeditor vers.cpp)
+add_library(libeditor vers.cpp document.cpp docview.cpp editor.cpp config.cpp display.cpp shape.cpp docstg.cpp docserializer.cpp utils.cpp)
 
 set_target_properties(editor PROPERTIES
     CXX_STANDARD 14
@@ -77,11 +77,13 @@ if(WITH_GTEST)
     target_link_libraries(test_versiong
         gtest
         libeditor
+        pthread
     )
 
     target_link_libraries(test_editor
         gtest
         libeditor
+        pthread
     )
 endif()
 
