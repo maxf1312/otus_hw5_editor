@@ -21,15 +21,6 @@ namespace otus_hw5{
     using shape_creator_ptr_t = std::shared_ptr<IShapeCreator>;
     shape_creator_ptr_t get_shape_creator(IConfig const& cfg); 
 
-    /// @brief Шаблон примеси для определения статического конструктора 
-    /// @tparam CreatedT 
-    /// @tparam CreatedPtrT 
-    template <typename CreatedT, typename CreatedPtrT = std::unique_ptr<CreatedT> >
-    struct Creator
-    {
-        static void create(CreatedPtrT& out_p) { out_p = std::make_unique<CreatedT>(); }
-    };
-
     class  Shape : public IShape
     {
     public:    

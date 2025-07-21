@@ -145,12 +145,12 @@ namespace otus_hw5{
         typedef void (*create_shape_fun_ptr_t)(shape_ptr_t&);
         using shape_creator_registry_t = std::unordered_map<IEditor::ShapeTypes, create_shape_fun_ptr_t>;
         static shape_creator_registry_t creators = {
-            {IEditor::ShapeTypes::Point, (create_shape_fun_ptr_t)(&Creator<Point>::create)},
-            {IEditor::ShapeTypes::Line, (create_shape_fun_ptr_t)(&Creator<Line>::create)},
-            {IEditor::ShapeTypes::Rectangle, (create_shape_fun_ptr_t)(&Creator<Rectangle>::create)},
-            {IEditor::ShapeTypes::Square, (create_shape_fun_ptr_t)(&Creator<Square>::create)},
-            {IEditor::ShapeTypes::Circle, (create_shape_fun_ptr_t)(&Creator<Circle>::create)},
-            {IEditor::ShapeTypes::Ellipse, (create_shape_fun_ptr_t)(&Creator<Ellipse>::create)},
+            {IEditor::ShapeTypes::Point, &Creator<Point, shape_ptr_t>::create},
+            {IEditor::ShapeTypes::Line, &Creator<Line, shape_ptr_t>::create},
+            {IEditor::ShapeTypes::Rectangle, &Creator<Rectangle, shape_ptr_t>::create},
+            {IEditor::ShapeTypes::Square, &Creator<Square, shape_ptr_t>::create},
+            {IEditor::ShapeTypes::Circle, &Creator<Circle, shape_ptr_t>::create},
+            {IEditor::ShapeTypes::Ellipse, &Creator<Ellipse, shape_ptr_t>::create},
         };
         
         shape_ptr_t p_ret;

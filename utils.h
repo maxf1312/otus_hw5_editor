@@ -14,6 +14,15 @@
 
 namespace otus_hw5{
     
+    /// @brief Шаблон примеси для определения статического конструктора 
+    /// @tparam CreatedT 
+    /// @tparam CreatedPtrT 
+    template <typename CreatedT, typename CreatedPtrT = std::unique_ptr<CreatedT> >
+    struct Creator
+    {
+        static void create(CreatedPtrT& out_p) { out_p = std::make_unique<CreatedT>(); }
+    };
+
     IEditor::ShapeTypes shape_type_from_string(const std::string& tp);
     const std::string   shape_type_to_string(const IEditor::ShapeTypes tp);
     void print_prompt(std::ostream& os);
