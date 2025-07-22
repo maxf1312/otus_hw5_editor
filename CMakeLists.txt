@@ -29,8 +29,8 @@ target_include_directories(libeditor
 )
 
 target_link_libraries(editor PRIVATE
-    libeditor
     asan
+    libeditor
 )
 
 target_link_libraries(libeditor PRIVATE
@@ -87,10 +87,10 @@ if(WITH_GTEST)
     )
 
     target_link_libraries(test_editor
+        asan
         gtest
         libeditor
         pthread
-        asan
     )
 endif()
 
@@ -123,7 +123,7 @@ else ()
     )
     if(WITH_BOOST_TEST)
         target_compile_options(test_version PRIVATE
-            -Wall -Wextra -pedantic -Werror
+            -Wall -Wextra -pedantic -Werror -fsanitize=leak
         )
     endif()
     if(WITH_GTEST)
