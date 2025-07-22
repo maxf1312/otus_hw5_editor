@@ -29,7 +29,12 @@ target_include_directories(libeditor
 )
 
 target_link_libraries(editor PRIVATE
+    asan
     libeditor
+)
+
+target_link_libraries(libeditor PRIVATE
+    asan
 )
 
 if(WITH_BOOST_TEST)
@@ -52,6 +57,7 @@ if(WITH_BOOST_TEST)
     )
 
     target_link_libraries(test_version
+        asan
         ${Boost_LIBRARIES}
         libeditor
     )
@@ -81,6 +87,7 @@ if(WITH_GTEST)
     )
 
     target_link_libraries(test_editor
+        asan
         gtest
         libeditor
         pthread
@@ -109,22 +116,22 @@ if (MSVC)
     endif()
 else ()
     target_compile_options(editor PRIVATE
-        -Wall -Wextra -pedantic -Werror
+        -Wall -Wextra -pedantic -Werror -fsanitize=address -fsanitize=leak
     )
     target_compile_options(libeditor PRIVATE
-        -Wall -Wextra -pedantic -Werror
+        -Wall -Wextra -pedantic -Werror -fsanitize=address -fsanitize=leak
     )
     if(WITH_BOOST_TEST)
         target_compile_options(test_version PRIVATE
-            -Wall -Wextra -pedantic -Werror
+            -Wall -Wextra -pedantic -Werror -fsanitize=leak
         )
     endif()
     if(WITH_GTEST)
         target_compile_options(test_versiong PRIVATE
-            -Wall -Wextra -pedantic -Werror
+            -Wall -Wextra -pedantic -Werror 
         )
         target_compile_options(test_editor PRIVATE
-            -Wall -Wextra -pedantic -Werror
+            -Wall -Wextra -pedantic -Werror -fsanitize=address -fsanitize=leak
         )
     endif()
 endif()

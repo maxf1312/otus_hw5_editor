@@ -2,7 +2,7 @@
 /**
  * @file editor.h
  * @author MaximF (maxf1312@yandex.ru)
- * @brief 
+ * @brief Описание всех интерфейсов
  * @version 0.1
  * @date 2025-04-26
  * 
@@ -101,6 +101,10 @@ namespace otus_hw5{
         virtual ~IEditor() = default;
         virtual doc_ptr_t& create_new_doc(IConfig const& cfg) = 0;
         virtual doc_ptr_coll_t& docs() = 0;
+        virtual doc_ptr_t& curr_doc() = 0;
+        virtual size_t     set_curr_doc_idx(size_t i) = 0;
+        virtual size_t     get_curr_doc_idx() const = 0;
+        
 
         virtual void import_doc_from(doc_ptr_t& doc, docstg_ptr_t const& stg, docser_ptr_t const& serializer) = 0;
         virtual void export_doc_to(doc_ptr_t const& doc, docstg_ptr_t& stg, docser_ptr_t const& serializer) = 0;

@@ -58,10 +58,9 @@ namespace otus_hw5{
             for(size_t i = pointers_.size(); i-- > 0 ;)
                 remove(i);
         }
-
     private:
         using coll_t = std::vector<SmartPtrT>;            
-        mutable coll_t pointers_;             
+        mutable coll_t pointers_;
     };
 } // otus_hw5
 

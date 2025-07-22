@@ -53,7 +53,7 @@ TEST(test_editor, test_doc_view)
     view = editor.create_new_view(the_config());
     EXPECT_EQ( editor.views().count(), 2 );
 
-    doc->add_view(view);
+    editor.curr_doc()->add_view(view);
 
     doc->as_subject().set_changed(true);
     doc->as_subject().notify_all();

@@ -44,6 +44,33 @@ namespace otus_hw5{
             return docs_;
         }
 
+        virtual doc_ptr_t& curr_doc() override
+        {
+            if( !docs_.count() )
+            {
+				auto& doc = create_new_doc(the_config());
+				auto& view = create_new_view(the_config());
+				doc->add_view(view);                
+            }
+            
+            if( cur_doc_idx_ >= docs_.count() ) cur_doc_idx_ = docs_.count() - 1;
+
+            return docs_.at( cur_doc_idx_  );
+        }
+
+        virtual size_t     set_curr_doc_idx(size_t i) override
+        {
+            auto ret_idx = cur_doc_idx_;
+            if( i < docs_.count() )
+                cur_doc_idx_ = i;
+            return ret_idx;
+        }
+
+        virtual size_t     get_curr_doc_idx() const override
+        {
+            return cur_doc_idx_;
+        }
+
         virtual void import_doc_from(doc_ptr_t& doc, docstg_ptr_t const& stg, docser_ptr_t const& serializer) override 
         {
             doc->as_serializable().deserialize(stg, serializer);
@@ -122,12 +149,12 @@ namespace otus_hw5{
 
         static IEditor& Instance()
         {
-            static SimpleEditor editor(the_config());
+            static SimpleEditor  editor(the_config());
             return editor;
         }
 
     private:
-        SimpleEditor(IConfig const& cfg) : shape_creator_(get_shape_creator(cfg))
+        SimpleEditor(IConfig const& cfg) : shape_creator_(get_shape_creator(cfg)), cur_doc_idx_{}
         {
 
         }
@@ -136,6 +163,7 @@ namespace otus_hw5{
         SmartPtrCollection<view_ptr_t> views_;
         mutable display_ptr_t   display_;
         shape_creator_ptr_t shape_creator_;
+        size_t              cur_doc_idx_;
     };
 
     /// @brief глобальный доступ к синглтону редактора 
