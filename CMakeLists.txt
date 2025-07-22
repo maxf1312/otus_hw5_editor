@@ -57,6 +57,7 @@ if(WITH_BOOST_TEST)
     )
 
     target_link_libraries(test_version
+        asan
         ${Boost_LIBRARIES}
         libeditor
     )
