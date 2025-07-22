@@ -43,7 +43,7 @@ int main(int, char **)
 				doc->as_subject().notify_all();
 				break;
 			}
-			break;
+
 			case 'R': // R - загрузить документ
 				break;
 			case 'S': // S - сохранить документ

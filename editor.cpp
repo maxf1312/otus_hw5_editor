@@ -122,8 +122,9 @@ namespace otus_hw5{
 
         static IEditor& Instance()
         {
-            static SimpleEditor editor(the_config());
-            return editor;
+            //static SimpleEditor  editor(the_config());
+            static SimpleEditor* editor = new SimpleEditor(the_config());
+            return *editor;
         }
 
     private:

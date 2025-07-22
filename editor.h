@@ -2,7 +2,7 @@
 /**
  * @file editor.h
  * @author MaximF (maxf1312@yandex.ru)
- * @brief 
+ * @brief Описание всех интерфейсов
  * @version 0.1
  * @date 2025-04-26
  * 
