@@ -15,6 +15,7 @@ add_definitions(-D USE_PRETTY)
 add_executable(editor main.cpp)
 add_library(libeditor vers.cpp document.cpp docview.cpp editor.cpp config.cpp display.cpp shape.cpp docstg.cpp docserializer.cpp utils.cpp)
 
+
 set_target_properties(editor PROPERTIES
     CXX_STANDARD 14
     CXX_STANDARD_REQUIRED ON
@@ -29,12 +30,12 @@ target_include_directories(libeditor
 )
 
 target_link_libraries(editor PRIVATE
-    asan
-    libeditor
+    asan -static-libasan
+    libeditor 
 )
 
 target_link_libraries(libeditor PRIVATE
-    asan
+    asan -static-libasan
 )
 
 if(WITH_BOOST_TEST)
@@ -57,7 +58,7 @@ if(WITH_BOOST_TEST)
     )
 
     target_link_libraries(test_version
-        asan
+        asan -static-libasan
         ${Boost_LIBRARIES}
         libeditor
     )
@@ -87,11 +88,12 @@ if(WITH_GTEST)
     )
 
     target_link_libraries(test_editor
-        asan
+        asan -static-libasan
         gtest
         libeditor
         pthread
     )
+
 endif()
 
 if (MSVC)
@@ -116,14 +118,14 @@ if (MSVC)
     endif()
 else ()
     target_compile_options(editor PRIVATE
-        -Wall -Wextra -pedantic -Werror -fsanitize=address -fsanitize=leak
+        -Wall -Wextra -pedantic -Werror -fsanitize=address -fsanitize=leak 
     )
     target_compile_options(libeditor PRIVATE
-        -Wall -Wextra -pedantic -Werror -fsanitize=address -fsanitize=leak
+        -Wall -Wextra -pedantic -Werror -fsanitize=address -fsanitize=leak 
     )
     if(WITH_BOOST_TEST)
         target_compile_options(test_version PRIVATE
-            -Wall -Wextra -pedantic -Werror -fsanitize=leak
+            -Wall -Wextra -pedantic -Werror -fsanitize=leak 
         )
     endif()
     if(WITH_GTEST)
@@ -131,7 +133,7 @@ else ()
             -Wall -Wextra -pedantic -Werror 
         )
         target_compile_options(test_editor PRIVATE
-            -Wall -Wextra -pedantic -Werror -fsanitize=address -fsanitize=leak
+            -Wall -Wextra -pedantic -Werror -fsanitize=address -fsanitize=leak 
         )
     endif()
 endif()
