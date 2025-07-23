@@ -51,4 +51,4 @@ namespace otus_hw5
         subject_ptr_t subj_impl_;
     };
 
-};
+}

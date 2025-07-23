@@ -17,7 +17,12 @@ add_library(libeditor vers.cpp document.cpp docview.cpp editor.cpp config.cpp di
 
 
 set_target_properties(editor PROPERTIES
-    CXX_STANDARD 14
+    CXX_STANDARD 17
+    CXX_STANDARD_REQUIRED ON
+)
+
+set_target_properties(libeditor PROPERTIES
+    CXX_STANDARD 17
     CXX_STANDARD_REQUIRED ON
 )
 
@@ -30,13 +35,12 @@ target_include_directories(libeditor
 )
 
 target_link_libraries(editor PRIVATE
-    asan -static-libasan
     libeditor 
 )
 
-target_link_libraries(libeditor PRIVATE
-    asan -static-libasan
-)
+#target_link_libraries(libeditor PRIVATE
+#    asan -static-libsan
+#)
 
 if(WITH_BOOST_TEST)
     
@@ -48,7 +52,7 @@ if(WITH_BOOST_TEST)
     add_executable(test_version test_version.cpp)
 
     set_target_properties(test_version PROPERTIES
-        CXX_STANDARD 14
+        CXX_STANDARD 17
         CXX_STANDARD_REQUIRED ON
     )
 
@@ -58,7 +62,6 @@ if(WITH_BOOST_TEST)
     )
 
     target_link_libraries(test_version
-        asan -static-libasan
         ${Boost_LIBRARIES}
         libeditor
     )
@@ -72,12 +75,12 @@ if(WITH_GTEST)
     #target_compile_definitions(test_editor PUBLIC -DUSE_DBG_TRACE)
 
     set_target_properties(test_versiong PROPERTIES
-        CXX_STANDARD 14
+        CXX_STANDARD 17
         CXX_STANDARD_REQUIRED ON
     )
 
     set_target_properties(test_editor PROPERTIES
-        CXX_STANDARD 14
+        CXX_STANDARD 17
         CXX_STANDARD_REQUIRED ON
     )
 
@@ -88,7 +91,6 @@ if(WITH_GTEST)
     )
 
     target_link_libraries(test_editor
-        asan -static-libasan
         gtest
         libeditor
         pthread
@@ -118,14 +120,14 @@ if (MSVC)
     endif()
 else ()
     target_compile_options(editor PRIVATE
-        -Wall -Wextra -pedantic -Werror -fsanitize=address -fsanitize=leak 
+        -Wall -Wextra -pedantic -Werror  
     )
     target_compile_options(libeditor PRIVATE
-        -Wall -Wextra -pedantic -Werror -fsanitize=address -fsanitize=leak 
+        -Wall -Wextra -pedantic -Werror  
     )
     if(WITH_BOOST_TEST)
         target_compile_options(test_version PRIVATE
-            -Wall -Wextra -pedantic -Werror -fsanitize=leak 
+            -Wall -Wextra -pedantic -Werror  
         )
     endif()
     if(WITH_GTEST)
@@ -133,7 +135,7 @@ else ()
             -Wall -Wextra -pedantic -Werror 
         )
         target_compile_options(test_editor PRIVATE
-            -Wall -Wextra -pedantic -Werror -fsanitize=address -fsanitize=leak 
+            -Wall -Wextra -pedantic -Werror  
         )
     endif()
 endif()

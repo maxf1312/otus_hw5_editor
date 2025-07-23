@@ -45,4 +45,4 @@ namespace otus_hw5
             sp_d->shapes().at(i)->draw(display_);
     }
 
-};
+}

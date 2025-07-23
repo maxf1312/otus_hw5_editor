@@ -70,4 +70,4 @@ namespace otus_hw5
         DBG_TRACE0(os_, "line_width",  " w: " << w << std::endl ); 
         return *this;
     }
-}; // otus_hw5
+} // otus_hw5

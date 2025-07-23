@@ -19,7 +19,7 @@ namespace otus_hw5
     class Subject : public ISubject
     {
     public:
-        Subject(SubjectImplT &outer) : outer_impl_(&outer) {}
+        explicit Subject(SubjectImplT &outer) : evt_{}, outer_impl_(&outer) {}
         virtual ~Subject() noexcept;
         virtual void subscribe(observer_ptr_t observer) override;
         virtual void unsubscribe(observer_ptr_t observer) override;
@@ -27,7 +27,7 @@ namespace otus_hw5
         virtual void notify_all() override;
 
     protected:
-        Subject() : outer_impl_(nullptr) {}
+        Subject() : evt_{}, outer_impl_(nullptr) {}
 
         template <typename SubjectImplTR = SubjectImplT>
         auto impl_this_ptr() -> std::enable_if_t<std::is_base_of<Subject<SubjectImplT>, SubjectImplTR>::value, SubjectImplTR *>
@@ -98,4 +98,4 @@ namespace otus_hw5
             observers_.at(i)->subject_changed(weak_from_this(), evt_);
         impl_this_ptr()->on_notify_all();
     }
-};
+}

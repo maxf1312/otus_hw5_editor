@@ -65,6 +65,10 @@
         "typeinfo": "cpp",
         "variant": "cpp",
         "bitset": "cpp",
-        "fstream": "cpp"
+        "fstream": "cpp",
+        "hash_map": "cpp",
+        "chrono": "cpp",
+        "complex": "cpp",
+        "typeindex": "cpp"
     }
 }

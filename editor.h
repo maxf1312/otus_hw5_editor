@@ -10,6 +10,7 @@
  * 
  */
 
+#include <type_traits>
 #include <ios>
 #include <memory>
 #include <string>

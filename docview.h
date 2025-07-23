@@ -30,4 +30,4 @@ namespace otus_hw5
         display_ptr_t display_;
     };
 
-};
+}

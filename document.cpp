@@ -85,4 +85,4 @@ void Document::serialize(docstg_ptr_t& stg, docser_ptr_t const& serializer)
     serializer->serialize_obj(*static_cast<IDocument*>(this), stg);
 }
 
-};
+}
