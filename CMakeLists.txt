@@ -35,12 +35,13 @@ target_include_directories(libeditor
 )
 
 target_link_libraries(editor PRIVATE
+    -static -static-libgcc -static-libstdc++
     libeditor 
 )
 
-#target_link_libraries(libeditor PRIVATE
-#    asan -static-libsan
-#)
+target_link_libraries(libeditor PRIVATE
+    -static -static-libgcc -static-libstdc++
+)
 
 if(WITH_BOOST_TEST)
     
@@ -48,6 +49,7 @@ if(WITH_BOOST_TEST)
         set (Boost_ROOT "C:/local/boost_1_87_0/") # Путь к библиотеке Boost
     #endif()
 
+    set(Boost_USE_STATIC_LIBS   ON)
     find_package(Boost COMPONENTS unit_test_framework REQUIRED)
     add_executable(test_version test_version.cpp)
 
@@ -57,13 +59,14 @@ if(WITH_BOOST_TEST)
     )
 
     set_target_properties(test_version PROPERTIES
-        COMPILE_DEFINITIONS BOOST_TEST_DYN_LINK
+        COMPILE_DEFINITIONS BOOST_TEST_STATIC_LINK
         INCLUDE_DIRECTORIES ${Boost_INCLUDE_DIR}
     )
 
     target_link_libraries(test_version
         ${Boost_LIBRARIES}
         libeditor
+        -static-libgcc -static-libstdc++
     )
 endif()
 
@@ -85,12 +88,14 @@ if(WITH_GTEST)
     )
 
     target_link_libraries(test_versiong
+        -static -static-libgcc -static-libstdc++
         gtest
         libeditor
         pthread
     )
 
     target_link_libraries(test_editor
+        -static -static-libgcc -static-libstdc++
         gtest
         libeditor
         pthread
