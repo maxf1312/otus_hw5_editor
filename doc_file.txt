@@ -1,7 +1,0 @@
-ImgDoc 6
-Point 16772736 1 0 10 
-Line 16769153 2 10 10 0 0 
-Square 986754 3 20 10 
-Rectangle 2092675 4 20 20 
-Circle 15855492 7 20 30 
-Ellipse 15670917 10 10 50 
