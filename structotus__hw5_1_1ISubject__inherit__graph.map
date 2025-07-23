@@ -1,0 +1,10 @@
+<map id="otus_hw5::ISubject" name="otus_hw5::ISubject">
+<area shape="rect" id="Node000001" title="Интерфейс наблюдаемого объекта в паттерне Наблюдатель" alt="" coords="16,136,136,284"/>
+<area shape="rect" id="Node000003" href="$classotus__hw5_1_1Subject.html" title=" " alt="" coords="19,681,144,1189"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="79,299,82,681,77,681,74,299"/>
+<area shape="rect" id="Node000004" href="$classotus__hw5_1_1Subject.html" title="brief Наблюдаемый объект &#45; шаблон базовой реализации" alt="" coords="98,333,222,618"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="106,297,118,333,113,334,101,298"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,147,87"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="79,102,79,136,74,136,74,102"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="136,633,128,681,122,680,131,632"/>
+</map>

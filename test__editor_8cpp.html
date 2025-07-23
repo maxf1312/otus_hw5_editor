@@ -1,0 +1,407 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.13.2"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>editor: Файл test_editor.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">editor<span id="projectnumber">&#160;1.0.0</span>
+   </div>
+   <div id="projectbrief">vector graphics editor framework made for homework 5</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.13.2 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Функции</a>  </div>
+  <div class="headertitle"><div class="title">Файл test_editor.cpp</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;gtest/gtest.h&gt;</code><br />
+<code>#include &lt;sstream&gt;</code><br />
+<code>#include &lt;list&gt;</code><br />
+<code>#include &lt;tuple&gt;</code><br />
+<code>#include &quot;<a class="el" href="pretty_8h_source.html">pretty.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="editor_8h_source.html">editor.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Граф включаемых заголовочных файлов для test_editor.cpp:</div>
+<div class="dyncontent">
+<div class="center"><img src="test__editor_8cpp__incl.png" border="0" usemap="#atest__editor_8cpp" alt=""/></div>
+<map name="atest__editor_8cpp" id="atest__editor_8cpp">
+<area shape="rect" title=" " alt="" coords="215,5,321,31"/>
+<area shape="rect" title=" " alt="" coords="5,79,99,105"/>
+<area shape="poly" title=" " alt="" coords="232,34,104,76,102,71,231,29"/>
+<area shape="rect" title=" " alt="" coords="123,79,192,105"/>
+<area shape="poly" title=" " alt="" coords="251,34,190,73,187,68,248,29"/>
+<area shape="rect" title=" " alt="" coords="215,79,254,105"/>
+<area shape="poly" title=" " alt="" coords="265,32,249,66,244,64,260,30"/>
+<area shape="rect" title=" " alt="" coords="278,79,327,105"/>
+<area shape="poly" title=" " alt="" coords="276,30,292,64,288,66,271,32"/>
+<area shape="rect" href="pretty_8h.html" title=" " alt="" coords="351,79,414,105"/>
+<area shape="poly" title=" " alt="" coords="289,29,352,68,349,73,286,34"/>
+<area shape="rect" href="editor_8h.html" title="Описание всех интерфейсов" alt="" coords="439,79,502,105"/>
+<area shape="poly" title=" " alt="" coords="303,29,425,72,423,77,301,34"/>
+<area shape="rect" title=" " alt="" coords="269,153,350,178"/>
+<area shape="poly" title=" " alt="" coords="444,108,352,148,350,144,442,103"/>
+<area shape="rect" title=" " alt="" coords="374,153,413,178"/>
+<area shape="poly" title=" " alt="" coords="459,107,419,144,416,140,456,103"/>
+<area shape="rect" title=" " alt="" coords="437,153,504,178"/>
+<area shape="poly" title=" " alt="" coords="473,105,473,137,468,137,468,105"/>
+<area shape="rect" title=" " alt="" coords="528,153,581,178"/>
+<area shape="poly" title=" " alt="" coords="487,103,531,140,527,144,483,107"/>
+<area shape="rect" href="smartptrcoll_8h.html" title="Коллекция указателей" alt="" coords="605,153,704,178"/>
+<area shape="poly" title=" " alt="" coords="503,103,610,144,608,149,501,108"/>
+<area shape="rect" title=" " alt="" coords="581,226,638,252"/>
+<area shape="poly" title=" " alt="" coords="649,180,627,215,623,212,645,177"/>
+<area shape="rect" title=" " alt="" coords="662,226,736,252"/>
+<area shape="poly" title=" " alt="" coords="664,177,685,211,681,214,660,180"/>
+</map>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Функции</h2></td></tr>
+<tr class="memitem:a3c04138a5bfe5d72780bb7e82a18e627" id="r_a3c04138a5bfe5d72780bb7e82a18e627"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3c04138a5bfe5d72780bb7e82a18e627">main</a> (int argc, char **argv)</td></tr>
+<tr class="separator:a3c04138a5bfe5d72780bb7e82a18e627"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4e660ee6ad577311c92ff5fb98b095e" id="r_ae4e660ee6ad577311c92ff5fb98b095e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae4e660ee6ad577311c92ff5fb98b095e">TEST</a> (test_editor, test_create)</td></tr>
+<tr class="separator:ae4e660ee6ad577311c92ff5fb98b095e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a286edcb4812ade5add226ecd71c364d7" id="r_a286edcb4812ade5add226ecd71c364d7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a286edcb4812ade5add226ecd71c364d7">TEST</a> (test_editor, test_doc_view)</td></tr>
+<tr class="separator:a286edcb4812ade5add226ecd71c364d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08d6bf2f9f4f6a8e895d2dce40fc18b2" id="r_a08d6bf2f9f4f6a8e895d2dce40fc18b2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a08d6bf2f9f4f6a8e895d2dce40fc18b2">TEST</a> (test_editor, test_doc_shapes)</td></tr>
+<tr class="separator:a08d6bf2f9f4f6a8e895d2dce40fc18b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5108a29d10c0ea28f82e254a6b0b90cc" id="r_a5108a29d10c0ea28f82e254a6b0b90cc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5108a29d10c0ea28f82e254a6b0b90cc">TEST</a> (test_editor, test_doc_stg)</td></tr>
+<tr class="separator:a5108a29d10c0ea28f82e254a6b0b90cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac16d133e0f78148578d42eacc8069053" id="r_ac16d133e0f78148578d42eacc8069053"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac16d133e0f78148578d42eacc8069053">TEST</a> (test_editor, test_doc_export)</td></tr>
+<tr class="separator:ac16d133e0f78148578d42eacc8069053"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a257f15cb34484796fad78c0220830d99" id="r_a257f15cb34484796fad78c0220830d99"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a257f15cb34484796fad78c0220830d99">TEST</a> (test_editor, test_doc_import)</td></tr>
+<tr class="separator:a257f15cb34484796fad78c0220830d99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Функции</h2>
+<a id="a3c04138a5bfe5d72780bb7e82a18e627" name="a3c04138a5bfe5d72780bb7e82a18e627"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c04138a5bfe5d72780bb7e82a18e627">&#9670;&#160;</a></span>main()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int main </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>argc</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char **</td>          <td class="paramname"><span class="paramname"><em>argv</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae4e660ee6ad577311c92ff5fb98b095e" name="ae4e660ee6ad577311c92ff5fb98b095e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4e660ee6ad577311c92ff5fb98b095e">&#9670;&#160;</a></span>TEST() <span class="overload">[1/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST </td>
+          <td>(</td>
+          <td class="paramtype">test_editor</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">test_create</td>          <td class="paramname"><span class="paramname"><em></em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="test__editor_8cpp_ae4e660ee6ad577311c92ff5fb98b095e_cgraph.png" border="0" usemap="#atest__editor_8cpp_ae4e660ee6ad577311c92ff5fb98b095e_cgraph" alt=""/></div>
+<map name="atest__editor_8cpp_ae4e660ee6ad577311c92ff5fb98b095e_cgraph" id="atest__editor_8cpp_ae4e660ee6ad577311c92ff5fb98b095e_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,60,31"/>
+<area shape="rect" href="namespaceotus__hw5.html#adaa378043f8bf3fd2b3c55a97bf96ef1" title="глобальный доступ к синглтону конфигурации" alt="" coords="500,7,643,32"/>
+<area shape="poly" title=" " alt="" coords="60,15,225,12,452,13,485,14,485,19,452,18,226,18,60,20"/>
+<area shape="rect" href="namespaceotus__hw5.html#aad15de1514f55e9f681423bcddf54220" title="глобальный доступ к синглтону редактора" alt="" coords="108,31,248,56"/>
+<area shape="poly" title=" " alt="" coords="60,20,93,26,92,31,60,25"/>
+<area shape="rect" href="classotus__hw5_1_1Config.html#a6c9ea9dcf96c700535aaccf57ebc5a79" title=" " alt="" coords="691,7,866,32"/>
+<area shape="poly" title=" " alt="" coords="643,17,675,17,675,22,643,22"/>
+<area shape="rect" href="classotus__hw5_1_1SimpleEditor.html#a8cba135b866de21a8e134a8bba67a5c4" title=" " alt="" coords="296,27,452,68"/>
+<area shape="poly" title=" " alt="" coords="249,42,280,43,280,48,248,48"/>
+<area shape="poly" title=" " alt="" coords="453,34,485,29,485,34,453,39"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ac16d133e0f78148578d42eacc8069053" name="ac16d133e0f78148578d42eacc8069053"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac16d133e0f78148578d42eacc8069053">&#9670;&#160;</a></span>TEST() <span class="overload">[2/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST </td>
+          <td>(</td>
+          <td class="paramtype">test_editor</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">test_doc_export</td>          <td class="paramname"><span class="paramname"><em></em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="test__editor_8cpp_ac16d133e0f78148578d42eacc8069053_cgraph.png" border="0" usemap="#atest__editor_8cpp_ac16d133e0f78148578d42eacc8069053_cgraph" alt=""/></div>
+<map name="atest__editor_8cpp_ac16d133e0f78148578d42eacc8069053_cgraph" id="atest__editor_8cpp_ac16d133e0f78148578d42eacc8069053_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,60,31"/>
+<area shape="rect" href="namespaceotus__hw5.html#adaa378043f8bf3fd2b3c55a97bf96ef1" title="глобальный доступ к синглтону конфигурации" alt="" coords="500,7,643,32"/>
+<area shape="poly" title=" " alt="" coords="60,15,225,12,452,13,485,14,485,19,452,18,226,18,60,20"/>
+<area shape="rect" href="namespaceotus__hw5.html#aad15de1514f55e9f681423bcddf54220" title="глобальный доступ к синглтону редактора" alt="" coords="108,31,248,56"/>
+<area shape="poly" title=" " alt="" coords="60,20,93,26,92,31,60,25"/>
+<area shape="rect" href="classotus__hw5_1_1Config.html#a6c9ea9dcf96c700535aaccf57ebc5a79" title=" " alt="" coords="691,7,866,32"/>
+<area shape="poly" title=" " alt="" coords="643,17,675,17,675,22,643,22"/>
+<area shape="rect" href="classotus__hw5_1_1SimpleEditor.html#a8cba135b866de21a8e134a8bba67a5c4" title=" " alt="" coords="296,27,452,68"/>
+<area shape="poly" title=" " alt="" coords="249,42,280,43,280,48,248,48"/>
+<area shape="poly" title=" " alt="" coords="453,34,485,29,485,34,453,39"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a257f15cb34484796fad78c0220830d99" name="a257f15cb34484796fad78c0220830d99"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a257f15cb34484796fad78c0220830d99">&#9670;&#160;</a></span>TEST() <span class="overload">[3/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST </td>
+          <td>(</td>
+          <td class="paramtype">test_editor</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">test_doc_import</td>          <td class="paramname"><span class="paramname"><em></em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="test__editor_8cpp_a257f15cb34484796fad78c0220830d99_cgraph.png" border="0" usemap="#atest__editor_8cpp_a257f15cb34484796fad78c0220830d99_cgraph" alt=""/></div>
+<map name="atest__editor_8cpp_a257f15cb34484796fad78c0220830d99_cgraph" id="atest__editor_8cpp_a257f15cb34484796fad78c0220830d99_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,60,31"/>
+<area shape="rect" href="namespaceotus__hw5.html#adaa378043f8bf3fd2b3c55a97bf96ef1" title="глобальный доступ к синглтону конфигурации" alt="" coords="500,7,643,32"/>
+<area shape="poly" title=" " alt="" coords="60,15,225,12,452,13,485,14,485,19,452,18,226,18,60,20"/>
+<area shape="rect" href="namespaceotus__hw5.html#aad15de1514f55e9f681423bcddf54220" title="глобальный доступ к синглтону редактора" alt="" coords="108,31,248,56"/>
+<area shape="poly" title=" " alt="" coords="60,20,93,26,92,31,60,25"/>
+<area shape="rect" href="classotus__hw5_1_1Config.html#a6c9ea9dcf96c700535aaccf57ebc5a79" title=" " alt="" coords="691,7,866,32"/>
+<area shape="poly" title=" " alt="" coords="643,17,675,17,675,22,643,22"/>
+<area shape="rect" href="classotus__hw5_1_1SimpleEditor.html#a8cba135b866de21a8e134a8bba67a5c4" title=" " alt="" coords="296,27,452,68"/>
+<area shape="poly" title=" " alt="" coords="249,42,280,43,280,48,248,48"/>
+<area shape="poly" title=" " alt="" coords="453,34,485,29,485,34,453,39"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a08d6bf2f9f4f6a8e895d2dce40fc18b2" name="a08d6bf2f9f4f6a8e895d2dce40fc18b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08d6bf2f9f4f6a8e895d2dce40fc18b2">&#9670;&#160;</a></span>TEST() <span class="overload">[4/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST </td>
+          <td>(</td>
+          <td class="paramtype">test_editor</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">test_doc_shapes</td>          <td class="paramname"><span class="paramname"><em></em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="test__editor_8cpp_a08d6bf2f9f4f6a8e895d2dce40fc18b2_cgraph.png" border="0" usemap="#atest__editor_8cpp_a08d6bf2f9f4f6a8e895d2dce40fc18b2_cgraph" alt=""/></div>
+<map name="atest__editor_8cpp_a08d6bf2f9f4f6a8e895d2dce40fc18b2_cgraph" id="atest__editor_8cpp_a08d6bf2f9f4f6a8e895d2dce40fc18b2_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,60,31"/>
+<area shape="rect" href="namespaceotus__hw5.html#adaa378043f8bf3fd2b3c55a97bf96ef1" title="глобальный доступ к синглтону конфигурации" alt="" coords="500,7,643,32"/>
+<area shape="poly" title=" " alt="" coords="60,15,225,12,452,13,485,14,485,19,452,18,226,18,60,20"/>
+<area shape="rect" href="namespaceotus__hw5.html#aad15de1514f55e9f681423bcddf54220" title="глобальный доступ к синглтону редактора" alt="" coords="108,31,248,56"/>
+<area shape="poly" title=" " alt="" coords="60,20,93,26,92,31,60,25"/>
+<area shape="rect" href="classotus__hw5_1_1Config.html#a6c9ea9dcf96c700535aaccf57ebc5a79" title=" " alt="" coords="691,7,866,32"/>
+<area shape="poly" title=" " alt="" coords="643,17,675,17,675,22,643,22"/>
+<area shape="rect" href="classotus__hw5_1_1SimpleEditor.html#a8cba135b866de21a8e134a8bba67a5c4" title=" " alt="" coords="296,27,452,68"/>
+<area shape="poly" title=" " alt="" coords="249,42,280,43,280,48,248,48"/>
+<area shape="poly" title=" " alt="" coords="453,34,485,29,485,34,453,39"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a5108a29d10c0ea28f82e254a6b0b90cc" name="a5108a29d10c0ea28f82e254a6b0b90cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5108a29d10c0ea28f82e254a6b0b90cc">&#9670;&#160;</a></span>TEST() <span class="overload">[5/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST </td>
+          <td>(</td>
+          <td class="paramtype">test_editor</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">test_doc_stg</td>          <td class="paramname"><span class="paramname"><em></em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="test__editor_8cpp_a5108a29d10c0ea28f82e254a6b0b90cc_cgraph.png" border="0" usemap="#atest__editor_8cpp_a5108a29d10c0ea28f82e254a6b0b90cc_cgraph" alt=""/></div>
+<map name="atest__editor_8cpp_a5108a29d10c0ea28f82e254a6b0b90cc_cgraph" id="atest__editor_8cpp_a5108a29d10c0ea28f82e254a6b0b90cc_cgraph">
+<area shape="rect" title=" " alt="" coords="5,13,60,38"/>
+<area shape="rect" href="namespaceotus__hw5.html#aad15de1514f55e9f681423bcddf54220" title="глобальный доступ к синглтону редактора" alt="" coords="108,13,248,38"/>
+<area shape="poly" title=" " alt="" coords="60,23,92,23,92,28,60,28"/>
+<area shape="rect" href="classotus__hw5_1_1SimpleEditor.html#a8cba135b866de21a8e134a8bba67a5c4" title=" " alt="" coords="296,5,452,46"/>
+<area shape="poly" title=" " alt="" coords="249,23,280,23,280,28,249,28"/>
+<area shape="rect" href="namespaceotus__hw5.html#adaa378043f8bf3fd2b3c55a97bf96ef1" title="глобальный доступ к синглтону конфигурации" alt="" coords="500,13,643,38"/>
+<area shape="poly" title=" " alt="" coords="453,23,485,23,485,28,453,28"/>
+<area shape="rect" href="classotus__hw5_1_1Config.html#a6c9ea9dcf96c700535aaccf57ebc5a79" title=" " alt="" coords="691,13,866,38"/>
+<area shape="poly" title=" " alt="" coords="643,23,675,23,675,28,643,28"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a286edcb4812ade5add226ecd71c364d7" name="a286edcb4812ade5add226ecd71c364d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a286edcb4812ade5add226ecd71c364d7">&#9670;&#160;</a></span>TEST() <span class="overload">[6/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST </td>
+          <td>(</td>
+          <td class="paramtype">test_editor</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">test_doc_view</td>          <td class="paramname"><span class="paramname"><em></em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="test__editor_8cpp_a286edcb4812ade5add226ecd71c364d7_cgraph.png" border="0" usemap="#atest__editor_8cpp_a286edcb4812ade5add226ecd71c364d7_cgraph" alt=""/></div>
+<map name="atest__editor_8cpp_a286edcb4812ade5add226ecd71c364d7_cgraph" id="atest__editor_8cpp_a286edcb4812ade5add226ecd71c364d7_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,60,31"/>
+<area shape="rect" href="namespaceotus__hw5.html#adaa378043f8bf3fd2b3c55a97bf96ef1" title="глобальный доступ к синглтону конфигурации" alt="" coords="500,7,643,32"/>
+<area shape="poly" title=" " alt="" coords="60,15,225,12,452,13,485,14,485,19,452,18,226,18,60,20"/>
+<area shape="rect" href="namespaceotus__hw5.html#aad15de1514f55e9f681423bcddf54220" title="глобальный доступ к синглтону редактора" alt="" coords="108,31,248,56"/>
+<area shape="poly" title=" " alt="" coords="60,20,93,26,92,31,60,25"/>
+<area shape="rect" href="classotus__hw5_1_1Config.html#a6c9ea9dcf96c700535aaccf57ebc5a79" title=" " alt="" coords="691,7,866,32"/>
+<area shape="poly" title=" " alt="" coords="643,17,675,17,675,22,643,22"/>
+<area shape="rect" href="classotus__hw5_1_1SimpleEditor.html#a8cba135b866de21a8e134a8bba67a5c4" title=" " alt="" coords="296,27,452,68"/>
+<area shape="poly" title=" " alt="" coords="249,42,280,43,280,48,248,48"/>
+<area shape="poly" title=" " alt="" coords="453,34,485,29,485,34,453,39"/>
+</map>
+</div>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

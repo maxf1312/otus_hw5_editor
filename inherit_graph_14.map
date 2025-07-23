@@ -1,0 +1,37 @@
+<map id="Иерархия классов. Графический вид." name="Иерархия классов. Графический вид.">
+<area shape="rect" id="Node000000" title=" " alt="" coords="17,120,147,161"/>
+<area shape="rect" id="Node000001" href="$classotus__hw5_1_1Document.html" title=" " alt="" coords="207,185,349,210"/>
+<area shape="poly" id="edge9_Node000000_Node000001" title=" " alt="" coords="162,161,232,182,230,187,161,166"/>
+<area shape="rect" id="Node000012" href="$structotus__hw5_1_1IObserver.html" title="Интерфейс Наблюдателя в паттерне Наблюдатель" alt="" coords="208,132,348,157"/>
+<area shape="poly" id="edge10_Node000000_Node000012" title=" " alt="" coords="162,139,207,140,207,146,162,145"/>
+<area shape="rect" id="Node000015" href="$structotus__hw5_1_1ISubject.html" title="Интерфейс наблюдаемого объекта в паттерне Наблюдатель" alt="" coords="212,78,344,104"/>
+<area shape="poly" id="edge13_Node000000_Node000015" title=" " alt="" coords="161,118,223,102,224,107,163,123"/>
+<area shape="rect" id="Node000013" href="$structotus__hw5_1_1IDocView.html" title="Интерфейс объекта Представление документа (Документ:Представление = N:1)" alt="" coords="397,136,536,161"/>
+<area shape="poly" id="edge11_Node000012_Node000013" title=" " alt="" coords="364,143,397,144,397,150,364,149"/>
+<area shape="rect" id="Node000014" href="$classotus__hw5_1_1DocView.html" title=" " alt="" coords="584,136,720,161"/>
+<area shape="poly" id="edge12_Node000013_Node000014" title=" " alt="" coords="552,146,584,146,584,151,552,151"/>
+<area shape="rect" id="Node000016" href="$classotus__hw5_1_1Subject.html" title=" " alt="" coords="399,5,534,46"/>
+<area shape="poly" id="edge14_Node000015_Node000016" title=" " alt="" coords="331,70,405,44,407,49,333,75"/>
+<area shape="rect" id="Node000017" href="$classotus__hw5_1_1Subject.html" title="brief Наблюдаемый объект &#45; шаблон базовой реализации" alt="" coords="399,71,534,111"/>
+<area shape="poly" id="edge15_Node000015_Node000017" title=" " alt="" coords="359,88,399,88,399,94,359,94"/>
+<area shape="rect" id="Node000002" href="$structotus__hw5_1_1IDocument.html" title="Интерфейс Документа" alt="" coords="9,185,155,210"/>
+<area shape="poly" id="edge16_Node000002_Node000001" title=" " alt="" coords="171,195,206,195,206,200,171,200"/>
+<area shape="rect" id="Node000003" href="$structotus__hw5_1_1ISerializable.html" title="Интерфейс сериализуемого объекта" alt="" coords="5,234,159,260"/>
+<area shape="poly" id="edge17_Node000003_Node000001" title=" " alt="" coords="150,227,223,209,224,214,152,232"/>
+<area shape="rect" id="Node000004" href="$structotus__hw5_1_1IShape.html" title="Интерфейс объекта Фигура" alt="" coords="216,234,340,260"/>
+<area shape="poly" id="edge18_Node000003_Node000004" title=" " alt="" coords="174,244,215,244,215,250,174,250"/>
+<area shape="rect" id="Node000005" href="$classotus__hw5_1_1Shape.html" title=" " alt="" coords="406,234,527,260"/>
+<area shape="poly" id="edge19_Node000004_Node000005" title=" " alt="" coords="356,244,406,244,406,250,356,250"/>
+<area shape="rect" id="Node000006" href="$classotus__hw5_1_1Point.html" title=" " alt="" coords="595,234,709,260"/>
+<area shape="poly" id="edge20_Node000005_Node000006" title=" " alt="" coords="542,244,595,244,595,250,542,250"/>
+<area shape="rect" id="Node000007" href="$classotus__hw5_1_1Circle.html" title=" " alt="" coords="772,160,888,185"/>
+<area shape="poly" id="edge21_Node000006_Node000007" title=" " alt="" coords="696,225,767,194,793,183,795,188,769,199,698,230"/>
+<area shape="rect" id="Node000008" href="$classotus__hw5_1_1Ellipse.html" title=" " alt="" coords="769,209,890,234"/>
+<area shape="poly" id="edge22_Node000006_Node000008" title=" " alt="" coords="724,234,769,228,769,233,725,239"/>
+<area shape="rect" id="Node000009" href="$classotus__hw5_1_1Line.html" title=" " alt="" coords="776,258,884,284"/>
+<area shape="poly" id="edge23_Node000006_Node000009" title=" " alt="" coords="724,254,776,261,775,266,724,259"/>
+<area shape="rect" id="Node000010" href="$classotus__hw5_1_1Square.html" title=" " alt="" coords="768,308,892,333"/>
+<area shape="poly" id="edge24_Node000006_Node000010" title=" " alt="" coords="699,264,769,294,795,305,793,310,767,299,697,269"/>
+<area shape="rect" id="Node000011" href="$classotus__hw5_1_1Rectangle.html" title=" " alt="" coords="940,308,1081,333"/>
+<area shape="poly" id="edge25_Node000010_Node000011" title=" " alt="" coords="908,318,939,318,939,323,908,323"/>
+</map>

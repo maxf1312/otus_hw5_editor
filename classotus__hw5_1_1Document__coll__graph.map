@@ -1,0 +1,15 @@
+<map id="otus_hw5::Document" name="otus_hw5::Document">
+<area shape="rect" id="Node000001" title=" " alt="" coords="343,619,475,889"/>
+<area shape="rect" id="Node000002" href="$structotus__hw5_1_1IDocument.html" title="Интерфейс Документа" alt="" coords="5,279,141,528"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="142,539,154,555,199,602,249,644,345,712,342,716,246,649,195,606,150,558,137,542"/>
+<area shape="rect" id="Node000003" href="$structotus__hw5_1_1ISerializable.html" title="Интерфейс сериализуемого объекта" alt="" coords="164,350,307,457"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="271,469,346,620,341,622,266,472"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="331,363,488,444"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="412,459,412,619,406,619,406,459"/>
+<area shape="rect" id="Node000005" href="$classotus__hw5_1_1SmartPtrCollection.html" title=" " alt="" coords="512,251,693,556"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="521,557,485,621,481,619,516,555"/>
+<area shape="rect" id="Node000006" href="$classotus__hw5_1_1SmartPtrCollection.html" title="Шаблон для коллекции умных указателей. Для удобства реализации коллекций внутри объектов" alt="" coords="512,5,693,188"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="605,204,605,252,600,252,600,204"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="717,371,864,437"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="780,438,751,497,731,529,707,558,656,606,600,649,543,686,491,715,488,711,540,681,597,644,653,602,703,555,726,526,746,494,775,436"/>
+</map>

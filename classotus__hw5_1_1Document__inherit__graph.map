@@ -1,0 +1,9 @@
+<map id="otus_hw5::Document" name="otus_hw5::Document">
+<area shape="rect" id="Node000001" title=" " alt="" coords="170,303,302,593"/>
+<area shape="rect" id="Node000002" href="$structotus__hw5_1_1IDocument.html" title="Интерфейс Документа" alt="" coords="5,5,141,255"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="146,267,173,318,168,320,141,269"/>
+<area shape="rect" id="Node000003" href="$structotus__hw5_1_1ISerializable.html" title="Интерфейс сериализуемого объекта" alt="" coords="164,76,307,184"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="238,199,238,303,233,303,233,199"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="331,89,488,171"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="383,185,304,328,299,326,378,182"/>
+</map>

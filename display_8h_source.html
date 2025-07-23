@@ -1,0 +1,142 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.13.2"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>editor: Исходный файл display.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">editor<span id="projectnumber">&#160;1.0.0</span>
+   </div>
+   <div id="projectbrief">vector graphics editor framework made for homework 5</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.13.2 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="doc-content">
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">display.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="display_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &lt;memory&gt;</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &quot;<a class="code" href="editor_8h.html">editor.h</a>&quot;</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceotus__hw5.html">otus_hw5</a>{</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span></div>
+<div class="foldopen" id="foldopen00019" data-start="{" data-end="};">
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="classotus__hw5_1_1OStreamDisplay.html">   19</a></span>    <span class="keyword">class </span><a class="code hl_function" href="classotus__hw5_1_1OStreamDisplay.html#a5b84d8fc61ac94b8f2301d8fe452de6f">OStreamDisplay</a> : <span class="keyword">public</span> <a class="code hl_struct" href="structotus__hw5_1_1IDisplay.html">IDisplay</a> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    {</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="classotus__hw5_1_1OStreamDisplay.html#a5b84d8fc61ac94b8f2301d8fe452de6f">   22</a></span>        <a class="code hl_function" href="classotus__hw5_1_1OStreamDisplay.html#a5b84d8fc61ac94b8f2301d8fe452de6f">OStreamDisplay</a>(std::ostream&amp; os) : os_(os) { }</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="classotus__hw5_1_1OStreamDisplay.html#a0257c3d8a3f54266ca76d700409468e8">   23</a></span>        <span class="keyword">virtual</span> <a class="code hl_function" href="classotus__hw5_1_1OStreamDisplay.html#a0257c3d8a3f54266ca76d700409468e8">~OStreamDisplay</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>        <span class="keyword">virtual</span> <a class="code hl_struct" href="structotus__hw5_1_1IDisplay.html">IDisplay</a>&amp; <a class="code hl_function" href="classotus__hw5_1_1OStreamDisplay.html#a4e9b6c69ddfd408d55d6acc092b57e2f">point</a>(<a class="code hl_typedef" href="structotus__hw5_1_1IDisplay.html#a8150678cee720aa4b1d27d3137095670">coord_t</a> x, <a class="code hl_typedef" href="structotus__hw5_1_1IDisplay.html#a8150678cee720aa4b1d27d3137095670">coord_t</a> y) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>        <span class="keyword">virtual</span> <a class="code hl_struct" href="structotus__hw5_1_1IDisplay.html">IDisplay</a>&amp; <a class="code hl_function" href="classotus__hw5_1_1OStreamDisplay.html#ac6d2173e1e5a5c6575bd0fd06fdda969">move_to</a>(<a class="code hl_typedef" href="structotus__hw5_1_1IDisplay.html#a8150678cee720aa4b1d27d3137095670">coord_t</a> x, <a class="code hl_typedef" href="structotus__hw5_1_1IDisplay.html#a8150678cee720aa4b1d27d3137095670">coord_t</a> y) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>        <span class="keyword">virtual</span> <a class="code hl_struct" href="structotus__hw5_1_1IDisplay.html">IDisplay</a>&amp; <a class="code hl_function" href="classotus__hw5_1_1OStreamDisplay.html#a0ec0116c19521a7c01d1814966bed154">line_to</a>(<a class="code hl_typedef" href="structotus__hw5_1_1IDisplay.html#a8150678cee720aa4b1d27d3137095670">coord_t</a> x, <a class="code hl_typedef" href="structotus__hw5_1_1IDisplay.html#a8150678cee720aa4b1d27d3137095670">coord_t</a> y) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>        <span class="keyword">virtual</span> <a class="code hl_struct" href="structotus__hw5_1_1IDisplay.html">IDisplay</a>&amp; <a class="code hl_function" href="classotus__hw5_1_1OStreamDisplay.html#adc05ffd373987d6dc54f02793ad4e265">line</a>(<a class="code hl_typedef" href="structotus__hw5_1_1IDisplay.html#a8150678cee720aa4b1d27d3137095670">coord_t</a> x0, <a class="code hl_typedef" href="structotus__hw5_1_1IDisplay.html#a8150678cee720aa4b1d27d3137095670">coord_t</a> y0, <a class="code hl_typedef" href="structotus__hw5_1_1IDisplay.html#a8150678cee720aa4b1d27d3137095670">coord_t</a> x1, <a class="code hl_typedef" href="structotus__hw5_1_1IDisplay.html#a8150678cee720aa4b1d27d3137095670">coord_t</a> y1) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>        <span class="keyword">virtual</span> <a class="code hl_struct" href="structotus__hw5_1_1IDisplay.html">IDisplay</a>&amp; <a class="code hl_function" href="classotus__hw5_1_1OStreamDisplay.html#a2ae1a80573da9a4f880eca884a1810bc">rect</a>(<a class="code hl_typedef" href="structotus__hw5_1_1IDisplay.html#a8150678cee720aa4b1d27d3137095670">coord_t</a> x, <a class="code hl_typedef" href="structotus__hw5_1_1IDisplay.html#a8150678cee720aa4b1d27d3137095670">coord_t</a> y, <a class="code hl_typedef" href="structotus__hw5_1_1IDisplay.html#ab0b3972e17b4b03c230cb701f798846b">sz_t</a> w, <a class="code hl_typedef" href="structotus__hw5_1_1IDisplay.html#ab0b3972e17b4b03c230cb701f798846b">sz_t</a> h) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>        <span class="keyword">virtual</span> <a class="code hl_struct" href="structotus__hw5_1_1IDisplay.html">IDisplay</a>&amp; <a class="code hl_function" href="classotus__hw5_1_1OStreamDisplay.html#a2ae1a80573da9a4f880eca884a1810bc">rect</a>(<a class="code hl_typedef" href="structotus__hw5_1_1IDisplay.html#a8150678cee720aa4b1d27d3137095670">coord_t</a> xLT, <a class="code hl_typedef" href="structotus__hw5_1_1IDisplay.html#a8150678cee720aa4b1d27d3137095670">coord_t</a> yLT, <a class="code hl_typedef" href="structotus__hw5_1_1IDisplay.html#a8150678cee720aa4b1d27d3137095670">coord_t</a> xRB, <a class="code hl_typedef" href="structotus__hw5_1_1IDisplay.html#a8150678cee720aa4b1d27d3137095670">coord_t</a> yRB) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>        <span class="keyword">virtual</span> <a class="code hl_struct" href="structotus__hw5_1_1IDisplay.html">IDisplay</a>&amp; <a class="code hl_function" href="classotus__hw5_1_1OStreamDisplay.html#a3cc4ad1c5cd268ec285faeb73761763d">circle</a>(<a class="code hl_typedef" href="structotus__hw5_1_1IDisplay.html#a8150678cee720aa4b1d27d3137095670">coord_t</a> x, <a class="code hl_typedef" href="structotus__hw5_1_1IDisplay.html#a8150678cee720aa4b1d27d3137095670">coord_t</a> y, <a class="code hl_typedef" href="structotus__hw5_1_1IDisplay.html#ab0b3972e17b4b03c230cb701f798846b">sz_t</a> radius) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>        <span class="keyword">virtual</span> <a class="code hl_struct" href="structotus__hw5_1_1IDisplay.html">IDisplay</a>&amp; <a class="code hl_function" href="classotus__hw5_1_1OStreamDisplay.html#aff200a75cbbb3f9e88b37e697349ab8b">color</a>(<span class="keyword">const</span> <a class="code hl_typedef" href="structotus__hw5_1_1IDisplay.html#a2d90e363f1b41508336c9dc0a817a4a3">rgb_t</a> clr) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>        <span class="keyword">virtual</span> <a class="code hl_struct" href="structotus__hw5_1_1IDisplay.html">IDisplay</a>&amp; <a class="code hl_function" href="classotus__hw5_1_1OStreamDisplay.html#a087253c8ec62f2fe70b41d2273a18bef">line_width</a>(<span class="keyword">const</span> <a class="code hl_typedef" href="structotus__hw5_1_1IDisplay.html#ab0b3972e17b4b03c230cb701f798846b">sz_t</a> w) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        std::ostream&amp; os_;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    };</div>
+</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>} <span class="comment">// otus_hw5</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="ttc" id="aclassotus__hw5_1_1OStreamDisplay_html_a0257c3d8a3f54266ca76d700409468e8"><div class="ttname"><a href="classotus__hw5_1_1OStreamDisplay.html#a0257c3d8a3f54266ca76d700409468e8">otus_hw5::OStreamDisplay::~OStreamDisplay</a></div><div class="ttdeci">virtual ~OStreamDisplay()=default</div></div>
+<div class="ttc" id="aclassotus__hw5_1_1OStreamDisplay_html_a087253c8ec62f2fe70b41d2273a18bef"><div class="ttname"><a href="classotus__hw5_1_1OStreamDisplay.html#a087253c8ec62f2fe70b41d2273a18bef">otus_hw5::OStreamDisplay::line_width</a></div><div class="ttdeci">virtual IDisplay &amp; line_width(const sz_t w) override</div><div class="ttdef"><b>Определения</b> display.cpp:68</div></div>
+<div class="ttc" id="aclassotus__hw5_1_1OStreamDisplay_html_a0ec0116c19521a7c01d1814966bed154"><div class="ttname"><a href="classotus__hw5_1_1OStreamDisplay.html#a0ec0116c19521a7c01d1814966bed154">otus_hw5::OStreamDisplay::line_to</a></div><div class="ttdeci">virtual IDisplay &amp; line_to(coord_t x, coord_t y) override</div><div class="ttdef"><b>Определения</b> display.cpp:32</div></div>
+<div class="ttc" id="aclassotus__hw5_1_1OStreamDisplay_html_a2ae1a80573da9a4f880eca884a1810bc"><div class="ttname"><a href="classotus__hw5_1_1OStreamDisplay.html#a2ae1a80573da9a4f880eca884a1810bc">otus_hw5::OStreamDisplay::rect</a></div><div class="ttdeci">virtual IDisplay &amp; rect(coord_t x, coord_t y, sz_t w, sz_t h) override</div><div class="ttdef"><b>Определения</b> display.cpp:44</div></div>
+<div class="ttc" id="aclassotus__hw5_1_1OStreamDisplay_html_a3cc4ad1c5cd268ec285faeb73761763d"><div class="ttname"><a href="classotus__hw5_1_1OStreamDisplay.html#a3cc4ad1c5cd268ec285faeb73761763d">otus_hw5::OStreamDisplay::circle</a></div><div class="ttdeci">virtual IDisplay &amp; circle(coord_t x, coord_t y, sz_t radius) override</div><div class="ttdef"><b>Определения</b> display.cpp:56</div></div>
+<div class="ttc" id="aclassotus__hw5_1_1OStreamDisplay_html_a4e9b6c69ddfd408d55d6acc092b57e2f"><div class="ttname"><a href="classotus__hw5_1_1OStreamDisplay.html#a4e9b6c69ddfd408d55d6acc092b57e2f">otus_hw5::OStreamDisplay::point</a></div><div class="ttdeci">virtual IDisplay &amp; point(coord_t x, coord_t y) override</div><div class="ttdef"><b>Определения</b> display.cpp:20</div></div>
+<div class="ttc" id="aclassotus__hw5_1_1OStreamDisplay_html_a5b84d8fc61ac94b8f2301d8fe452de6f"><div class="ttname"><a href="classotus__hw5_1_1OStreamDisplay.html#a5b84d8fc61ac94b8f2301d8fe452de6f">otus_hw5::OStreamDisplay::OStreamDisplay</a></div><div class="ttdeci">OStreamDisplay(std::ostream &amp;os)</div><div class="ttdef"><b>Определения</b> display.h:22</div></div>
+<div class="ttc" id="aclassotus__hw5_1_1OStreamDisplay_html_ac6d2173e1e5a5c6575bd0fd06fdda969"><div class="ttname"><a href="classotus__hw5_1_1OStreamDisplay.html#ac6d2173e1e5a5c6575bd0fd06fdda969">otus_hw5::OStreamDisplay::move_to</a></div><div class="ttdeci">virtual IDisplay &amp; move_to(coord_t x, coord_t y) override</div><div class="ttdef"><b>Определения</b> display.cpp:26</div></div>
+<div class="ttc" id="aclassotus__hw5_1_1OStreamDisplay_html_adc05ffd373987d6dc54f02793ad4e265"><div class="ttname"><a href="classotus__hw5_1_1OStreamDisplay.html#adc05ffd373987d6dc54f02793ad4e265">otus_hw5::OStreamDisplay::line</a></div><div class="ttdeci">virtual IDisplay &amp; line(coord_t x0, coord_t y0, coord_t x1, coord_t y1) override</div><div class="ttdef"><b>Определения</b> display.cpp:38</div></div>
+<div class="ttc" id="aclassotus__hw5_1_1OStreamDisplay_html_aff200a75cbbb3f9e88b37e697349ab8b"><div class="ttname"><a href="classotus__hw5_1_1OStreamDisplay.html#aff200a75cbbb3f9e88b37e697349ab8b">otus_hw5::OStreamDisplay::color</a></div><div class="ttdeci">virtual IDisplay &amp; color(const rgb_t clr) override</div><div class="ttdef"><b>Определения</b> display.cpp:62</div></div>
+<div class="ttc" id="aeditor_8h_html"><div class="ttname"><a href="editor_8h.html">editor.h</a></div><div class="ttdoc">Описание всех интерфейсов</div></div>
+<div class="ttc" id="anamespaceotus__hw5_html"><div class="ttname"><a href="namespaceotus__hw5.html">otus_hw5</a></div><div class="ttdef"><b>Определения</b> config.cpp:14</div></div>
+<div class="ttc" id="astructotus__hw5_1_1IDisplay_html"><div class="ttname"><a href="structotus__hw5_1_1IDisplay.html">otus_hw5::IDisplay</a></div><div class="ttdoc">Интерфейс объекта дисплей, ответственен за отрисовку элементов</div><div class="ttdef"><b>Определения</b> editor.h:214</div></div>
+<div class="ttc" id="astructotus__hw5_1_1IDisplay_html_a2d90e363f1b41508336c9dc0a817a4a3"><div class="ttname"><a href="structotus__hw5_1_1IDisplay.html#a2d90e363f1b41508336c9dc0a817a4a3">otus_hw5::IDisplay::rgb_t</a></div><div class="ttdeci">IShape::rgb_t rgb_t</div><div class="ttdef"><b>Определения</b> editor.h:217</div></div>
+<div class="ttc" id="astructotus__hw5_1_1IDisplay_html_a8150678cee720aa4b1d27d3137095670"><div class="ttname"><a href="structotus__hw5_1_1IDisplay.html#a8150678cee720aa4b1d27d3137095670">otus_hw5::IDisplay::coord_t</a></div><div class="ttdeci">IShape::coord_t coord_t</div><div class="ttdef"><b>Определения</b> editor.h:215</div></div>
+<div class="ttc" id="astructotus__hw5_1_1IDisplay_html_ab0b3972e17b4b03c230cb701f798846b"><div class="ttname"><a href="structotus__hw5_1_1IDisplay.html#ab0b3972e17b4b03c230cb701f798846b">otus_hw5::IDisplay::sz_t</a></div><div class="ttdeci">IShape::sz_t sz_t</div><div class="ttdef"><b>Определения</b> editor.h:216</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

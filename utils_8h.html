@@ -1,0 +1,175 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.13.2"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>editor: Файл utils.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">editor<span id="projectnumber">&#160;1.0.0</span>
+   </div>
+   <div id="projectbrief">vector graphics editor framework made for homework 5</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.13.2 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Классы</a> &#124;
+<a href="#namespaces">Пространства имен</a> &#124;
+<a href="#func-members">Функции</a>  </div>
+  <div class="headertitle"><div class="title">Файл utils.h</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>утилиты  
+<a href="#details">Подробнее...</a></p>
+<div class="textblock"><code>#include &quot;<a class="el" href="editor_8h_source.html">editor.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Граф включаемых заголовочных файлов для utils.h:</div>
+<div class="dyncontent">
+<div class="center"><img src="utils_8h__incl.png" border="0" usemap="#autils_8h" alt=""/></div>
+<map name="autils_8h" id="autils_8h">
+<area shape="rect" title="утилиты" alt="" coords="180,5,235,31"/>
+<area shape="rect" href="editor_8h.html" title="Описание всех интерфейсов" alt="" coords="176,79,239,105"/>
+<area shape="poly" title=" " alt="" coords="210,31,210,63,205,63,205,31"/>
+<area shape="rect" title=" " alt="" coords="5,153,87,178"/>
+<area shape="poly" title=" " alt="" coords="181,108,88,148,86,144,179,103"/>
+<area shape="rect" title=" " alt="" coords="111,153,149,178"/>
+<area shape="poly" title=" " alt="" coords="196,107,156,144,152,140,192,103"/>
+<area shape="rect" title=" " alt="" coords="174,153,241,178"/>
+<area shape="poly" title=" " alt="" coords="210,105,210,137,205,137,205,105"/>
+<area shape="rect" title=" " alt="" coords="265,153,318,178"/>
+<area shape="poly" title=" " alt="" coords="223,103,267,140,264,144,220,107"/>
+<area shape="rect" href="smartptrcoll_8h.html" title="Коллекция указателей" alt="" coords="342,153,441,178"/>
+<area shape="poly" title=" " alt="" coords="240,103,347,144,345,149,238,108"/>
+<area shape="rect" title=" " alt="" coords="317,226,375,252"/>
+<area shape="poly" title=" " alt="" coords="386,180,364,215,359,212,382,177"/>
+<area shape="rect" title=" " alt="" coords="398,226,472,252"/>
+<area shape="poly" title=" " alt="" coords="401,177,422,211,418,214,396,180"/>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+Граф файлов, в которые включается этот файл:</div>
+<div class="dyncontent">
+<div class="center"><img src="utils_8h__dep__incl.png" border="0" usemap="#autils_8hdep" alt=""/></div>
+<map name="autils_8hdep" id="autils_8hdep">
+<area shape="rect" title="утилиты" alt="" coords="207,5,262,31"/>
+<area shape="rect" href="docserializer_8cpp.html" title="Реализация сериализаторов" alt="" coords="5,79,123,105"/>
+<area shape="poly" title=" " alt="" coords="194,39,94,81,92,76,192,35"/>
+<area shape="rect" href="main_8cpp.html" title=" " alt="" coords="147,79,221,105"/>
+<area shape="poly" title=" " alt="" coords="220,45,195,80,190,77,215,42"/>
+<area shape="rect" href="shape_8cpp.html" title=" " alt="" coords="245,79,326,105"/>
+<area shape="poly" title=" " alt="" coords="254,42,279,77,275,80,250,45"/>
+<area shape="rect" href="utils_8cpp.html" title="Реализация утилит" alt="" coords="349,79,419,105"/>
+<area shape="poly" title=" " alt="" coords="275,36,360,76,357,81,272,40"/>
+</map>
+</div>
+</div>
+<p><a href="utils_8h_source.html">См. исходные тексты.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Классы</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structotus__hw5_1_1Creator.html">otus_hw5::Creator&lt; CreatedT, CreatedPtrT &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Шаблон примеси для определения статического конструктора  <a href="structotus__hw5_1_1Creator.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
+Пространства имен</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceotus__hw5.html">otus_hw5</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Функции</h2></td></tr>
+<tr class="memitem:a4c5dcf23be9b154d16ed3248b0bc4728" id="r_a4c5dcf23be9b154d16ed3248b0bc4728"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structotus__hw5_1_1IEditor.html#acd4080f8514783bb09546e064aee47cb">ShpTp_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceotus__hw5.html#a4c5dcf23be9b154d16ed3248b0bc4728">otus_hw5::shape_type_from_string</a> (const std::string &amp;tp)</td></tr>
+<tr class="separator:a4c5dcf23be9b154d16ed3248b0bc4728"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e24525795940cc6a07a0d650dcdd851" id="r_a0e24525795940cc6a07a0d650dcdd851"><td class="memItemLeft" align="right" valign="top">const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceotus__hw5.html#a0e24525795940cc6a07a0d650dcdd851">otus_hw5::shape_type_to_string</a> (const <a class="el" href="structotus__hw5_1_1IEditor.html#acd4080f8514783bb09546e064aee47cb">ShpTp_t</a> tp)</td></tr>
+<tr class="separator:a0e24525795940cc6a07a0d650dcdd851"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6077310e07eb2463bb36f5b19a8a37e7" id="r_a6077310e07eb2463bb36f5b19a8a37e7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceotus__hw5.html#a6077310e07eb2463bb36f5b19a8a37e7">otus_hw5::print_prompt</a> (std::ostream &amp;os)</td></tr>
+<tr class="separator:a6077310e07eb2463bb36f5b19a8a37e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>утилиты </p>
+<dl class="section author"><dt>Автор</dt><dd>MaximF (<a href="#" onclick="location.href='mai'+'lto:'+'max'+'f1'+'312'+'@y'+'and'+'ex'+'.ru'; return false;">maxf1<span class="obfuscator">.nosp@m.</span>312@<span class="obfuscator">.nosp@m.</span>yande<span class="obfuscator">.nosp@m.</span>x.ru</a>) </dd></dl>
+<dl class="section version"><dt>Версия</dt><dd>0.1 </dd></dl>
+<dl class="section date"><dt>Дата</dt><dd>2025-07-21</dd></dl>
+<dl class="section copyright"><dt>Авторство</dt><dd>Copyright (c) 2025 </dd></dl>
+</div></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

@@ -1,0 +1,20 @@
+<map id="otus_hw5::Square" name="otus_hw5::Square">
+<area shape="rect" id="Node000001" title=" " alt="" coords="366,1120,480,1309"/>
+<area shape="rect" id="Node000002" href="$classotus__hw5_1_1Point.html" title=" " alt="" coords="315,883,417,1071"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="395,1085,403,1120,398,1121,390,1086"/>
+<area shape="rect" id="Node000003" href="$classotus__hw5_1_1Shape.html" title=" " alt="" coords="263,509,373,820"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="347,834,354,883,349,883,341,834"/>
+<area shape="rect" id="Node000004" href="$structotus__hw5_1_1IShape.html" title="Интерфейс объекта Фигура" alt="" coords="20,162,134,431"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="143,422,148,430,207,517,266,594,261,597,203,520,144,433,139,424"/>
+<area shape="rect" id="Node000005" href="$structotus__hw5_1_1ISerializable.html" title="Интерфейс сериализуемого объекта" alt="" coords="5,5,148,112"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="79,127,79,162,74,162,74,127"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="158,263,241,330"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="211,328,261,485,263,492,258,494,255,486,206,330"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="264,263,318,330"/>
+<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="293,329,292,401,295,485,296,492,290,493,290,485,287,401,288,329"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="342,263,382,330"/>
+<area shape="poly" id="edge7_Node000003_Node000008" title=" " alt="" coords="361,330,341,493,336,492,356,329"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="435,263,470,330"/>
+<area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="456,329,455,485,445,823,432,1104,427,1103,439,823,450,485,450,329"/>
+<area shape="poly" id="edge8_Node000003_Node000009" title=" " alt="" coords="443,331,381,500,376,498,438,329"/>
+</map>

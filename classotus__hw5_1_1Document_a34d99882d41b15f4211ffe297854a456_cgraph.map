@@ -1,0 +1,8 @@
+<map id="otus_hw5::Document::add_view" name="otus_hw5::Document::add_view">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,51,148,91"/>
+<area shape="rect" id="Node000002" href="$classotus__hw5_1_1Document.html#acef5caa58cf0aa5ef14a4be0afd8941a" title=" " alt="" coords="196,5,338,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="148,51,180,44,181,49,149,57"/>
+<area shape="rect" id="Node000003" href="$structotus__hw5_1_1ISubject.html#a4effc4c09e9278ca75f80bf26295ac7d" title=" " alt="" coords="201,95,332,135"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="149,85,187,94,186,99,148,90"/>
+<area shape="poly" id="edge3_Node000003_Node000003" title=" " alt="" coords="230,95,229,85,235,76,248,70,267,68,288,70,300,77,298,81,286,76,267,73,249,75,238,80,234,86,236,93"/>
+</map>

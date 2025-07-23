@@ -1,0 +1,26 @@
+<map id="docview.cpp" name="docview.cpp">
+<area shape="rect" id="Node000001" title="Представление документа базовое" alt="" coords="106,5,200,31"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,79,77,105"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="135,34,74,73,71,68,133,29"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="136,300,194,326"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="152,32,142,79,140,136,145,193,161,284,156,285,139,194,135,137,137,79,147,31"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="428,300,502,326"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="201,20,300,34,361,48,426,67,491,94,552,128,607,172,631,197,653,225,660,244,656,261,643,275,623,286,572,301,518,310,517,304,571,296,621,281,639,270,651,258,655,245,648,228,627,200,604,175,549,133,488,99,424,73,360,53,299,39,200,25"/>
+<area shape="rect" id="Node000005" href="$docview_8h.html" title="Представление документа базовое" alt="" coords="152,79,231,105"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="162,30,180,64,176,66,157,32"/>
+<area shape="poly" id="edge5_Node000005_Node000003" title=" " alt="" coords="193,105,171,285,166,284,188,105"/>
+<area shape="rect" id="Node000006" href="$editor_8h.html" title="Описание всех интерфейсов" alt="" coords="365,153,429,178"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="227,103,351,146,350,151,226,108"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="403,226,484,252"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="407,177,430,212,425,215,402,180"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="508,226,547,252"/>
+<area shape="poly" id="edge8_Node000006_Node000008" title=" " alt="" coords="420,177,496,218,494,222,418,181"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="571,226,639,252"/>
+<area shape="poly" id="edge9_Node000006_Node000009" title=" " alt="" coords="430,175,557,219,556,224,428,180"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="325,226,378,252"/>
+<area shape="poly" id="edge10_Node000006_Node000010" title=" " alt="" coords="392,180,370,215,365,212,387,177"/>
+<area shape="rect" id="Node000011" href="$smartptrcoll_8h.html" title="Коллекция указателей" alt="" coords="202,226,301,252"/>
+<area shape="poly" id="edge11_Node000006_Node000011" title=" " alt="" coords="374,181,291,221,289,217,371,176"/>
+<area shape="poly" id="edge12_Node000011_Node000003" title=" " alt="" coords="239,255,193,292,189,288,235,250"/>
+<area shape="poly" id="edge13_Node000011_Node000004" title=" " alt="" coords="289,250,415,292,414,297,287,255"/>
+</map>

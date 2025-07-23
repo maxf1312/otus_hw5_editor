@@ -1,0 +1,5 @@
+<map id="otus_hw5::IDisplay" name="otus_hw5::IDisplay">
+<area shape="rect" id="Node000001" title="Интерфейс объекта дисплей, ответственен за отрисовку элементов" alt="" coords="29,5,148,255"/>
+<area shape="rect" id="Node000002" href="$classotus__hw5_1_1OStreamDisplay.html" title="Простой отладочный дисплей &#45; вывод в STL&#45;поток" alt="" coords="5,303,172,572"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="91,270,91,303,86,303,86,270"/>
+</map>

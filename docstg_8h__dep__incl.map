@@ -1,0 +1,7 @@
+<map id="docstg.h" name="docstg.h">
+<area shape="rect" id="Node000001" title="Хранилища для документов" alt="" coords="64,5,135,31"/>
+<area shape="rect" id="Node000002" href="$docstg_8cpp.html" title="Реализация хранилищ" alt="" coords="5,79,90,105"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="84,45,58,80,54,77,80,42"/>
+<area shape="rect" id="Node000003" href="$editor_8cpp.html" title="Реализация простого редактора" alt="" coords="114,79,192,105"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="120,42,146,77,142,80,115,45"/>
+</map>

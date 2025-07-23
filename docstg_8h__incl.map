@@ -1,0 +1,23 @@
+<map id="docstg.h" name="docstg.h">
+<area shape="rect" id="Node000001" title="Хранилища для документов" alt="" coords="98,5,168,31"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,79,77,105"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="119,34,70,72,67,67,116,29"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="100,79,166,105"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="136,31,136,63,130,63,130,31"/>
+<area shape="rect" id="Node000004" href="$editor_8h.html" title="Описание всех интерфейсов" alt="" coords="189,79,253,105"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="150,29,196,67,193,71,146,34"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="19,153,100,178"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="195,108,102,148,100,144,193,103"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="124,153,163,178"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="210,107,170,144,166,140,206,103"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="187,153,255,178"/>
+<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="224,105,224,137,218,137,218,105"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="278,153,332,178"/>
+<area shape="poly" id="edge7_Node000004_Node000008" title=" " alt="" coords="237,103,281,140,278,144,234,107"/>
+<area shape="rect" id="Node000009" href="$smartptrcoll_8h.html" title="Коллекция указателей" alt="" coords="355,153,455,178"/>
+<area shape="poly" id="edge8_Node000004_Node000009" title=" " alt="" coords="253,103,361,144,359,149,251,108"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="331,226,388,252"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="400,180,378,215,373,212,395,177"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="412,226,486,252"/>
+<area shape="poly" id="edge10_Node000009_Node000011" title=" " alt="" coords="415,177,436,211,431,214,410,180"/>
+</map>

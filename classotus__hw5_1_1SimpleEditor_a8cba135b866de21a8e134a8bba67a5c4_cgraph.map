@@ -1,0 +1,7 @@
+<map id="otus_hw5::SimpleEditor::Instance" name="otus_hw5::SimpleEditor::Instance">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,162,46"/>
+<area shape="rect" id="Node000002" href="$namespaceotus__hw5.html#adaa378043f8bf3fd2b3c55a97bf96ef1" title="глобальный доступ к синглтону конфигурации" alt="" coords="210,13,352,38"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="162,23,194,23,194,28,162,28"/>
+<area shape="rect" id="Node000003" href="$classotus__hw5_1_1Config.html#a6c9ea9dcf96c700535aaccf57ebc5a79" title=" " alt="" coords="400,13,575,38"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="352,23,384,23,384,28,352,28"/>
+</map>

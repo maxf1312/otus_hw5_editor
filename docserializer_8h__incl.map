@@ -1,0 +1,25 @@
+<map id="docserializer.h" name="docserializer.h">
+<area shape="rect" id="Node000001" title="Сериализаторы для объектов" alt="" coords="229,5,332,31"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,226,44,252"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="251,34,209,54,166,81,129,114,95,150,43,215,39,212,91,147,125,110,163,77,206,49,248,29"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="298,226,365,252"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="286,31,328,211,322,212,281,32"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="389,226,442,252"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="290,30,402,212,398,215,286,33"/>
+<area shape="rect" id="Node000005" href="$editor_8h.html" title="Описание всех интерфейсов" alt="" coords="201,153,264,178"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="280,32,258,106,245,139,240,137,253,104,275,30"/>
+<area shape="rect" id="Node000010" href="$shape_8h.html" title="Реализация фигур" alt="" coords="177,79,243,105"/>
+<area shape="poly" id="edge12_Node000001_Node000010" title=" " alt="" coords="271,33,234,70,231,66,267,29"/>
+<area shape="poly" id="edge6_Node000005_Node000002" title=" " alt="" coords="202,180,59,228,58,223,200,175"/>
+<area shape="poly" id="edge7_Node000005_Node000003" title=" " alt="" coords="251,177,304,215,301,219,248,181"/>
+<area shape="poly" id="edge8_Node000005_Node000004" title=" " alt="" coords="264,176,375,219,373,224,263,181"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="192,226,273,252"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="235,179,235,211,230,211,230,179"/>
+<area shape="rect" id="Node000007" href="$smartptrcoll_8h.html" title="Коллекция указателей" alt="" coords="68,226,168,252"/>
+<area shape="poly" id="edge9_Node000005_Node000007" title=" " alt="" coords="214,181,152,220,149,215,212,177"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="44,300,101,326"/>
+<area shape="poly" id="edge10_Node000007_Node000008" title=" " alt="" coords="113,254,90,288,86,285,108,251"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="125,300,199,326"/>
+<area shape="poly" id="edge11_Node000007_Node000009" title=" " alt="" coords="127,251,149,285,144,288,123,254"/>
+<area shape="poly" id="edge13_Node000010_Node000005" title=" " alt="" coords="216,104,227,137,222,138,211,106"/>
+</map>

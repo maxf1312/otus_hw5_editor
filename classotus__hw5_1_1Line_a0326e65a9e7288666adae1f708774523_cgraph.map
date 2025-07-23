@@ -1,0 +1,8 @@
+<map id="otus_hw5::Line::Line" name="otus_hw5::Line::Line">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,29,145,55"/>
+<area shape="rect" id="Node000002" href="$classotus__hw5_1_1Point.html#a20575a6efd6e0c9e3eb262688340d394" title=" " alt="" coords="193,29,342,55"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="145,40,177,40,177,45,145,45"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="235,30,229,21,233,11,246,5,267,3,291,5,303,12,300,17,289,10,267,8,247,10,236,15,234,20,239,27"/>
+<area shape="rect" id="Node000003" href="$classotus__hw5_1_1Shape.html#a2830abac7ad0a23ab6d79d25b672ce0a" title=" " alt="" coords="390,29,553,55"/>
+<area shape="poly" id="edge3_Node000002_Node000003" title=" " alt="" coords="343,40,375,40,375,45,343,45"/>
+</map>

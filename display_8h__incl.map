@@ -1,0 +1,20 @@
+<map id="display.h" name="display.h">
+<area shape="rect" id="Node000001" title="Дисплеи" alt="" coords="94,5,165,31"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,153,73,178"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="125,33,57,141,52,138,120,30"/>
+<area shape="rect" id="Node000003" href="$editor_8h.html" title="Описание всех интерфейсов" alt="" coords="147,79,211,105"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="140,30,164,65,160,68,136,33"/>
+<area shape="poly" id="edge5_Node000003_Node000002" title=" " alt="" coords="156,108,77,148,75,143,154,103"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="97,153,178,178"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="174,106,155,141,150,138,170,104"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="202,153,241,178"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="188,104,209,138,204,141,184,106"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="264,153,318,178"/>
+<area shape="poly" id="edge6_Node000003_Node000006" title=" " alt="" coords="199,103,261,142,258,146,197,107"/>
+<area shape="rect" id="Node000007" href="$smartptrcoll_8h.html" title="Коллекция указателей" alt="" coords="341,153,441,178"/>
+<area shape="poly" id="edge7_Node000003_Node000007" title=" " alt="" coords="212,101,342,145,340,150,210,106"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="317,226,374,252"/>
+<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="386,180,364,215,359,212,381,177"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="398,226,472,252"/>
+<area shape="poly" id="edge9_Node000007_Node000009" title=" " alt="" coords="401,177,422,211,417,214,396,180"/>
+</map>

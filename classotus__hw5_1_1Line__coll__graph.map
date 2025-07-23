@@ -1,0 +1,20 @@
+<map id="otus_hw5::Line" name="otus_hw5::Line">
+<area shape="rect" id="Node000001" title=" " alt="" coords="366,1135,464,1385"/>
+<area shape="rect" id="Node000002" href="$classotus__hw5_1_1Point.html" title=" " alt="" coords="310,898,413,1086"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="386,1100,393,1135,387,1136,380,1101"/>
+<area shape="rect" id="Node000003" href="$classotus__hw5_1_1Shape.html" title=" " alt="" coords="246,509,356,820"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="335,834,347,897,342,898,330,835"/>
+<area shape="rect" id="Node000004" href="$structotus__hw5_1_1IShape.html" title="Интерфейс объекта Фигура" alt="" coords="112,162,226,431"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="225,445,249,511,244,512,220,446"/>
+<area shape="rect" id="Node000005" href="$structotus__hw5_1_1ISerializable.html" title="Интерфейс сериализуемого объекта" alt="" coords="98,5,241,112"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="172,127,172,162,167,162,167,127"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="5,263,88,330"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="58,329,76,378,102,430,133,476,168,520,237,597,233,601,164,524,129,479,98,433,71,380,53,330"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="412,263,466,330"/>
+<area shape="poly" id="edge9_Node000001_Node000007" title=" " alt="" coords="441,329,439,637,428,1086,427,1119,421,1118,423,1086,434,637,436,329"/>
+<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="432,330,380,486,365,524,360,522,375,484,427,328"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="251,263,290,330"/>
+<area shape="poly" id="edge7_Node000003_Node000008" title=" " alt="" coords="272,329,271,401,274,485,275,492,270,493,269,486,266,401,267,329"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="315,263,349,330"/>
+<area shape="poly" id="edge8_Node000003_Node000009" title=" " alt="" coords="332,330,318,493,313,492,327,329"/>
+</map>

@@ -1,0 +1,181 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.13.2"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>editor: Файл docserializer.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">editor<span id="projectnumber">&#160;1.0.0</span>
+   </div>
+   <div id="projectbrief">vector graphics editor framework made for homework 5</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.13.2 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Классы</a> &#124;
+<a href="#namespaces">Пространства имен</a>  </div>
+  <div class="headertitle"><div class="title">Файл docserializer.h</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Сериализаторы для объектов  
+<a href="#details">Подробнее...</a></p>
+<div class="textblock"><code>#include &lt;ios&gt;</code><br />
+<code>#include &lt;memory&gt;</code><br />
+<code>#include &lt;string&gt;</code><br />
+<code>#include &quot;<a class="el" href="editor_8h_source.html">editor.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="shape_8h_source.html">shape.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Граф включаемых заголовочных файлов для docserializer.h:</div>
+<div class="dyncontent">
+<div class="center"><img src="docserializer_8h__incl.png" border="0" usemap="#adocserializer_8h" alt=""/></div>
+<map name="adocserializer_8h" id="adocserializer_8h">
+<area shape="rect" title="Сериализаторы для объектов" alt="" coords="229,5,332,31"/>
+<area shape="rect" title=" " alt="" coords="5,226,44,252"/>
+<area shape="poly" title=" " alt="" coords="251,34,209,54,166,81,129,114,95,150,43,215,39,212,91,147,125,110,163,77,206,49,248,29"/>
+<area shape="rect" title=" " alt="" coords="298,226,365,252"/>
+<area shape="poly" title=" " alt="" coords="286,31,328,211,322,212,281,32"/>
+<area shape="rect" title=" " alt="" coords="389,226,442,252"/>
+<area shape="poly" title=" " alt="" coords="290,30,402,212,398,215,286,33"/>
+<area shape="rect" href="editor_8h.html" title="Описание всех интерфейсов" alt="" coords="201,153,264,178"/>
+<area shape="poly" title=" " alt="" coords="280,32,258,106,245,139,240,137,253,104,275,30"/>
+<area shape="rect" href="shape_8h.html" title="Реализация фигур" alt="" coords="177,79,243,105"/>
+<area shape="poly" title=" " alt="" coords="271,33,234,70,231,66,267,29"/>
+<area shape="poly" title=" " alt="" coords="202,180,59,228,58,223,200,175"/>
+<area shape="poly" title=" " alt="" coords="251,177,304,215,301,219,248,181"/>
+<area shape="poly" title=" " alt="" coords="264,176,375,219,373,224,263,181"/>
+<area shape="rect" title=" " alt="" coords="192,226,273,252"/>
+<area shape="poly" title=" " alt="" coords="235,179,235,211,230,211,230,179"/>
+<area shape="rect" href="smartptrcoll_8h.html" title="Коллекция указателей" alt="" coords="68,226,168,252"/>
+<area shape="poly" title=" " alt="" coords="214,181,152,220,149,215,212,177"/>
+<area shape="rect" title=" " alt="" coords="44,300,101,326"/>
+<area shape="poly" title=" " alt="" coords="113,254,90,288,86,285,108,251"/>
+<area shape="rect" title=" " alt="" coords="125,300,199,326"/>
+<area shape="poly" title=" " alt="" coords="127,251,149,285,144,288,123,254"/>
+<area shape="poly" title=" " alt="" coords="216,104,227,137,222,138,211,106"/>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+Граф файлов, в которые включается этот файл:</div>
+<div class="dyncontent">
+<div class="center"><img src="docserializer_8h__dep__incl.png" border="0" usemap="#adocserializer_8hdep" alt=""/></div>
+<map name="adocserializer_8hdep" id="adocserializer_8hdep">
+<area shape="rect" title="Сериализаторы для объектов" alt="" coords="202,5,305,31"/>
+<area shape="rect" href="docserializer_8cpp.html" title="Реализация сериализаторов" alt="" coords="5,79,123,105"/>
+<area shape="poly" title=" " alt="" coords="208,39,97,81,95,76,206,34"/>
+<area shape="rect" href="document_8cpp.html" title="Документ &#45; реализация" alt="" coords="146,79,248,105"/>
+<area shape="poly" title=" " alt="" coords="237,45,209,80,205,77,233,41"/>
+<area shape="rect" href="editor_8cpp.html" title="Реализация простого редактора" alt="" coords="272,79,349,105"/>
+<area shape="poly" title=" " alt="" coords="274,41,303,77,299,80,270,45"/>
+<area shape="rect" href="shape_8cpp.html" title=" " alt="" coords="373,79,454,105"/>
+<area shape="poly" title=" " alt="" coords="295,35,387,76,385,81,293,40"/>
+</map>
+</div>
+</div>
+<p><a href="docserializer_8h_source.html">См. исходные тексты.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Классы</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structotus__hw5_1_1IDocSerializer.html">otus_hw5::IDocSerializer</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Интерфейс объекта Сериализатор объектов с интерфейсом <a class="el" href="structotus__hw5_1_1ISerializable.html" title="Интерфейс сериализуемого объекта">ISerializable</a>, по сути представляет Посетителя в патерне Посетитель для документа и фигур.  <a href="structotus__hw5_1_1IDocSerializer.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classotus__hw5_1_1DocSerializer.html">otus_hw5::DocSerializer</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сериализатор - Посетитель  <a href="classotus__hw5_1_1DocSerializer.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classotus__hw5_1_1DocSerializerText.html">otus_hw5::DocSerializerText</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сериализатор формат текст  <a href="classotus__hw5_1_1DocSerializerText.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
+Пространства имен</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceotus__hw5.html">otus_hw5</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Сериализаторы для объектов </p>
+<dl class="section author"><dt>Автор</dt><dd>MaximF (<a href="#" onclick="location.href='mai'+'lto:'+'max'+'f1'+'312'+'@y'+'and'+'ex'+'.ru'; return false;">maxf1<span class="obfuscator">.nosp@m.</span>312@<span class="obfuscator">.nosp@m.</span>yande<span class="obfuscator">.nosp@m.</span>x.ru</a>) </dd></dl>
+<dl class="section version"><dt>Версия</dt><dd>0.1 </dd></dl>
+<dl class="section date"><dt>Дата</dt><dd>2025-07-21</dd></dl>
+<dl class="section copyright"><dt>Авторство</dt><dd>Copyright (c) 2025 </dd></dl>
+</div></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

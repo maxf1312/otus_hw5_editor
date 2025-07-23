@@ -1,0 +1,5 @@
+<map id="otus_hw5::IObserver" name="otus_hw5::IObserver">
+<area shape="rect" id="Node000001" title="Интерфейс Наблюдателя в паттерне Наблюдатель" alt="" coords="16,135,146,221"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,156,87"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="83,102,83,135,78,135,78,102"/>
+</map>

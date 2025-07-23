@@ -1,0 +1,7 @@
+<map id="otus_hw5::IDocSerializer" name="otus_hw5::IDocSerializer">
+<area shape="rect" id="Node000001" title="Интерфейс объекта Сериализатор объектов с интерфейсом ISerializable, по сути представляет Посетителя ..." alt="" coords="16,5,168,356"/>
+<area shape="rect" id="Node000002" href="$classotus__hw5_1_1DocSerializer.html" title="Сериализатор &#45; Посетитель" alt="" coords="18,404,166,471"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="95,371,95,405,90,405,90,371"/>
+<area shape="rect" id="Node000003" href="$classotus__hw5_1_1DocSerializerText.html" title="Сериализатор формат текст" alt="" coords="5,519,179,870"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="95,486,95,519,90,519,90,486"/>
+</map>

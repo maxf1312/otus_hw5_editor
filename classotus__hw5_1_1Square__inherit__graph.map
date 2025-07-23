@@ -1,0 +1,13 @@
+<map id="otus_hw5::Square" name="otus_hw5::Square">
+<area shape="rect" id="Node000001" title=" " alt="" coords="20,1154,134,1342"/>
+<area shape="rect" id="Node000006" href="$classotus__hw5_1_1Rectangle.html" title=" " alt="" coords="11,1390,142,1579"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="79,1357,79,1391,74,1391,74,1357"/>
+<area shape="rect" id="Node000002" href="$classotus__hw5_1_1Point.html" title=" " alt="" coords="25,918,128,1106"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="79,1121,79,1154,74,1154,74,1121"/>
+<area shape="rect" id="Node000003" href="$classotus__hw5_1_1Shape.html" title=" " alt="" coords="22,478,132,870"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="79,884,79,918,74,918,74,884"/>
+<area shape="rect" id="Node000004" href="$structotus__hw5_1_1IShape.html" title="Интерфейс объекта Фигура" alt="" coords="20,160,134,430"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="79,445,79,478,74,478,74,445"/>
+<area shape="rect" id="Node000005" href="$structotus__hw5_1_1ISerializable.html" title="Интерфейс сериализуемого объекта" alt="" coords="5,5,148,112"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="79,127,79,160,74,160,74,127"/>
+</map>

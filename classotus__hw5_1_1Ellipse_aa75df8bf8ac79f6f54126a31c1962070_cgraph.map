@@ -1,0 +1,8 @@
+<map id="otus_hw5::Ellipse::Ellipse" name="otus_hw5::Ellipse::Ellipse">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,22,133,62"/>
+<area shape="rect" id="Node000002" href="$classotus__hw5_1_1Point.html#a20575a6efd6e0c9e3eb262688340d394" title=" " alt="" coords="181,29,330,55"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="133,40,165,40,165,45,133,45"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="224,30,218,21,222,11,234,5,255,3,278,5,290,12,287,16,276,10,255,8,236,10,225,15,223,20,228,27"/>
+<area shape="rect" id="Node000003" href="$classotus__hw5_1_1Shape.html#a2830abac7ad0a23ab6d79d25b672ce0a" title=" " alt="" coords="378,29,541,55"/>
+<area shape="poly" id="edge3_Node000002_Node000003" title=" " alt="" coords="331,40,363,40,363,45,331,45"/>
+</map>

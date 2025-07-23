@@ -1,0 +1,8 @@
+<map id="otus_hw5::Circle::Circle" name="otus_hw5::Circle::Circle">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,29,161,55"/>
+<area shape="rect" id="Node000002" href="$classotus__hw5_1_1Point.html#a20575a6efd6e0c9e3eb262688340d394" title=" " alt="" coords="209,29,358,55"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="161,40,193,40,193,45,161,45"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="250,30,243,21,247,11,261,5,283,3,308,5,321,12,318,17,306,10,283,8,262,10,251,15,249,20,254,27"/>
+<area shape="rect" id="Node000003" href="$classotus__hw5_1_1Shape.html#a2830abac7ad0a23ab6d79d25b672ce0a" title=" " alt="" coords="406,29,569,55"/>
+<area shape="poly" id="edge3_Node000002_Node000003" title=" " alt="" coords="359,40,391,40,391,45,359,45"/>
+</map>

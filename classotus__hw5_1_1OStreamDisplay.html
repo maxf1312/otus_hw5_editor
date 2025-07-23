@@ -1,0 +1,533 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.13.2"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>editor: Класс otus_hw5::OStreamDisplay</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">editor<span id="projectnumber">&#160;1.0.0</span>
+   </div>
+   <div id="projectbrief">vector graphics editor framework made for homework 5</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.13.2 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespaceotus__hw5.html">otus_hw5</a></li><li class="navelem"><a class="el" href="classotus__hw5_1_1OStreamDisplay.html">OStreamDisplay</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="classotus__hw5_1_1OStreamDisplay-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle"><div class="title">Класс otus_hw5::OStreamDisplay</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Простой отладочный дисплей - вывод в STL-поток  
+ <a href="#details">Подробнее...</a></p>
+
+<p><code>#include &lt;<a class="el" href="display_8h_source.html">display.h</a>&gt;</code></p>
+<div class="dynheader">
+Граф наследования:otus_hw5::OStreamDisplay:</div>
+<div class="dyncontent">
+<div class="center"><img src="classotus__hw5_1_1OStreamDisplay__inherit__graph.png" border="0" usemap="#aotus__hw5_1_1OStreamDisplay_inherit__map" alt="Inheritance graph"/></div>
+<map name="aotus__hw5_1_1OStreamDisplay_inherit__map" id="aotus__hw5_1_1OStreamDisplay_inherit__map">
+<area shape="rect" title="Простой отладочный дисплей &#45; вывод в STL&#45;поток" alt="" coords="5,303,172,572"/>
+<area shape="rect" href="structotus__hw5_1_1IDisplay.html" title="Интерфейс объекта дисплей, ответственен за отрисовку элементов" alt="" coords="29,5,148,255"/>
+<area shape="poly" title=" " alt="" coords="91,270,91,303,86,303,86,270"/>
+</map>
+</div>
+<div class="dynheader">
+Граф связей класса otus_hw5::OStreamDisplay:</div>
+<div class="dyncontent">
+<div class="center"><img src="classotus__hw5_1_1OStreamDisplay__coll__graph.png" border="0" usemap="#aotus__hw5_1_1OStreamDisplay_coll__map" alt="Collaboration graph"/></div>
+<map name="aotus__hw5_1_1OStreamDisplay_coll__map" id="aotus__hw5_1_1OStreamDisplay_coll__map">
+<area shape="rect" title="Простой отладочный дисплей &#45; вывод в STL&#45;поток" alt="" coords="5,303,172,572"/>
+<area shape="rect" href="structotus__hw5_1_1IDisplay.html" title="Интерфейс объекта дисплей, ответственен за отрисовку элементов" alt="" coords="29,5,148,255"/>
+<area shape="poly" title=" " alt="" coords="91,270,91,303,86,303,86,270"/>
+</map>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:a5b84d8fc61ac94b8f2301d8fe452de6f" id="r_a5b84d8fc61ac94b8f2301d8fe452de6f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5b84d8fc61ac94b8f2301d8fe452de6f">OStreamDisplay</a> (std::ostream &amp;os)</td></tr>
+<tr class="separator:a5b84d8fc61ac94b8f2301d8fe452de6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0257c3d8a3f54266ca76d700409468e8" id="r_a0257c3d8a3f54266ca76d700409468e8"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0257c3d8a3f54266ca76d700409468e8">~OStreamDisplay</a> ()=default</td></tr>
+<tr class="separator:a0257c3d8a3f54266ca76d700409468e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e9b6c69ddfd408d55d6acc092b57e2f" id="r_a4e9b6c69ddfd408d55d6acc092b57e2f"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="structotus__hw5_1_1IDisplay.html">IDisplay</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4e9b6c69ddfd408d55d6acc092b57e2f">point</a> (<a class="el" href="structotus__hw5_1_1IDisplay.html#a8150678cee720aa4b1d27d3137095670">coord_t</a> x, <a class="el" href="structotus__hw5_1_1IDisplay.html#a8150678cee720aa4b1d27d3137095670">coord_t</a> y) override</td></tr>
+<tr class="separator:a4e9b6c69ddfd408d55d6acc092b57e2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6d2173e1e5a5c6575bd0fd06fdda969" id="r_ac6d2173e1e5a5c6575bd0fd06fdda969"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="structotus__hw5_1_1IDisplay.html">IDisplay</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac6d2173e1e5a5c6575bd0fd06fdda969">move_to</a> (<a class="el" href="structotus__hw5_1_1IDisplay.html#a8150678cee720aa4b1d27d3137095670">coord_t</a> x, <a class="el" href="structotus__hw5_1_1IDisplay.html#a8150678cee720aa4b1d27d3137095670">coord_t</a> y) override</td></tr>
+<tr class="separator:ac6d2173e1e5a5c6575bd0fd06fdda969"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ec0116c19521a7c01d1814966bed154" id="r_a0ec0116c19521a7c01d1814966bed154"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="structotus__hw5_1_1IDisplay.html">IDisplay</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0ec0116c19521a7c01d1814966bed154">line_to</a> (<a class="el" href="structotus__hw5_1_1IDisplay.html#a8150678cee720aa4b1d27d3137095670">coord_t</a> x, <a class="el" href="structotus__hw5_1_1IDisplay.html#a8150678cee720aa4b1d27d3137095670">coord_t</a> y) override</td></tr>
+<tr class="separator:a0ec0116c19521a7c01d1814966bed154"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc05ffd373987d6dc54f02793ad4e265" id="r_adc05ffd373987d6dc54f02793ad4e265"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="structotus__hw5_1_1IDisplay.html">IDisplay</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adc05ffd373987d6dc54f02793ad4e265">line</a> (<a class="el" href="structotus__hw5_1_1IDisplay.html#a8150678cee720aa4b1d27d3137095670">coord_t</a> x0, <a class="el" href="structotus__hw5_1_1IDisplay.html#a8150678cee720aa4b1d27d3137095670">coord_t</a> y0, <a class="el" href="structotus__hw5_1_1IDisplay.html#a8150678cee720aa4b1d27d3137095670">coord_t</a> x1, <a class="el" href="structotus__hw5_1_1IDisplay.html#a8150678cee720aa4b1d27d3137095670">coord_t</a> y1) override</td></tr>
+<tr class="separator:adc05ffd373987d6dc54f02793ad4e265"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ae1a80573da9a4f880eca884a1810bc" id="r_a2ae1a80573da9a4f880eca884a1810bc"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="structotus__hw5_1_1IDisplay.html">IDisplay</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2ae1a80573da9a4f880eca884a1810bc">rect</a> (<a class="el" href="structotus__hw5_1_1IDisplay.html#a8150678cee720aa4b1d27d3137095670">coord_t</a> x, <a class="el" href="structotus__hw5_1_1IDisplay.html#a8150678cee720aa4b1d27d3137095670">coord_t</a> y, <a class="el" href="structotus__hw5_1_1IDisplay.html#ab0b3972e17b4b03c230cb701f798846b">sz_t</a> w, <a class="el" href="structotus__hw5_1_1IDisplay.html#ab0b3972e17b4b03c230cb701f798846b">sz_t</a> h) override</td></tr>
+<tr class="separator:a2ae1a80573da9a4f880eca884a1810bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0161914bc6fc7705a9fb1e7a0c5107f" id="r_ab0161914bc6fc7705a9fb1e7a0c5107f"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="structotus__hw5_1_1IDisplay.html">IDisplay</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab0161914bc6fc7705a9fb1e7a0c5107f">rect</a> (<a class="el" href="structotus__hw5_1_1IDisplay.html#a8150678cee720aa4b1d27d3137095670">coord_t</a> xLT, <a class="el" href="structotus__hw5_1_1IDisplay.html#a8150678cee720aa4b1d27d3137095670">coord_t</a> yLT, <a class="el" href="structotus__hw5_1_1IDisplay.html#a8150678cee720aa4b1d27d3137095670">coord_t</a> xRB, <a class="el" href="structotus__hw5_1_1IDisplay.html#a8150678cee720aa4b1d27d3137095670">coord_t</a> yRB) override</td></tr>
+<tr class="separator:ab0161914bc6fc7705a9fb1e7a0c5107f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3cc4ad1c5cd268ec285faeb73761763d" id="r_a3cc4ad1c5cd268ec285faeb73761763d"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="structotus__hw5_1_1IDisplay.html">IDisplay</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3cc4ad1c5cd268ec285faeb73761763d">circle</a> (<a class="el" href="structotus__hw5_1_1IDisplay.html#a8150678cee720aa4b1d27d3137095670">coord_t</a> x, <a class="el" href="structotus__hw5_1_1IDisplay.html#a8150678cee720aa4b1d27d3137095670">coord_t</a> y, <a class="el" href="structotus__hw5_1_1IDisplay.html#ab0b3972e17b4b03c230cb701f798846b">sz_t</a> radius) override</td></tr>
+<tr class="separator:a3cc4ad1c5cd268ec285faeb73761763d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff200a75cbbb3f9e88b37e697349ab8b" id="r_aff200a75cbbb3f9e88b37e697349ab8b"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="structotus__hw5_1_1IDisplay.html">IDisplay</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aff200a75cbbb3f9e88b37e697349ab8b">color</a> (const <a class="el" href="structotus__hw5_1_1IDisplay.html#a2d90e363f1b41508336c9dc0a817a4a3">rgb_t</a> clr) override</td></tr>
+<tr class="separator:aff200a75cbbb3f9e88b37e697349ab8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a087253c8ec62f2fe70b41d2273a18bef" id="r_a087253c8ec62f2fe70b41d2273a18bef"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="structotus__hw5_1_1IDisplay.html">IDisplay</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a087253c8ec62f2fe70b41d2273a18bef">line_width</a> (const <a class="el" href="structotus__hw5_1_1IDisplay.html#ab0b3972e17b4b03c230cb701f798846b">sz_t</a> w) override</td></tr>
+<tr class="separator:a087253c8ec62f2fe70b41d2273a18bef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_structotus__hw5_1_1IDisplay"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_structotus__hw5_1_1IDisplay')"><img src="closed.png" alt="-"/>&#160;Открытые члены унаследованные от <a class="el" href="structotus__hw5_1_1IDisplay.html">otus_hw5::IDisplay</a></td></tr>
+<tr class="memitem:a49999d94fe84f9311ab0704d546914dd inherit pub_methods_structotus__hw5_1_1IDisplay" id="r_a49999d94fe84f9311ab0704d546914dd"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structotus__hw5_1_1IDisplay.html#a49999d94fe84f9311ab0704d546914dd">~IDisplay</a> ()=default</td></tr>
+<tr class="separator:a49999d94fe84f9311ab0704d546914dd inherit pub_methods_structotus__hw5_1_1IDisplay"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
+Дополнительные унаследованные члены</h2></td></tr>
+<tr class="inherit_header pub_types_structotus__hw5_1_1IDisplay"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_types_structotus__hw5_1_1IDisplay')"><img src="closed.png" alt="-"/>&#160;Открытые типы унаследованные от <a class="el" href="structotus__hw5_1_1IDisplay.html">otus_hw5::IDisplay</a></td></tr>
+<tr class="memitem:a8150678cee720aa4b1d27d3137095670 inherit pub_types_structotus__hw5_1_1IDisplay" id="r_a8150678cee720aa4b1d27d3137095670"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structotus__hw5_1_1IDisplay.html#a8150678cee720aa4b1d27d3137095670">coord_t</a> = <a class="el" href="structotus__hw5_1_1IShape.html#a68e49fde31acf40a758ec400da42f4f6">IShape::coord_t</a></td></tr>
+<tr class="separator:a8150678cee720aa4b1d27d3137095670 inherit pub_types_structotus__hw5_1_1IDisplay"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0b3972e17b4b03c230cb701f798846b inherit pub_types_structotus__hw5_1_1IDisplay" id="r_ab0b3972e17b4b03c230cb701f798846b"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structotus__hw5_1_1IDisplay.html#ab0b3972e17b4b03c230cb701f798846b">sz_t</a> = <a class="el" href="structotus__hw5_1_1IShape.html#a50155274cc7f864a5a75401218c31af1">IShape::sz_t</a></td></tr>
+<tr class="separator:ab0b3972e17b4b03c230cb701f798846b inherit pub_types_structotus__hw5_1_1IDisplay"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d90e363f1b41508336c9dc0a817a4a3 inherit pub_types_structotus__hw5_1_1IDisplay" id="r_a2d90e363f1b41508336c9dc0a817a4a3"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structotus__hw5_1_1IDisplay.html#a2d90e363f1b41508336c9dc0a817a4a3">rgb_t</a> = <a class="el" href="unionotus__hw5_1_1IShape_1_1rgb__t.html">IShape::rgb_t</a></td></tr>
+<tr class="separator:a2d90e363f1b41508336c9dc0a817a4a3 inherit pub_types_structotus__hw5_1_1IDisplay"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Простой отладочный дисплей - вывод в STL-поток </p>
+</div><h2 class="groupheader">Конструктор(ы)</h2>
+<a id="a5b84d8fc61ac94b8f2301d8fe452de6f" name="a5b84d8fc61ac94b8f2301d8fe452de6f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b84d8fc61ac94b8f2301d8fe452de6f">&#9670;&#160;</a></span>OStreamDisplay()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">otus_hw5::OStreamDisplay::OStreamDisplay </td>
+          <td>(</td>
+          <td class="paramtype">std::ostream &amp;</td>          <td class="paramname"><span class="paramname"><em>os</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0257c3d8a3f54266ca76d700409468e8" name="a0257c3d8a3f54266ca76d700409468e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0257c3d8a3f54266ca76d700409468e8">&#9670;&#160;</a></span>~OStreamDisplay()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual otus_hw5::OStreamDisplay::~OStreamDisplay </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel virtual">virtual</span><span class="mlabel default">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Методы</h2>
+<a id="a3cc4ad1c5cd268ec285faeb73761763d" name="a3cc4ad1c5cd268ec285faeb73761763d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3cc4ad1c5cd268ec285faeb73761763d">&#9670;&#160;</a></span>circle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structotus__hw5_1_1IDisplay.html">IDisplay</a> &amp; otus_hw5::OStreamDisplay::circle </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structotus__hw5_1_1IDisplay.html#a8150678cee720aa4b1d27d3137095670">coord_t</a></td>          <td class="paramname"><span class="paramname"><em>x</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structotus__hw5_1_1IDisplay.html#a8150678cee720aa4b1d27d3137095670">coord_t</a></td>          <td class="paramname"><span class="paramname"><em>y</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structotus__hw5_1_1IDisplay.html#ab0b3972e17b4b03c230cb701f798846b">sz_t</a></td>          <td class="paramname"><span class="paramname"><em>radius</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Замещает <a class="el" href="structotus__hw5_1_1IDisplay.html#aea752fef90ce9d51ccba3ebf2778613a">otus_hw5::IDisplay</a>.</p>
+
+</div>
+</div>
+<a id="aff200a75cbbb3f9e88b37e697349ab8b" name="aff200a75cbbb3f9e88b37e697349ab8b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff200a75cbbb3f9e88b37e697349ab8b">&#9670;&#160;</a></span>color()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structotus__hw5_1_1IDisplay.html">IDisplay</a> &amp; otus_hw5::OStreamDisplay::color </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structotus__hw5_1_1IDisplay.html#a2d90e363f1b41508336c9dc0a817a4a3">rgb_t</a></td>          <td class="paramname"><span class="paramname"><em>clr</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Замещает <a class="el" href="structotus__hw5_1_1IDisplay.html#a72e42434c27128edeaa800a36531053c">otus_hw5::IDisplay</a>.</p>
+
+</div>
+</div>
+<a id="adc05ffd373987d6dc54f02793ad4e265" name="adc05ffd373987d6dc54f02793ad4e265"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc05ffd373987d6dc54f02793ad4e265">&#9670;&#160;</a></span>line()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structotus__hw5_1_1IDisplay.html">IDisplay</a> &amp; otus_hw5::OStreamDisplay::line </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structotus__hw5_1_1IDisplay.html#a8150678cee720aa4b1d27d3137095670">coord_t</a></td>          <td class="paramname"><span class="paramname"><em>x0</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structotus__hw5_1_1IDisplay.html#a8150678cee720aa4b1d27d3137095670">coord_t</a></td>          <td class="paramname"><span class="paramname"><em>y0</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structotus__hw5_1_1IDisplay.html#a8150678cee720aa4b1d27d3137095670">coord_t</a></td>          <td class="paramname"><span class="paramname"><em>x1</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structotus__hw5_1_1IDisplay.html#a8150678cee720aa4b1d27d3137095670">coord_t</a></td>          <td class="paramname"><span class="paramname"><em>y1</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Замещает <a class="el" href="structotus__hw5_1_1IDisplay.html#afc3c91ed8c82b86317ac857613f3598c">otus_hw5::IDisplay</a>.</p>
+
+</div>
+</div>
+<a id="a0ec0116c19521a7c01d1814966bed154" name="a0ec0116c19521a7c01d1814966bed154"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ec0116c19521a7c01d1814966bed154">&#9670;&#160;</a></span>line_to()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structotus__hw5_1_1IDisplay.html">IDisplay</a> &amp; otus_hw5::OStreamDisplay::line_to </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structotus__hw5_1_1IDisplay.html#a8150678cee720aa4b1d27d3137095670">coord_t</a></td>          <td class="paramname"><span class="paramname"><em>x</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structotus__hw5_1_1IDisplay.html#a8150678cee720aa4b1d27d3137095670">coord_t</a></td>          <td class="paramname"><span class="paramname"><em>y</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Замещает <a class="el" href="structotus__hw5_1_1IDisplay.html#aa218896935165ac748c4e51ecc8a1b96">otus_hw5::IDisplay</a>.</p>
+
+</div>
+</div>
+<a id="a087253c8ec62f2fe70b41d2273a18bef" name="a087253c8ec62f2fe70b41d2273a18bef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a087253c8ec62f2fe70b41d2273a18bef">&#9670;&#160;</a></span>line_width()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structotus__hw5_1_1IDisplay.html">IDisplay</a> &amp; otus_hw5::OStreamDisplay::line_width </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structotus__hw5_1_1IDisplay.html#ab0b3972e17b4b03c230cb701f798846b">sz_t</a></td>          <td class="paramname"><span class="paramname"><em>w</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Замещает <a class="el" href="structotus__hw5_1_1IDisplay.html#a9bf7ce6f857e7afacb7350fb207aaf51">otus_hw5::IDisplay</a>.</p>
+
+</div>
+</div>
+<a id="ac6d2173e1e5a5c6575bd0fd06fdda969" name="ac6d2173e1e5a5c6575bd0fd06fdda969"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6d2173e1e5a5c6575bd0fd06fdda969">&#9670;&#160;</a></span>move_to()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structotus__hw5_1_1IDisplay.html">IDisplay</a> &amp; otus_hw5::OStreamDisplay::move_to </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structotus__hw5_1_1IDisplay.html#a8150678cee720aa4b1d27d3137095670">coord_t</a></td>          <td class="paramname"><span class="paramname"><em>x</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structotus__hw5_1_1IDisplay.html#a8150678cee720aa4b1d27d3137095670">coord_t</a></td>          <td class="paramname"><span class="paramname"><em>y</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Замещает <a class="el" href="structotus__hw5_1_1IDisplay.html#a74da04e465ab160d5c46a28142307426">otus_hw5::IDisplay</a>.</p>
+
+</div>
+</div>
+<a id="a4e9b6c69ddfd408d55d6acc092b57e2f" name="a4e9b6c69ddfd408d55d6acc092b57e2f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e9b6c69ddfd408d55d6acc092b57e2f">&#9670;&#160;</a></span>point()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structotus__hw5_1_1IDisplay.html">IDisplay</a> &amp; otus_hw5::OStreamDisplay::point </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structotus__hw5_1_1IDisplay.html#a8150678cee720aa4b1d27d3137095670">coord_t</a></td>          <td class="paramname"><span class="paramname"><em>x</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structotus__hw5_1_1IDisplay.html#a8150678cee720aa4b1d27d3137095670">coord_t</a></td>          <td class="paramname"><span class="paramname"><em>y</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Замещает <a class="el" href="structotus__hw5_1_1IDisplay.html#a8e2eabade095de87f7ce11ff2c189302">otus_hw5::IDisplay</a>.</p>
+
+</div>
+</div>
+<a id="a2ae1a80573da9a4f880eca884a1810bc" name="a2ae1a80573da9a4f880eca884a1810bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ae1a80573da9a4f880eca884a1810bc">&#9670;&#160;</a></span>rect() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structotus__hw5_1_1IDisplay.html">IDisplay</a> &amp; otus_hw5::OStreamDisplay::rect </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structotus__hw5_1_1IDisplay.html#a8150678cee720aa4b1d27d3137095670">coord_t</a></td>          <td class="paramname"><span class="paramname"><em>x</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structotus__hw5_1_1IDisplay.html#a8150678cee720aa4b1d27d3137095670">coord_t</a></td>          <td class="paramname"><span class="paramname"><em>y</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structotus__hw5_1_1IDisplay.html#ab0b3972e17b4b03c230cb701f798846b">sz_t</a></td>          <td class="paramname"><span class="paramname"><em>w</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structotus__hw5_1_1IDisplay.html#ab0b3972e17b4b03c230cb701f798846b">sz_t</a></td>          <td class="paramname"><span class="paramname"><em>h</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Замещает <a class="el" href="structotus__hw5_1_1IDisplay.html#a5ae7b95a8d59f1045fce931f141ff740">otus_hw5::IDisplay</a>.</p>
+
+</div>
+</div>
+<a id="ab0161914bc6fc7705a9fb1e7a0c5107f" name="ab0161914bc6fc7705a9fb1e7a0c5107f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0161914bc6fc7705a9fb1e7a0c5107f">&#9670;&#160;</a></span>rect() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structotus__hw5_1_1IDisplay.html">IDisplay</a> &amp; otus_hw5::OStreamDisplay::rect </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structotus__hw5_1_1IDisplay.html#a8150678cee720aa4b1d27d3137095670">coord_t</a></td>          <td class="paramname"><span class="paramname"><em>xLT</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structotus__hw5_1_1IDisplay.html#a8150678cee720aa4b1d27d3137095670">coord_t</a></td>          <td class="paramname"><span class="paramname"><em>yLT</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structotus__hw5_1_1IDisplay.html#a8150678cee720aa4b1d27d3137095670">coord_t</a></td>          <td class="paramname"><span class="paramname"><em>xRB</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structotus__hw5_1_1IDisplay.html#a8150678cee720aa4b1d27d3137095670">coord_t</a></td>          <td class="paramname"><span class="paramname"><em>yRB</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Замещает <a class="el" href="structotus__hw5_1_1IDisplay.html#a9b59355341a65395fd9f98457270a542">otus_hw5::IDisplay</a>.</p>
+
+</div>
+</div>
+<hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li><a class="el" href="display_8h_source.html">display.h</a></li>
+<li><a class="el" href="display_8cpp.html">display.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

@@ -1,0 +1,211 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.13.2"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>editor: Исходный файл docserializer.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">editor<span id="projectnumber">&#160;1.0.0</span>
+   </div>
+   <div id="projectbrief">vector graphics editor framework made for homework 5</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.13.2 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="doc-content">
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">docserializer.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="docserializer_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &lt;ios&gt;</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &lt;memory&gt;</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &quot;<a class="code" href="editor_8h.html">editor.h</a>&quot;</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#include &quot;<a class="code" href="shape_8h.html">shape.h</a>&quot;</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceotus__hw5.html">otus_hw5</a>{</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span></div>
+<div class="foldopen" id="foldopen00023" data-start="{" data-end="};">
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="structotus__hw5_1_1IDocSerializer.html">   23</a></span>    <span class="keyword">struct </span><a class="code hl_struct" href="structotus__hw5_1_1IDocSerializer.html">IDocSerializer</a>  </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    {</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="structotus__hw5_1_1IDocSerializer.html#aef84d6a4357905022c0cb0f7fa89191f">   25</a></span>        <span class="keyword">using </span><a class="code hl_typedef" href="structotus__hw5_1_1IDocSerializer.html#aef84d6a4357905022c0cb0f7fa89191f">DocFormatTypes</a> = <a class="code hl_enumeration" href="structotus__hw5_1_1IEditor.html#a2eedabe7ae5b7afcdbe52350388406da">IEditor::DocFormatTypes</a>;</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="structotus__hw5_1_1IDocSerializer.html#abdcabf93c9c88272f61cf0fb0c98c757">   26</a></span>        <span class="keyword">virtual</span> <a class="code hl_function" href="structotus__hw5_1_1IDocSerializer.html#abdcabf93c9c88272f61cf0fb0c98c757">~IDocSerializer</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="structotus__hw5_1_1IDocSerializer.html#aa691e9f699cbf0c847ef58213977e0db">   27</a></span>        <span class="keyword">virtual</span> <a class="code hl_typedef" href="namespaceotus__hw5.html#a6f32fdb97469b31771dd67c1a2f0476e">docser_ptr_t</a> <a class="code hl_function" href="structotus__hw5_1_1IDocSerializer.html#aa691e9f699cbf0c847ef58213977e0db">clone</a>() <span class="keyword">const</span> = 0;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="structotus__hw5_1_1IDocSerializer.html#a87a066be30ab76708487b9fa698478b0">   28</a></span>        <span class="keyword">virtual</span> <a class="code hl_typedef" href="structotus__hw5_1_1IDocSerializer.html#aef84d6a4357905022c0cb0f7fa89191f">DocFormatTypes</a> <a class="code hl_function" href="structotus__hw5_1_1IDocSerializer.html#a87a066be30ab76708487b9fa698478b0">format_type</a>() <span class="keyword">const</span> = 0;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="structotus__hw5_1_1IDocSerializer.html#a933e0dc5f0078e34f626e3bdfb8b0adc">   29</a></span>        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="structotus__hw5_1_1IDocSerializer.html#a933e0dc5f0078e34f626e3bdfb8b0adc">deserialize_obj</a>(<a class="code hl_struct" href="structotus__hw5_1_1ISerializable.html">ISerializable</a>&amp; obj, <a class="code hl_typedef" href="namespaceotus__hw5.html#aa518e14958ecdd58bb16eeec0f3cb482">docstg_ptr_t</a> stg_from)  = 0;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="structotus__hw5_1_1IDocSerializer.html#a2a758d4b09d37b889422100b8c120ac3">   30</a></span>        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="structotus__hw5_1_1IDocSerializer.html#a2a758d4b09d37b889422100b8c120ac3">serialize_obj</a>(<a class="code hl_struct" href="structotus__hw5_1_1ISerializable.html">ISerializable</a>&amp; obj, <a class="code hl_typedef" href="namespaceotus__hw5.html#aa518e14958ecdd58bb16eeec0f3cb482">docstg_ptr_t</a> stg_to)  = 0;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="structotus__hw5_1_1IDocSerializer.html#af098cb990ef634fbe66470d701c8006b">   32</a></span>        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="structotus__hw5_1_1IDocSerializer.html#af098cb990ef634fbe66470d701c8006b">deserialize_obj</a>(<a class="code hl_struct" href="structotus__hw5_1_1IDocument.html">IDocument</a>&amp; doc, <a class="code hl_typedef" href="namespaceotus__hw5.html#aa518e14958ecdd58bb16eeec0f3cb482">docstg_ptr_t</a> stg_from)  = 0;</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="structotus__hw5_1_1IDocSerializer.html#a7dfe43c114a8d15778a312f10fae0599">   33</a></span>        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="structotus__hw5_1_1IDocSerializer.html#a7dfe43c114a8d15778a312f10fae0599">serialize_obj</a>(<a class="code hl_struct" href="structotus__hw5_1_1IDocument.html">IDocument</a>&amp; doc, <a class="code hl_typedef" href="namespaceotus__hw5.html#aa518e14958ecdd58bb16eeec0f3cb482">docstg_ptr_t</a> stg_to)  = 0;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="structotus__hw5_1_1IDocSerializer.html#a4178e6d645689fa72338725014e3821d">   35</a></span>        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="structotus__hw5_1_1IDocSerializer.html#a4178e6d645689fa72338725014e3821d">deserialize_obj</a>(<a class="code hl_struct" href="structotus__hw5_1_1IShape.html">IShape</a>&amp; shp, <a class="code hl_typedef" href="namespaceotus__hw5.html#aa518e14958ecdd58bb16eeec0f3cb482">docstg_ptr_t</a> stg_from)  = 0;</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="structotus__hw5_1_1IDocSerializer.html#a16575b20a31d50e59b5fa120373cac66">   36</a></span>        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="structotus__hw5_1_1IDocSerializer.html#a16575b20a31d50e59b5fa120373cac66">serialize_obj</a>(<a class="code hl_struct" href="structotus__hw5_1_1IShape.html">IShape</a>&amp; shp, <a class="code hl_typedef" href="namespaceotus__hw5.html#aa518e14958ecdd58bb16eeec0f3cb482">docstg_ptr_t</a> stg_to)  = 0;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="structotus__hw5_1_1IDocSerializer.html#a9d76337f3e0c8b46cb64aa50e0ce1a69">   38</a></span>        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="structotus__hw5_1_1IDocSerializer.html#a9d76337f3e0c8b46cb64aa50e0ce1a69">deserialize_obj</a>(<a class="code hl_class" href="classotus__hw5_1_1Shape.html">Shape</a>&amp; shp, <a class="code hl_typedef" href="namespaceotus__hw5.html#aa518e14958ecdd58bb16eeec0f3cb482">docstg_ptr_t</a> stg_from)  = 0;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="structotus__hw5_1_1IDocSerializer.html#a7dd77fd3cf2dc3f91a14267b63cbb41c">   39</a></span>        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="structotus__hw5_1_1IDocSerializer.html#a7dd77fd3cf2dc3f91a14267b63cbb41c">serialize_obj</a>(<a class="code hl_class" href="classotus__hw5_1_1Shape.html">Shape</a>&amp; shp, <a class="code hl_typedef" href="namespaceotus__hw5.html#aa518e14958ecdd58bb16eeec0f3cb482">docstg_ptr_t</a> stg_to)  = 0;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="structotus__hw5_1_1IDocSerializer.html#ae40aa25e9a8d66f7a68e1a670da03e0c">   41</a></span>        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="structotus__hw5_1_1IDocSerializer.html#ae40aa25e9a8d66f7a68e1a670da03e0c">deserialize_obj</a>(<a class="code hl_class" href="classotus__hw5_1_1Point.html">Point</a>&amp; pt, <a class="code hl_typedef" href="namespaceotus__hw5.html#aa518e14958ecdd58bb16eeec0f3cb482">docstg_ptr_t</a> stg_from)  = 0;</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="structotus__hw5_1_1IDocSerializer.html#a6c9a0a5db83cf7fbd0c1f75160e6e4f6">   42</a></span>        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="structotus__hw5_1_1IDocSerializer.html#a6c9a0a5db83cf7fbd0c1f75160e6e4f6">serialize_obj</a>(<a class="code hl_class" href="classotus__hw5_1_1Point.html">Point</a>&amp; pt, <a class="code hl_typedef" href="namespaceotus__hw5.html#aa518e14958ecdd58bb16eeec0f3cb482">docstg_ptr_t</a> stg_to)  = 0;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="structotus__hw5_1_1IDocSerializer.html#ae47b01577a74fb79236b5a30cc9029f4">   44</a></span>        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="structotus__hw5_1_1IDocSerializer.html#ae47b01577a74fb79236b5a30cc9029f4">deserialize_obj</a>(<a class="code hl_class" href="classotus__hw5_1_1Line.html">Line</a>&amp; line, <a class="code hl_typedef" href="namespaceotus__hw5.html#aa518e14958ecdd58bb16eeec0f3cb482">docstg_ptr_t</a> stg_from)  = 0;</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="structotus__hw5_1_1IDocSerializer.html#a09fd6764ce8bed453c16d5da4f859ce9">   45</a></span>        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="structotus__hw5_1_1IDocSerializer.html#a09fd6764ce8bed453c16d5da4f859ce9">serialize_obj</a>(<a class="code hl_class" href="classotus__hw5_1_1Line.html">Line</a>&amp; line, <a class="code hl_typedef" href="namespaceotus__hw5.html#aa518e14958ecdd58bb16eeec0f3cb482">docstg_ptr_t</a> stg_to)  = 0;</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    };    </div>
+</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span></div>
+<div class="foldopen" id="foldopen00049" data-start="{" data-end="};">
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="classotus__hw5_1_1DocSerializer.html">   49</a></span>    <span class="keyword">class </span><a class="code hl_class" href="classotus__hw5_1_1DocSerializer.html">DocSerializer</a> : <span class="keyword">public</span> <a class="code hl_struct" href="structotus__hw5_1_1IDocSerializer.html">IDocSerializer</a></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    {</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="classotus__hw5_1_1DocSerializer.html#a29a9a1d748618a4e20232da8cea8c6e9">   52</a></span>        <span class="keyword">virtual</span> <a class="code hl_function" href="classotus__hw5_1_1DocSerializer.html#a29a9a1d748618a4e20232da8cea8c6e9">~DocSerializer</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    };    </div>
+</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span></div>
+<div class="foldopen" id="foldopen00056" data-start="{" data-end="};">
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="classotus__hw5_1_1DocSerializerText.html">   56</a></span>    <span class="keyword">class </span><a class="code hl_class" href="classotus__hw5_1_1DocSerializerText.html">DocSerializerText</a> : <span class="keyword">public</span> <a class="code hl_class" href="classotus__hw5_1_1DocSerializer.html">DocSerializer</a></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    {</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="classotus__hw5_1_1DocSerializerText.html#a4794504972e5c685e3dc89a01a2582fe">   59</a></span>        <span class="keyword">virtual</span> <a class="code hl_function" href="classotus__hw5_1_1DocSerializerText.html#a4794504972e5c685e3dc89a01a2582fe">~DocSerializerText</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="classotus__hw5_1_1DocSerializerText.html#a1c0ec75ad3f0dbd131a42e66f80e8735">   60</a></span>        <span class="keyword">virtual</span> <a class="code hl_typedef" href="namespaceotus__hw5.html#a6f32fdb97469b31771dd67c1a2f0476e">docser_ptr_t</a> <a class="code hl_function" href="classotus__hw5_1_1DocSerializerText.html#a1c0ec75ad3f0dbd131a42e66f80e8735">clone</a>()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> <a class="code hl_typedef" href="namespaceotus__hw5.html#a6f32fdb97469b31771dd67c1a2f0476e">docser_ptr_t</a>{<span class="keyword">new</span> <a class="code hl_class" href="classotus__hw5_1_1DocSerializerText.html">DocSerializerText</a>(*<span class="keyword">this</span>)}; }</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="classotus__hw5_1_1DocSerializerText.html#af30dfe02d4752215adf7d0e4c6ec10c4">   61</a></span>        <span class="keyword">virtual</span> <a class="code hl_typedef" href="structotus__hw5_1_1IDocSerializer.html#aef84d6a4357905022c0cb0f7fa89191f">DocFormatTypes</a> <a class="code hl_function" href="classotus__hw5_1_1DocSerializerText.html#af30dfe02d4752215adf7d0e4c6ec10c4">format_type</a>()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> DocFormatTypes::Text; }</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="classotus__hw5_1_1DocSerializerText.html#a4bdb9fb1d9015fd14532c64124e93f82">   62</a></span>        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classotus__hw5_1_1DocSerializerText.html#a4bdb9fb1d9015fd14532c64124e93f82">deserialize_obj</a>(<a class="code hl_struct" href="structotus__hw5_1_1ISerializable.html">ISerializable</a>&amp; obj, <a class="code hl_typedef" href="namespaceotus__hw5.html#aa518e14958ecdd58bb16eeec0f3cb482">docstg_ptr_t</a> stg_from) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="classotus__hw5_1_1DocSerializerText.html#aa52ff05c18c0982db637969b6903a7d7">   63</a></span>        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classotus__hw5_1_1DocSerializerText.html#aa52ff05c18c0982db637969b6903a7d7">serialize_obj</a>(<a class="code hl_struct" href="structotus__hw5_1_1ISerializable.html">ISerializable</a>&amp; obj, <a class="code hl_typedef" href="namespaceotus__hw5.html#aa518e14958ecdd58bb16eeec0f3cb482">docstg_ptr_t</a> stg_to) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="classotus__hw5_1_1DocSerializerText.html#abf124c3a9dd8f8c70fa834fbf9d74876">   65</a></span>        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classotus__hw5_1_1DocSerializerText.html#abf124c3a9dd8f8c70fa834fbf9d74876">deserialize_obj</a>(<a class="code hl_struct" href="structotus__hw5_1_1IDocument.html">IDocument</a>&amp; doc, <a class="code hl_typedef" href="namespaceotus__hw5.html#aa518e14958ecdd58bb16eeec0f3cb482">docstg_ptr_t</a> stg_from) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno"><a class="line" href="classotus__hw5_1_1DocSerializerText.html#adf5ae56c1a4528991b7eaae766ebb1c8">   66</a></span>        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classotus__hw5_1_1DocSerializerText.html#adf5ae56c1a4528991b7eaae766ebb1c8">serialize_obj</a>(<a class="code hl_struct" href="structotus__hw5_1_1IDocument.html">IDocument</a>&amp; doc, <a class="code hl_typedef" href="namespaceotus__hw5.html#aa518e14958ecdd58bb16eeec0f3cb482">docstg_ptr_t</a> stg_to) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classotus__hw5_1_1DocSerializerText.html#a4bdb9fb1d9015fd14532c64124e93f82">deserialize_obj</a>(<a class="code hl_struct" href="structotus__hw5_1_1IShape.html">IShape</a>&amp; shp, <a class="code hl_typedef" href="namespaceotus__hw5.html#aa518e14958ecdd58bb16eeec0f3cb482">docstg_ptr_t</a> stg_from) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classotus__hw5_1_1DocSerializerText.html#aa52ff05c18c0982db637969b6903a7d7">serialize_obj</a>(<a class="code hl_struct" href="structotus__hw5_1_1IShape.html">IShape</a>&amp; shp, <a class="code hl_typedef" href="namespaceotus__hw5.html#aa518e14958ecdd58bb16eeec0f3cb482">docstg_ptr_t</a> stg_to) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classotus__hw5_1_1DocSerializerText.html#a4bdb9fb1d9015fd14532c64124e93f82">deserialize_obj</a>(<a class="code hl_class" href="classotus__hw5_1_1Shape.html">Shape</a>&amp; shp, <a class="code hl_typedef" href="namespaceotus__hw5.html#aa518e14958ecdd58bb16eeec0f3cb482">docstg_ptr_t</a> stg_from) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classotus__hw5_1_1DocSerializerText.html#aa52ff05c18c0982db637969b6903a7d7">serialize_obj</a>(<a class="code hl_class" href="classotus__hw5_1_1Shape.html">Shape</a>&amp; shp, <a class="code hl_typedef" href="namespaceotus__hw5.html#aa518e14958ecdd58bb16eeec0f3cb482">docstg_ptr_t</a> stg_to) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classotus__hw5_1_1DocSerializerText.html#a4bdb9fb1d9015fd14532c64124e93f82">deserialize_obj</a>(<a class="code hl_class" href="classotus__hw5_1_1Point.html">Point</a>&amp; pt, <a class="code hl_typedef" href="namespaceotus__hw5.html#aa518e14958ecdd58bb16eeec0f3cb482">docstg_ptr_t</a> stg_from) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classotus__hw5_1_1DocSerializerText.html#aa52ff05c18c0982db637969b6903a7d7">serialize_obj</a>(<a class="code hl_class" href="classotus__hw5_1_1Point.html">Point</a>&amp; pt, <a class="code hl_typedef" href="namespaceotus__hw5.html#aa518e14958ecdd58bb16eeec0f3cb482">docstg_ptr_t</a> stg_to) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classotus__hw5_1_1DocSerializerText.html#a4bdb9fb1d9015fd14532c64124e93f82">deserialize_obj</a>(<a class="code hl_class" href="classotus__hw5_1_1Line.html">Line</a>&amp; line, <a class="code hl_typedef" href="namespaceotus__hw5.html#aa518e14958ecdd58bb16eeec0f3cb482">docstg_ptr_t</a> stg_from) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classotus__hw5_1_1DocSerializerText.html#aa52ff05c18c0982db637969b6903a7d7">serialize_obj</a>(<a class="code hl_class" href="classotus__hw5_1_1Line.html">Line</a>&amp; line, <a class="code hl_typedef" href="namespaceotus__hw5.html#aa518e14958ecdd58bb16eeec0f3cb482">docstg_ptr_t</a> stg_to) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    };    </div>
+</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>} <span class="comment">// otus_hw5</span></div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
+<div class="ttc" id="aclassotus__hw5_1_1DocSerializerText_html"><div class="ttname"><a href="classotus__hw5_1_1DocSerializerText.html">otus_hw5::DocSerializerText</a></div><div class="ttdoc">Сериализатор формат текст</div><div class="ttdef"><b>Определения</b> docserializer.h:57</div></div>
+<div class="ttc" id="aclassotus__hw5_1_1DocSerializerText_html_a1c0ec75ad3f0dbd131a42e66f80e8735"><div class="ttname"><a href="classotus__hw5_1_1DocSerializerText.html#a1c0ec75ad3f0dbd131a42e66f80e8735">otus_hw5::DocSerializerText::clone</a></div><div class="ttdeci">virtual docser_ptr_t clone() const override</div><div class="ttdef"><b>Определения</b> docserializer.h:60</div></div>
+<div class="ttc" id="aclassotus__hw5_1_1DocSerializerText_html_a4794504972e5c685e3dc89a01a2582fe"><div class="ttname"><a href="classotus__hw5_1_1DocSerializerText.html#a4794504972e5c685e3dc89a01a2582fe">otus_hw5::DocSerializerText::~DocSerializerText</a></div><div class="ttdeci">virtual ~DocSerializerText()=default</div></div>
+<div class="ttc" id="aclassotus__hw5_1_1DocSerializerText_html_a4bdb9fb1d9015fd14532c64124e93f82"><div class="ttname"><a href="classotus__hw5_1_1DocSerializerText.html#a4bdb9fb1d9015fd14532c64124e93f82">otus_hw5::DocSerializerText::deserialize_obj</a></div><div class="ttdeci">virtual void deserialize_obj(ISerializable &amp;obj, docstg_ptr_t stg_from) override</div></div>
+<div class="ttc" id="aclassotus__hw5_1_1DocSerializerText_html_aa52ff05c18c0982db637969b6903a7d7"><div class="ttname"><a href="classotus__hw5_1_1DocSerializerText.html#aa52ff05c18c0982db637969b6903a7d7">otus_hw5::DocSerializerText::serialize_obj</a></div><div class="ttdeci">virtual void serialize_obj(ISerializable &amp;obj, docstg_ptr_t stg_to) override</div></div>
+<div class="ttc" id="aclassotus__hw5_1_1DocSerializerText_html_abf124c3a9dd8f8c70fa834fbf9d74876"><div class="ttname"><a href="classotus__hw5_1_1DocSerializerText.html#abf124c3a9dd8f8c70fa834fbf9d74876">otus_hw5::DocSerializerText::deserialize_obj</a></div><div class="ttdeci">virtual void deserialize_obj(IDocument &amp;doc, docstg_ptr_t stg_from) override</div></div>
+<div class="ttc" id="aclassotus__hw5_1_1DocSerializerText_html_adf5ae56c1a4528991b7eaae766ebb1c8"><div class="ttname"><a href="classotus__hw5_1_1DocSerializerText.html#adf5ae56c1a4528991b7eaae766ebb1c8">otus_hw5::DocSerializerText::serialize_obj</a></div><div class="ttdeci">virtual void serialize_obj(IDocument &amp;doc, docstg_ptr_t stg_to) override</div></div>
+<div class="ttc" id="aclassotus__hw5_1_1DocSerializerText_html_af30dfe02d4752215adf7d0e4c6ec10c4"><div class="ttname"><a href="classotus__hw5_1_1DocSerializerText.html#af30dfe02d4752215adf7d0e4c6ec10c4">otus_hw5::DocSerializerText::format_type</a></div><div class="ttdeci">virtual DocFormatTypes format_type() const override</div><div class="ttdef"><b>Определения</b> docserializer.h:61</div></div>
+<div class="ttc" id="aclassotus__hw5_1_1DocSerializer_html"><div class="ttname"><a href="classotus__hw5_1_1DocSerializer.html">otus_hw5::DocSerializer</a></div><div class="ttdoc">Сериализатор - Посетитель</div><div class="ttdef"><b>Определения</b> docserializer.h:50</div></div>
+<div class="ttc" id="aclassotus__hw5_1_1DocSerializer_html_a29a9a1d748618a4e20232da8cea8c6e9"><div class="ttname"><a href="classotus__hw5_1_1DocSerializer.html#a29a9a1d748618a4e20232da8cea8c6e9">otus_hw5::DocSerializer::~DocSerializer</a></div><div class="ttdeci">virtual ~DocSerializer()=default</div></div>
+<div class="ttc" id="aclassotus__hw5_1_1Line_html"><div class="ttname"><a href="classotus__hw5_1_1Line.html">otus_hw5::Line</a></div><div class="ttdef"><b>Определения</b> shape.h:60</div></div>
+<div class="ttc" id="aclassotus__hw5_1_1Point_html"><div class="ttname"><a href="classotus__hw5_1_1Point.html">otus_hw5::Point</a></div><div class="ttdef"><b>Определения</b> shape.h:48</div></div>
+<div class="ttc" id="aclassotus__hw5_1_1Shape_html"><div class="ttname"><a href="classotus__hw5_1_1Shape.html">otus_hw5::Shape</a></div><div class="ttdef"><b>Определения</b> shape.h:25</div></div>
+<div class="ttc" id="aeditor_8h_html"><div class="ttname"><a href="editor_8h.html">editor.h</a></div><div class="ttdoc">Описание всех интерфейсов</div></div>
+<div class="ttc" id="anamespaceotus__hw5_html"><div class="ttname"><a href="namespaceotus__hw5.html">otus_hw5</a></div><div class="ttdef"><b>Определения</b> config.cpp:14</div></div>
+<div class="ttc" id="anamespaceotus__hw5_html_a6f32fdb97469b31771dd67c1a2f0476e"><div class="ttname"><a href="namespaceotus__hw5.html#a6f32fdb97469b31771dd67c1a2f0476e">otus_hw5::docser_ptr_t</a></div><div class="ttdeci">std::unique_ptr&lt; IDocSerializer, IDocSerializerDeleter &gt; docser_ptr_t</div><div class="ttdef"><b>Определения</b> editor.h:51</div></div>
+<div class="ttc" id="anamespaceotus__hw5_html_aa518e14958ecdd58bb16eeec0f3cb482"><div class="ttname"><a href="namespaceotus__hw5.html#aa518e14958ecdd58bb16eeec0f3cb482">otus_hw5::docstg_ptr_t</a></div><div class="ttdeci">std::shared_ptr&lt; IDocStorage &gt; docstg_ptr_t</div><div class="ttdef"><b>Определения</b> editor.h:50</div></div>
+<div class="ttc" id="ashape_8h_html"><div class="ttname"><a href="shape_8h.html">shape.h</a></div><div class="ttdoc">Реализация фигур</div></div>
+<div class="ttc" id="astructotus__hw5_1_1IDocSerializer_html"><div class="ttname"><a href="structotus__hw5_1_1IDocSerializer.html">otus_hw5::IDocSerializer</a></div><div class="ttdoc">Интерфейс объекта Сериализатор объектов с интерфейсом ISerializable, по сути представляет Посетителя ...</div><div class="ttdef"><b>Определения</b> docserializer.h:24</div></div>
+<div class="ttc" id="astructotus__hw5_1_1IDocSerializer_html_a09fd6764ce8bed453c16d5da4f859ce9"><div class="ttname"><a href="structotus__hw5_1_1IDocSerializer.html#a09fd6764ce8bed453c16d5da4f859ce9">otus_hw5::IDocSerializer::serialize_obj</a></div><div class="ttdeci">virtual void serialize_obj(Line &amp;line, docstg_ptr_t stg_to)=0</div></div>
+<div class="ttc" id="astructotus__hw5_1_1IDocSerializer_html_a16575b20a31d50e59b5fa120373cac66"><div class="ttname"><a href="structotus__hw5_1_1IDocSerializer.html#a16575b20a31d50e59b5fa120373cac66">otus_hw5::IDocSerializer::serialize_obj</a></div><div class="ttdeci">virtual void serialize_obj(IShape &amp;shp, docstg_ptr_t stg_to)=0</div></div>
+<div class="ttc" id="astructotus__hw5_1_1IDocSerializer_html_a2a758d4b09d37b889422100b8c120ac3"><div class="ttname"><a href="structotus__hw5_1_1IDocSerializer.html#a2a758d4b09d37b889422100b8c120ac3">otus_hw5::IDocSerializer::serialize_obj</a></div><div class="ttdeci">virtual void serialize_obj(ISerializable &amp;obj, docstg_ptr_t stg_to)=0</div></div>
+<div class="ttc" id="astructotus__hw5_1_1IDocSerializer_html_a4178e6d645689fa72338725014e3821d"><div class="ttname"><a href="structotus__hw5_1_1IDocSerializer.html#a4178e6d645689fa72338725014e3821d">otus_hw5::IDocSerializer::deserialize_obj</a></div><div class="ttdeci">virtual void deserialize_obj(IShape &amp;shp, docstg_ptr_t stg_from)=0</div></div>
+<div class="ttc" id="astructotus__hw5_1_1IDocSerializer_html_a6c9a0a5db83cf7fbd0c1f75160e6e4f6"><div class="ttname"><a href="structotus__hw5_1_1IDocSerializer.html#a6c9a0a5db83cf7fbd0c1f75160e6e4f6">otus_hw5::IDocSerializer::serialize_obj</a></div><div class="ttdeci">virtual void serialize_obj(Point &amp;pt, docstg_ptr_t stg_to)=0</div></div>
+<div class="ttc" id="astructotus__hw5_1_1IDocSerializer_html_a7dd77fd3cf2dc3f91a14267b63cbb41c"><div class="ttname"><a href="structotus__hw5_1_1IDocSerializer.html#a7dd77fd3cf2dc3f91a14267b63cbb41c">otus_hw5::IDocSerializer::serialize_obj</a></div><div class="ttdeci">virtual void serialize_obj(Shape &amp;shp, docstg_ptr_t stg_to)=0</div></div>
+<div class="ttc" id="astructotus__hw5_1_1IDocSerializer_html_a7dfe43c114a8d15778a312f10fae0599"><div class="ttname"><a href="structotus__hw5_1_1IDocSerializer.html#a7dfe43c114a8d15778a312f10fae0599">otus_hw5::IDocSerializer::serialize_obj</a></div><div class="ttdeci">virtual void serialize_obj(IDocument &amp;doc, docstg_ptr_t stg_to)=0</div></div>
+<div class="ttc" id="astructotus__hw5_1_1IDocSerializer_html_a87a066be30ab76708487b9fa698478b0"><div class="ttname"><a href="structotus__hw5_1_1IDocSerializer.html#a87a066be30ab76708487b9fa698478b0">otus_hw5::IDocSerializer::format_type</a></div><div class="ttdeci">virtual DocFormatTypes format_type() const =0</div></div>
+<div class="ttc" id="astructotus__hw5_1_1IDocSerializer_html_a933e0dc5f0078e34f626e3bdfb8b0adc"><div class="ttname"><a href="structotus__hw5_1_1IDocSerializer.html#a933e0dc5f0078e34f626e3bdfb8b0adc">otus_hw5::IDocSerializer::deserialize_obj</a></div><div class="ttdeci">virtual void deserialize_obj(ISerializable &amp;obj, docstg_ptr_t stg_from)=0</div></div>
+<div class="ttc" id="astructotus__hw5_1_1IDocSerializer_html_a9d76337f3e0c8b46cb64aa50e0ce1a69"><div class="ttname"><a href="structotus__hw5_1_1IDocSerializer.html#a9d76337f3e0c8b46cb64aa50e0ce1a69">otus_hw5::IDocSerializer::deserialize_obj</a></div><div class="ttdeci">virtual void deserialize_obj(Shape &amp;shp, docstg_ptr_t stg_from)=0</div></div>
+<div class="ttc" id="astructotus__hw5_1_1IDocSerializer_html_aa691e9f699cbf0c847ef58213977e0db"><div class="ttname"><a href="structotus__hw5_1_1IDocSerializer.html#aa691e9f699cbf0c847ef58213977e0db">otus_hw5::IDocSerializer::clone</a></div><div class="ttdeci">virtual docser_ptr_t clone() const =0</div></div>
+<div class="ttc" id="astructotus__hw5_1_1IDocSerializer_html_abdcabf93c9c88272f61cf0fb0c98c757"><div class="ttname"><a href="structotus__hw5_1_1IDocSerializer.html#abdcabf93c9c88272f61cf0fb0c98c757">otus_hw5::IDocSerializer::~IDocSerializer</a></div><div class="ttdeci">virtual ~IDocSerializer()=default</div></div>
+<div class="ttc" id="astructotus__hw5_1_1IDocSerializer_html_ae40aa25e9a8d66f7a68e1a670da03e0c"><div class="ttname"><a href="structotus__hw5_1_1IDocSerializer.html#ae40aa25e9a8d66f7a68e1a670da03e0c">otus_hw5::IDocSerializer::deserialize_obj</a></div><div class="ttdeci">virtual void deserialize_obj(Point &amp;pt, docstg_ptr_t stg_from)=0</div></div>
+<div class="ttc" id="astructotus__hw5_1_1IDocSerializer_html_ae47b01577a74fb79236b5a30cc9029f4"><div class="ttname"><a href="structotus__hw5_1_1IDocSerializer.html#ae47b01577a74fb79236b5a30cc9029f4">otus_hw5::IDocSerializer::deserialize_obj</a></div><div class="ttdeci">virtual void deserialize_obj(Line &amp;line, docstg_ptr_t stg_from)=0</div></div>
+<div class="ttc" id="astructotus__hw5_1_1IDocSerializer_html_aef84d6a4357905022c0cb0f7fa89191f"><div class="ttname"><a href="structotus__hw5_1_1IDocSerializer.html#aef84d6a4357905022c0cb0f7fa89191f">otus_hw5::IDocSerializer::DocFormatTypes</a></div><div class="ttdeci">IEditor::DocFormatTypes DocFormatTypes</div><div class="ttdef"><b>Определения</b> docserializer.h:25</div></div>
+<div class="ttc" id="astructotus__hw5_1_1IDocSerializer_html_af098cb990ef634fbe66470d701c8006b"><div class="ttname"><a href="structotus__hw5_1_1IDocSerializer.html#af098cb990ef634fbe66470d701c8006b">otus_hw5::IDocSerializer::deserialize_obj</a></div><div class="ttdeci">virtual void deserialize_obj(IDocument &amp;doc, docstg_ptr_t stg_from)=0</div></div>
+<div class="ttc" id="astructotus__hw5_1_1IDocument_html"><div class="ttname"><a href="structotus__hw5_1_1IDocument.html">otus_hw5::IDocument</a></div><div class="ttdoc">Интерфейс Документа</div><div class="ttdef"><b>Определения</b> editor.h:161</div></div>
+<div class="ttc" id="astructotus__hw5_1_1IEditor_html_a2eedabe7ae5b7afcdbe52350388406da"><div class="ttname"><a href="structotus__hw5_1_1IEditor.html#a2eedabe7ae5b7afcdbe52350388406da">otus_hw5::IEditor::DocFormatTypes</a></div><div class="ttdeci">DocFormatTypes</div><div class="ttdoc">Форматы хранения документов</div><div class="ttdef"><b>Определения</b> editor.h:83</div></div>
+<div class="ttc" id="astructotus__hw5_1_1ISerializable_html"><div class="ttname"><a href="structotus__hw5_1_1ISerializable.html">otus_hw5::ISerializable</a></div><div class="ttdoc">Интерфейс сериализуемого объекта</div><div class="ttdef"><b>Определения</b> editor.h:153</div></div>
+<div class="ttc" id="astructotus__hw5_1_1IShape_html"><div class="ttname"><a href="structotus__hw5_1_1IShape.html">otus_hw5::IShape</a></div><div class="ttdoc">Интерфейс объекта Фигура</div><div class="ttdef"><b>Определения</b> editor.h:176</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

@@ -1,0 +1,7 @@
+<map id="otus_hw5::IDocStorage" name="otus_hw5::IDocStorage">
+<area shape="rect" id="Node000001" title="Интерфейс объекта Хранилище документов, по сути предоставляет унифицированный интерфейс к STL&#45;потоку." alt="" coords="24,5,169,214"/>
+<area shape="rect" id="Node000002" href="$classotus__hw5_1_1StreamDocStorage.html" title="Объект Хранилище документов для STL&#45;потоков, хранит ссылки на потоки." alt="" coords="5,262,188,532"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="99,229,99,262,94,262,94,229"/>
+<area shape="rect" id="Node000003" href="$classotus__hw5_1_1FileDocStorage.html" title="Объект Хранилище документов для STL&#45;файла." alt="" coords="16,580,178,768"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="99,546,99,580,94,580,94,546"/>
+</map>

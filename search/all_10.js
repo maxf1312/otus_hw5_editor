@@ -1,0 +1,17 @@
+var searchData=
+[
+  ['r_0',['r',['../structotus__hw5_1_1IShape_1_1rgb__struct__t.html#aabae32fc684074989d66f853b980d4c7',1,'otus_hw5::IShape::rgb_struct_t']]],
+  ['radius_5f_1',['radius_',['../classotus__hw5_1_1Circle.html#a23d61f811d565d2cbb8cf0168c771229',1,'otus_hw5::Circle']]],
+  ['read_5fdoc_2',['read_doc',['../classotus__hw5_1_1StreamDocStorage.html#a9ee83379d29d4a52fa744a31356d103f',1,'otus_hw5::StreamDocStorage::read_doc()'],['../structotus__hw5_1_1IDocStorage.html#ab9f002f9a2e9e8cba617d66a56d49410',1,'otus_hw5::IDocStorage::read_doc()']]],
+  ['readme_2emd_3',['README.md',['../README_8md.html',1,'']]],
+  ['rect_4',['rect',['../classotus__hw5_1_1OStreamDisplay.html#a2ae1a80573da9a4f880eca884a1810bc',1,'otus_hw5::OStreamDisplay::rect(coord_t x, coord_t y, sz_t w, sz_t h) override'],['../classotus__hw5_1_1OStreamDisplay.html#ab0161914bc6fc7705a9fb1e7a0c5107f',1,'otus_hw5::OStreamDisplay::rect(coord_t xLT, coord_t yLT, coord_t xRB, coord_t yRB) override'],['../structotus__hw5_1_1IDisplay.html#a5ae7b95a8d59f1045fce931f141ff740',1,'otus_hw5::IDisplay::rect(coord_t x, coord_t y, sz_t w, sz_t h)=0'],['../structotus__hw5_1_1IDisplay.html#a9b59355341a65395fd9f98457270a542',1,'otus_hw5::IDisplay::rect(coord_t xLT, coord_t yLT, coord_t xRB, coord_t yRB)=0']]],
+  ['rectangle_5',['Rectangle',['../classotus__hw5_1_1Rectangle.html',1,'otus_hw5::Rectangle'],['../classotus__hw5_1_1Rectangle.html#ac51c26584e61dd07a82fcdf8d559f60c',1,'otus_hw5::Rectangle::Rectangle()'],['../classotus__hw5_1_1Rectangle.html#ad01988c6f699aa7a0157cecb57f714a3',1,'otus_hw5::Rectangle::Rectangle(coord_t x, coord_t y, sz_t w, sz_t h)'],['../structotus__hw5_1_1IEditor.html#acd4080f8514783bb09546e064aee47cbace9291906a4c3b042650b70d7f3b152e',1,'otus_hw5::IEditor::Rectangle']]],
+  ['remove_6',['remove',['../classotus__hw5_1_1SmartPtrCollection.html#adbb32ccd88acd5f0f7419da3f5a6d827',1,'otus_hw5::SmartPtrCollection::remove(const SmartPtrT &amp;ptr)'],['../classotus__hw5_1_1SmartPtrCollection.html#af3929b3622db3215194130f00bf285d7',1,'otus_hw5::SmartPtrCollection::remove(size_t i)']]],
+  ['remove_5fall_7',['remove_all',['../classotus__hw5_1_1SmartPtrCollection.html#a2cb3e02544f850afbc5cd388214aa6ec',1,'otus_hw5::SmartPtrCollection']]],
+  ['remove_5fshape_8',['remove_shape',['../classotus__hw5_1_1Document.html#a9c0766274a519c69c2965b517d336c1a',1,'otus_hw5::Document::remove_shape()'],['../structotus__hw5_1_1IDocument.html#a85558dbdd676e844910ce2f6b9024c69',1,'otus_hw5::IDocument::remove_shape()']]],
+  ['remove_5fview_9',['remove_view',['../classotus__hw5_1_1Document.html#a487a334371a379d51ac9b84d713d7944',1,'otus_hw5::Document::remove_view()'],['../structotus__hw5_1_1IDocument.html#adb6a26529a1045e035cfdc527146adb4',1,'otus_hw5::IDocument::remove_view()']]],
+  ['rgb_5fstruct_5ft_10',['rgb_struct_t',['../structotus__hw5_1_1IShape_1_1rgb__struct__t.html',1,'otus_hw5::IShape']]],
+  ['rgb_5ft_11',['rgb_t',['../unionotus__hw5_1_1IShape_1_1rgb__t.html',1,'otus_hw5::IShape::rgb_t'],['../structotus__hw5_1_1IDisplay.html#a2d90e363f1b41508336c9dc0a817a4a3',1,'otus_hw5::IDisplay::rgb_t'],['../unionotus__hw5_1_1IShape_1_1rgb__t.html#a2a03dd0e475ddcfd871a8fe87bcf963c',1,'otus_hw5::IShape::rgb_t::rgb_t(uint32_t n=0)']]],
+  ['rgba_5fn_12',['rgba_n',['../unionotus__hw5_1_1IShape_1_1rgb__t.html#a88829342e99cabeb2ac1d6a94821ae05',1,'otus_hw5::IShape::rgb_t']]],
+  ['rgba_5fs_13',['rgba_s',['../unionotus__hw5_1_1IShape_1_1rgb__t.html#a54f4722f4cae72410ce89826ef415894',1,'otus_hw5::IShape::rgb_t']]]
+];

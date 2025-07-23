@@ -1,0 +1,15 @@
+<map id="otus_hw5::FileDocStorage" name="otus_hw5::FileDocStorage">
+<area shape="rect" id="Node000001" title="Объект Хранилище документов для STL&#45;файла." alt="" coords="269,589,430,757"/>
+<area shape="rect" id="Node000002" href="$classotus__hw5_1_1StreamDocStorage.html" title="Объект Хранилище документов для STL&#45;потоков, хранит ссылки на потоки." alt="" coords="116,277,298,526"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="282,538,308,588,303,591,277,540"/>
+<area shape="rect" id="Node000003" href="$structotus__hw5_1_1IDocStorage.html" title="Интерфейс объекта Хранилище документов, по сути предоставляет унифицированный интерфейс к STL&#45;потоку." alt="" coords="5,5,150,214"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="132,226,154,276,149,278,127,228"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="174,76,240,143"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="210,143,210,260,204,260,204,143"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="264,76,326,143"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="288,143,252,262,247,260,283,142"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="322,368,377,435"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="352,434,352,573,347,573,347,434"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="401,368,498,435"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="447,435,434,496,412,566,408,575,404,573,407,564,429,495,442,434"/>
+</map>

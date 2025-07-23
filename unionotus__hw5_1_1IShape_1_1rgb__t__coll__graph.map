@@ -1,0 +1,9 @@
+<map id="otus_hw5::IShape::rgb_t" name="otus_hw5::IShape::rgb_t">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,324,154,411"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="11,187,68,254"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="51,253,66,307,61,309,46,254"/>
+<area shape="rect" id="Node000003" href="$structotus__hw5_1_1IShape_1_1rgb__struct__t.html" title=" " alt="" coords="92,180,230,261"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="141,262,114,311,109,308,137,259"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="136,5,186,72"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="164,71,164,163,158,163,158,71"/>
+</map>

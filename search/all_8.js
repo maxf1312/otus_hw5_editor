@@ -1,0 +1,26 @@
+var searchData=
+[
+  ['icommand_0',['ICommand',['../structotus__hw5_1_1ICommand.html',1,'otus_hw5']]],
+  ['icommandhandlerdeleter_1',['ICommandHandlerDeleter',['../structotus__hw5_1_1ICommandHandlerDeleter.html',1,'otus_hw5']]],
+  ['iconfig_2',['IConfig',['../structotus__hw5_1_1IConfig.html',1,'otus_hw5']]],
+  ['idisplay_3',['IDisplay',['../structotus__hw5_1_1IDisplay.html',1,'otus_hw5']]],
+  ['idocserializer_4',['IDocSerializer',['../structotus__hw5_1_1IDocSerializer.html',1,'otus_hw5']]],
+  ['idocserializerdeleter_5',['IDocSerializerDeleter',['../structotus__hw5_1_1IDocSerializerDeleter.html',1,'otus_hw5']]],
+  ['idocstorage_6',['IDocStorage',['../structotus__hw5_1_1IDocStorage.html',1,'otus_hw5']]],
+  ['idocument_7',['IDocument',['../structotus__hw5_1_1IDocument.html',1,'otus_hw5']]],
+  ['idocview_8',['IDocView',['../structotus__hw5_1_1IDocView.html',1,'otus_hw5']]],
+  ['ieditor_9',['IEditor',['../structotus__hw5_1_1IEditor.html',1,'otus_hw5']]],
+  ['impl_5fthis_5fptr_10',['impl_this_ptr',['../classotus__hw5_1_1Subject.html#a03eddab7db18a90b54d007fdc80bf1ef',1,'otus_hw5::Subject::impl_this_ptr() -&gt; std::enable_if_t&lt; std::is_base_of&lt; Subject&lt; SubjectImplT &gt;, SubjectImplTR &gt;::value, SubjectImplTR * &gt;'],['../classotus__hw5_1_1Subject.html#abc324cc148b54606b401bef1c0be331d',1,'otus_hw5::Subject::impl_this_ptr() -&gt; std::enable_if_t&lt;!std::is_base_of&lt; Subject&lt; SubjectImplT &gt;, SubjectImplTR &gt;::value, SubjectImplTR * &gt;'],['../classotus__hw5_1_1Subject.html#a5a661a821b5672d6550c4797ccafc57b',1,'otus_hw5::Subject::impl_this_ptr() const -&gt; std::enable_if_t&lt; std::is_base_of&lt; Subject&lt; SubjectImplT &gt;, SubjectImplTR &gt;::value, SubjectImplTR const * &gt;'],['../classotus__hw5_1_1Subject.html#a4a30a9e9539605937b799f951cb086c2',1,'otus_hw5::Subject::impl_this_ptr() const -&gt; std::enable_if_t&lt;!std::is_base_of&lt; Subject&lt; SubjectImplT &gt;, SubjectImplTR &gt;::value, SubjectImplTR const * &gt;']]],
+  ['import_5fdoc_5ffrom_11',['import_doc_from',['../classotus__hw5_1_1SimpleEditor.html#abc794411e455ff309231d9e0e83e8102',1,'otus_hw5::SimpleEditor::import_doc_from()'],['../structotus__hw5_1_1IEditor.html#af6535366d30e105cd816d038ac819efd',1,'otus_hw5::IEditor::import_doc_from()']]],
+  ['import_5ffrom_12',['import_from',['../classotus__hw5_1_1Document.html#a341456e7fa3cabce4bd56d74fbf8f103',1,'otus_hw5::Document::import_from()'],['../structotus__hw5_1_1IDocument.html#ad361c9408e8d574a55c04ce569f53b77',1,'otus_hw5::IDocument::import_from()']]],
+  ['input_5fmode_13',['input_mode',['../classotus__hw5_1_1StreamDocStorage.html#a04908923d74c30600bad539ec9e0dce7',1,'otus_hw5::StreamDocStorage::input_mode()'],['../classotus__hw5_1_1FileDocStorage.html#ab2a06fb2f1df291f32324960a1329a55',1,'otus_hw5::FileDocStorage::input_mode()'],['../structotus__hw5_1_1IDocStorage.html#afdba29c96033fbb2df44042b9fb82036',1,'otus_hw5::IDocStorage::input_mode()']]],
+  ['inputstream_14',['inputstream',['../classotus__hw5_1_1StreamDocStorage.html#a53ccf8017c2ad93891a6634a83f899e5',1,'otus_hw5::StreamDocStorage::inputstream()'],['../structotus__hw5_1_1IDocStorage.html#adbfa89d7f1354c37aba983e09a44a2f1',1,'otus_hw5::IDocStorage::inputstream()']]],
+  ['instance_15',['Instance',['../classotus__hw5_1_1Config.html#a6c9ea9dcf96c700535aaccf57ebc5a79',1,'otus_hw5::Config::Instance()'],['../classotus__hw5_1_1SimpleEditor.html#a8cba135b866de21a8e134a8bba67a5c4',1,'otus_hw5::SimpleEditor::Instance()']]],
+  ['iobase_5ft_16',['IOBase_t',['../structotus__hw5_1_1IEditor.html#a83372e9622f03a3ea9879db55c9cc344',1,'otus_hw5::IEditor::IOBase_t'],['../structotus__hw5_1_1IDocStorage.html#a5a9e21d08c93f70a0e8e2b4cf913c43a',1,'otus_hw5::IDocStorage::IOBase_t']]],
+  ['iobserver_17',['IObserver',['../structotus__hw5_1_1IObserver.html',1,'otus_hw5']]],
+  ['is_5f_18',['is_',['../classotus__hw5_1_1StreamDocStorage.html#a4190a32d74c681f9d0753446c0b339d3',1,'otus_hw5::StreamDocStorage']]],
+  ['iserializable_19',['ISerializable',['../structotus__hw5_1_1ISerializable.html',1,'otus_hw5']]],
+  ['ishape_20',['IShape',['../structotus__hw5_1_1IShape.html',1,'otus_hw5']]],
+  ['ishapecreator_21',['IShapeCreator',['../structotus__hw5_1_1IShapeCreator.html',1,'otus_hw5']]],
+  ['isubject_22',['ISubject',['../structotus__hw5_1_1ISubject.html',1,'otus_hw5']]]
+];

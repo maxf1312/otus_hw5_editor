@@ -1,0 +1,177 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.13.2"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>editor: Исходный файл document.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">editor<span id="projectnumber">&#160;1.0.0</span>
+   </div>
+   <div id="projectbrief">vector graphics editor framework made for homework 5</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.13.2 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="doc-content">
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">document.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="document_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &quot;<a class="code" href="editor_8h.html">editor.h</a>&quot;</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &quot;<a class="code" href="subject_8h.html">subject.h</a>&quot;</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceotus__hw5.html">otus_hw5</a></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>{</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="foldopen" id="foldopen00019" data-start="{" data-end="};">
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="classotus__hw5_1_1Document.html">   19</a></span>    <span class="keyword">class </span><a class="code hl_function" href="classotus__hw5_1_1Document.html#aa9dd0b0db189d31f2b19dac055f5fc05">Document</a> : <span class="keyword">public</span> <a class="code hl_struct" href="structotus__hw5_1_1IDocument.html">IDocument</a>, <span class="keyword">public</span> <a class="code hl_struct" href="structotus__hw5_1_1ISerializable.html">ISerializable</a>, <span class="keyword">public</span> std::enable_shared_from_this&lt;IDocument&gt; </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    {</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>        <a class="code hl_function" href="classotus__hw5_1_1Document.html#aa9dd0b0db189d31f2b19dac055f5fc05">Document</a>();</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>        <span class="keyword">virtual</span> <a class="code hl_function" href="classotus__hw5_1_1Document.html#a0fafa4651062a841c1b8c3cc695d6db9">~Document</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classotus__hw5_1_1Document.html#aabe85cbc75eb6ff9ba6b44bfef057896">deserialize</a>(<a class="code hl_typedef" href="namespaceotus__hw5.html#aa518e14958ecdd58bb16eeec0f3cb482">docstg_ptr_t</a> <span class="keyword">const</span>&amp; stg, <a class="code hl_typedef" href="namespaceotus__hw5.html#a6f32fdb97469b31771dd67c1a2f0476e">docser_ptr_t</a> <span class="keyword">const</span>&amp; serializer) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classotus__hw5_1_1Document.html#abe552e0a5863db5004bd6089d1230da8">serialize</a>(<a class="code hl_typedef" href="namespaceotus__hw5.html#aa518e14958ecdd58bb16eeec0f3cb482">docstg_ptr_t</a>&amp; stg, <a class="code hl_typedef" href="namespaceotus__hw5.html#a6f32fdb97469b31771dd67c1a2f0476e">docser_ptr_t</a> <span class="keyword">const</span>&amp; serializer) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classotus__hw5_1_1Document.html#a341456e7fa3cabce4bd56d74fbf8f103">import_from</a>(<a class="code hl_typedef" href="namespaceotus__hw5.html#aa518e14958ecdd58bb16eeec0f3cb482">docstg_ptr_t</a> <span class="keyword">const</span>&amp; stg, <a class="code hl_typedef" href="namespaceotus__hw5.html#a6f32fdb97469b31771dd67c1a2f0476e">docser_ptr_t</a> <span class="keyword">const</span>&amp; serializer) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classotus__hw5_1_1Document.html#af8f6b6623e050af56b165f227532b6a4">export_to</a>(<a class="code hl_typedef" href="namespaceotus__hw5.html#aa518e14958ecdd58bb16eeec0f3cb482">docstg_ptr_t</a>&amp; stg, <a class="code hl_typedef" href="namespaceotus__hw5.html#a6f32fdb97469b31771dd67c1a2f0476e">docser_ptr_t</a> <span class="keyword">const</span>&amp; serializer) <span class="keyword">override</span>;        </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>        <span class="keyword">virtual</span> <a class="code hl_typedef" href="namespaceotus__hw5.html#a1d8495f6a147cb71a4de3cee224ce21c">shape_ptr_t</a>&amp; <a class="code hl_function" href="classotus__hw5_1_1Document.html#a9190029f2d5459c07646517492355efa">add_shape</a>(<a class="code hl_typedef" href="namespaceotus__hw5.html#a1d8495f6a147cb71a4de3cee224ce21c">shape_ptr_t</a>&amp;&amp; shp) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classotus__hw5_1_1Document.html#a9c0766274a519c69c2965b517d336c1a">remove_shape</a>(<a class="code hl_typedef" href="namespaceotus__hw5.html#a1d8495f6a147cb71a4de3cee224ce21c">shape_ptr_t</a> <span class="keyword">const</span>&amp; shp) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>        <span class="keyword">virtual</span> <a class="code hl_typedef" href="namespaceotus__hw5.html#ac55c268c2a03622046be8546b35f5c91">shape_ptr_coll_t</a>&amp; <a class="code hl_function" href="classotus__hw5_1_1Document.html#abb6ea7399db50960319fcd9a17c1ce21">shapes</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classotus__hw5_1_1Document.html#a34d99882d41b15f4211ffe297854a456">add_view</a>(<a class="code hl_typedef" href="namespaceotus__hw5.html#ad397d90d5fbe6287369835a345de2619">view_ptr_t</a> v) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classotus__hw5_1_1Document.html#a487a334371a379d51ac9b84d713d7944">remove_view</a>(<a class="code hl_typedef" href="namespaceotus__hw5.html#ad397d90d5fbe6287369835a345de2619">view_ptr_t</a> v) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        <span class="keyword">virtual</span> <a class="code hl_struct" href="structotus__hw5_1_1ISubject.html">ISubject</a>&amp; <a class="code hl_function" href="classotus__hw5_1_1Document.html#acef5caa58cf0aa5ef14a4be0afd8941a">as_subject</a>() <span class="keyword">override</span>; </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="classotus__hw5_1_1Document.html#a226c7ec687c433a67b1054b8030c724e">   35</a></span>        <span class="keyword">virtual</span> <a class="code hl_struct" href="structotus__hw5_1_1ISerializable.html">ISerializable</a>&amp; <a class="code hl_function" href="classotus__hw5_1_1Document.html#a226c7ec687c433a67b1054b8030c724e">as_serializable</a>()<span class="keyword"> override </span>{ <span class="keywordflow">return</span> *<span class="keyword">this</span>; }</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="classotus__hw5_1_1Document.html#a82a6bf9d127c8cdab9d5ccf80d213994">   37</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classotus__hw5_1_1Document.html#a82a6bf9d127c8cdab9d5ccf80d213994">on_subscribe</a>(<a class="code hl_typedef" href="namespaceotus__hw5.html#aa2fada0cbdf5c3c9d65d26fe0774ddcd">observer_ptr_t</a>){}</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="classotus__hw5_1_1Document.html#aedd9e390740256a9d39f8b5742eb8485">   38</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classotus__hw5_1_1Document.html#aedd9e390740256a9d39f8b5742eb8485">on_unsubscribe</a>(<a class="code hl_typedef" href="namespaceotus__hw5.html#aa2fada0cbdf5c3c9d65d26fe0774ddcd">observer_ptr_t</a>){}</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="classotus__hw5_1_1Document.html#afc96049dd1e3cfead1dc2a4683ef32f1">   39</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classotus__hw5_1_1Document.html#afc96049dd1e3cfead1dc2a4683ef32f1">on_set_changed</a>(<span class="keywordtype">bool</span>){}</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="classotus__hw5_1_1Document.html#a39584156c9364c541b538483958f8a9e">   40</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classotus__hw5_1_1Document.html#a39584156c9364c541b538483958f8a9e">on_notify_all</a>(){}</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="keyword">protected</span>:</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="classotus__hw5_1_1Document.html#a25cba15aaa1591018021dee485f9a582">   43</a></span>        <span class="keyword">using </span><a class="code hl_typedef" href="classotus__hw5_1_1Document.html#a25cba15aaa1591018021dee485f9a582">shape_cont_t</a> = std::vector&lt;shape_ptr_t&gt;;</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="classotus__hw5_1_1Document.html#a11881c0c27460b3e5d14d76413a35134">   44</a></span>        <span class="keyword">using </span><a class="code hl_typedef" href="classotus__hw5_1_1Document.html#a11881c0c27460b3e5d14d76413a35134">subject_t</a> = <a class="code hl_class" href="classotus__hw5_1_1Subject.html">Subject&lt;Document&gt;</a>;</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="classotus__hw5_1_1Document.html#afe13da99464c4032cba4a7753b1d7a1e">   45</a></span>        <span class="keyword">using </span><a class="code hl_typedef" href="classotus__hw5_1_1Document.html#afe13da99464c4032cba4a7753b1d7a1e">subject_ptr_t</a> = std::shared_ptr&lt;subject_t&gt;;</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="classotus__hw5_1_1Document.html#a7511931bdbc0e233c4f4f34f5f42b6fe">   48</a></span>        <a class="code hl_typedef" href="namespaceotus__hw5.html#ac55c268c2a03622046be8546b35f5c91">shape_ptr_coll_t</a> <a class="code hl_variable" href="classotus__hw5_1_1Document.html#a7511931bdbc0e233c4f4f34f5f42b6fe">shapes_</a>;</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="classotus__hw5_1_1Document.html#a9404284bbe3338dbf3046c3acf93f610">   51</a></span>        <a class="code hl_typedef" href="classotus__hw5_1_1Document.html#afe13da99464c4032cba4a7753b1d7a1e">subject_ptr_t</a> <a class="code hl_variable" href="classotus__hw5_1_1Document.html#a9404284bbe3338dbf3046c3acf93f610">subj_impl_</a>;</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    };</div>
+</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>}</div>
+<div class="ttc" id="aclassotus__hw5_1_1Document_html_a0fafa4651062a841c1b8c3cc695d6db9"><div class="ttname"><a href="classotus__hw5_1_1Document.html#a0fafa4651062a841c1b8c3cc695d6db9">otus_hw5::Document::~Document</a></div><div class="ttdeci">virtual ~Document() override</div><div class="ttdef"><b>Определения</b> document.cpp:27</div></div>
+<div class="ttc" id="aclassotus__hw5_1_1Document_html_a11881c0c27460b3e5d14d76413a35134"><div class="ttname"><a href="classotus__hw5_1_1Document.html#a11881c0c27460b3e5d14d76413a35134">otus_hw5::Document::subject_t</a></div><div class="ttdeci">Subject&lt; Document &gt; subject_t</div><div class="ttdef"><b>Определения</b> document.h:44</div></div>
+<div class="ttc" id="aclassotus__hw5_1_1Document_html_a226c7ec687c433a67b1054b8030c724e"><div class="ttname"><a href="classotus__hw5_1_1Document.html#a226c7ec687c433a67b1054b8030c724e">otus_hw5::Document::as_serializable</a></div><div class="ttdeci">virtual ISerializable &amp; as_serializable() override</div><div class="ttdef"><b>Определения</b> document.h:35</div></div>
+<div class="ttc" id="aclassotus__hw5_1_1Document_html_a25cba15aaa1591018021dee485f9a582"><div class="ttname"><a href="classotus__hw5_1_1Document.html#a25cba15aaa1591018021dee485f9a582">otus_hw5::Document::shape_cont_t</a></div><div class="ttdeci">std::vector&lt; shape_ptr_t &gt; shape_cont_t</div><div class="ttdef"><b>Определения</b> document.h:43</div></div>
+<div class="ttc" id="aclassotus__hw5_1_1Document_html_a341456e7fa3cabce4bd56d74fbf8f103"><div class="ttname"><a href="classotus__hw5_1_1Document.html#a341456e7fa3cabce4bd56d74fbf8f103">otus_hw5::Document::import_from</a></div><div class="ttdeci">virtual void import_from(docstg_ptr_t const &amp;stg, docser_ptr_t const &amp;serializer) override</div><div class="ttdef"><b>Определения</b> document.cpp:68</div></div>
+<div class="ttc" id="aclassotus__hw5_1_1Document_html_a34d99882d41b15f4211ffe297854a456"><div class="ttname"><a href="classotus__hw5_1_1Document.html#a34d99882d41b15f4211ffe297854a456">otus_hw5::Document::add_view</a></div><div class="ttdeci">virtual void add_view(view_ptr_t v) override</div><div class="ttdef"><b>Определения</b> document.cpp:56</div></div>
+<div class="ttc" id="aclassotus__hw5_1_1Document_html_a39584156c9364c541b538483958f8a9e"><div class="ttname"><a href="classotus__hw5_1_1Document.html#a39584156c9364c541b538483958f8a9e">otus_hw5::Document::on_notify_all</a></div><div class="ttdeci">void on_notify_all()</div><div class="ttdef"><b>Определения</b> document.h:40</div></div>
+<div class="ttc" id="aclassotus__hw5_1_1Document_html_a487a334371a379d51ac9b84d713d7944"><div class="ttname"><a href="classotus__hw5_1_1Document.html#a487a334371a379d51ac9b84d713d7944">otus_hw5::Document::remove_view</a></div><div class="ttdeci">virtual void remove_view(view_ptr_t v) override</div><div class="ttdef"><b>Определения</b> document.cpp:62</div></div>
+<div class="ttc" id="aclassotus__hw5_1_1Document_html_a7511931bdbc0e233c4f4f34f5f42b6fe"><div class="ttname"><a href="classotus__hw5_1_1Document.html#a7511931bdbc0e233c4f4f34f5f42b6fe">otus_hw5::Document::shapes_</a></div><div class="ttdeci">shape_ptr_coll_t shapes_</div><div class="ttdoc">Список фигур</div><div class="ttdef"><b>Определения</b> document.h:48</div></div>
+<div class="ttc" id="aclassotus__hw5_1_1Document_html_a82a6bf9d127c8cdab9d5ccf80d213994"><div class="ttname"><a href="classotus__hw5_1_1Document.html#a82a6bf9d127c8cdab9d5ccf80d213994">otus_hw5::Document::on_subscribe</a></div><div class="ttdeci">void on_subscribe(observer_ptr_t)</div><div class="ttdef"><b>Определения</b> document.h:37</div></div>
+<div class="ttc" id="aclassotus__hw5_1_1Document_html_a9190029f2d5459c07646517492355efa"><div class="ttname"><a href="classotus__hw5_1_1Document.html#a9190029f2d5459c07646517492355efa">otus_hw5::Document::add_shape</a></div><div class="ttdeci">virtual shape_ptr_t &amp; add_shape(shape_ptr_t &amp;&amp;shp) override</div><div class="ttdef"><b>Определения</b> document.cpp:36</div></div>
+<div class="ttc" id="aclassotus__hw5_1_1Document_html_a9404284bbe3338dbf3046c3acf93f610"><div class="ttname"><a href="classotus__hw5_1_1Document.html#a9404284bbe3338dbf3046c3acf93f610">otus_hw5::Document::subj_impl_</a></div><div class="ttdeci">subject_ptr_t subj_impl_</div><div class="ttdoc">Реализация Наблюдаемого объекта</div><div class="ttdef"><b>Определения</b> document.h:51</div></div>
+<div class="ttc" id="aclassotus__hw5_1_1Document_html_a9c0766274a519c69c2965b517d336c1a"><div class="ttname"><a href="classotus__hw5_1_1Document.html#a9c0766274a519c69c2965b517d336c1a">otus_hw5::Document::remove_shape</a></div><div class="ttdeci">virtual void remove_shape(shape_ptr_t const &amp;shp) override</div><div class="ttdef"><b>Определения</b> document.cpp:44</div></div>
+<div class="ttc" id="aclassotus__hw5_1_1Document_html_aa9dd0b0db189d31f2b19dac055f5fc05"><div class="ttname"><a href="classotus__hw5_1_1Document.html#aa9dd0b0db189d31f2b19dac055f5fc05">otus_hw5::Document::Document</a></div><div class="ttdeci">Document()</div><div class="ttdef"><b>Определения</b> document.cpp:22</div></div>
+<div class="ttc" id="aclassotus__hw5_1_1Document_html_aabe85cbc75eb6ff9ba6b44bfef057896"><div class="ttname"><a href="classotus__hw5_1_1Document.html#aabe85cbc75eb6ff9ba6b44bfef057896">otus_hw5::Document::deserialize</a></div><div class="ttdeci">virtual void deserialize(docstg_ptr_t const &amp;stg, docser_ptr_t const &amp;serializer) override</div><div class="ttdef"><b>Определения</b> document.cpp:78</div></div>
+<div class="ttc" id="aclassotus__hw5_1_1Document_html_abb6ea7399db50960319fcd9a17c1ce21"><div class="ttname"><a href="classotus__hw5_1_1Document.html#abb6ea7399db50960319fcd9a17c1ce21">otus_hw5::Document::shapes</a></div><div class="ttdeci">virtual shape_ptr_coll_t &amp; shapes() override</div><div class="ttdef"><b>Определения</b> document.cpp:51</div></div>
+<div class="ttc" id="aclassotus__hw5_1_1Document_html_abe552e0a5863db5004bd6089d1230da8"><div class="ttname"><a href="classotus__hw5_1_1Document.html#abe552e0a5863db5004bd6089d1230da8">otus_hw5::Document::serialize</a></div><div class="ttdeci">virtual void serialize(docstg_ptr_t &amp;stg, docser_ptr_t const &amp;serializer) override</div><div class="ttdef"><b>Определения</b> document.cpp:83</div></div>
+<div class="ttc" id="aclassotus__hw5_1_1Document_html_acef5caa58cf0aa5ef14a4be0afd8941a"><div class="ttname"><a href="classotus__hw5_1_1Document.html#acef5caa58cf0aa5ef14a4be0afd8941a">otus_hw5::Document::as_subject</a></div><div class="ttdeci">virtual ISubject &amp; as_subject() override</div><div class="ttdef"><b>Определения</b> document.cpp:31</div></div>
+<div class="ttc" id="aclassotus__hw5_1_1Document_html_aedd9e390740256a9d39f8b5742eb8485"><div class="ttname"><a href="classotus__hw5_1_1Document.html#aedd9e390740256a9d39f8b5742eb8485">otus_hw5::Document::on_unsubscribe</a></div><div class="ttdeci">void on_unsubscribe(observer_ptr_t)</div><div class="ttdef"><b>Определения</b> document.h:38</div></div>
+<div class="ttc" id="aclassotus__hw5_1_1Document_html_af8f6b6623e050af56b165f227532b6a4"><div class="ttname"><a href="classotus__hw5_1_1Document.html#af8f6b6623e050af56b165f227532b6a4">otus_hw5::Document::export_to</a></div><div class="ttdeci">virtual void export_to(docstg_ptr_t &amp;stg, docser_ptr_t const &amp;serializer) override</div><div class="ttdef"><b>Определения</b> document.cpp:73</div></div>
+<div class="ttc" id="aclassotus__hw5_1_1Document_html_afc96049dd1e3cfead1dc2a4683ef32f1"><div class="ttname"><a href="classotus__hw5_1_1Document.html#afc96049dd1e3cfead1dc2a4683ef32f1">otus_hw5::Document::on_set_changed</a></div><div class="ttdeci">void on_set_changed(bool)</div><div class="ttdef"><b>Определения</b> document.h:39</div></div>
+<div class="ttc" id="aclassotus__hw5_1_1Document_html_afe13da99464c4032cba4a7753b1d7a1e"><div class="ttname"><a href="classotus__hw5_1_1Document.html#afe13da99464c4032cba4a7753b1d7a1e">otus_hw5::Document::subject_ptr_t</a></div><div class="ttdeci">std::shared_ptr&lt; subject_t &gt; subject_ptr_t</div><div class="ttdef"><b>Определения</b> document.h:45</div></div>
+<div class="ttc" id="aclassotus__hw5_1_1Subject_html"><div class="ttname"><a href="classotus__hw5_1_1Subject.html">otus_hw5::Subject</a></div><div class="ttdoc">brief Наблюдаемый объект - шаблон базовой реализации</div><div class="ttdef"><b>Определения</b> subject.h:20</div></div>
+<div class="ttc" id="aeditor_8h_html"><div class="ttname"><a href="editor_8h.html">editor.h</a></div><div class="ttdoc">Описание всех интерфейсов</div></div>
+<div class="ttc" id="anamespaceotus__hw5_html"><div class="ttname"><a href="namespaceotus__hw5.html">otus_hw5</a></div><div class="ttdef"><b>Определения</b> config.cpp:14</div></div>
+<div class="ttc" id="anamespaceotus__hw5_html_a1d8495f6a147cb71a4de3cee224ce21c"><div class="ttname"><a href="namespaceotus__hw5.html#a1d8495f6a147cb71a4de3cee224ce21c">otus_hw5::shape_ptr_t</a></div><div class="ttdeci">std::unique_ptr&lt; IShape &gt; shape_ptr_t</div><div class="ttdef"><b>Определения</b> editor.h:52</div></div>
+<div class="ttc" id="anamespaceotus__hw5_html_a6f32fdb97469b31771dd67c1a2f0476e"><div class="ttname"><a href="namespaceotus__hw5.html#a6f32fdb97469b31771dd67c1a2f0476e">otus_hw5::docser_ptr_t</a></div><div class="ttdeci">std::unique_ptr&lt; IDocSerializer, IDocSerializerDeleter &gt; docser_ptr_t</div><div class="ttdef"><b>Определения</b> editor.h:51</div></div>
+<div class="ttc" id="anamespaceotus__hw5_html_aa2fada0cbdf5c3c9d65d26fe0774ddcd"><div class="ttname"><a href="namespaceotus__hw5.html#aa2fada0cbdf5c3c9d65d26fe0774ddcd">otus_hw5::observer_ptr_t</a></div><div class="ttdeci">std::shared_ptr&lt; IObserver &gt; observer_ptr_t</div><div class="ttdef"><b>Определения</b> editor.h:55</div></div>
+<div class="ttc" id="anamespaceotus__hw5_html_aa518e14958ecdd58bb16eeec0f3cb482"><div class="ttname"><a href="namespaceotus__hw5.html#aa518e14958ecdd58bb16eeec0f3cb482">otus_hw5::docstg_ptr_t</a></div><div class="ttdeci">std::shared_ptr&lt; IDocStorage &gt; docstg_ptr_t</div><div class="ttdef"><b>Определения</b> editor.h:50</div></div>
+<div class="ttc" id="anamespaceotus__hw5_html_ac55c268c2a03622046be8546b35f5c91"><div class="ttname"><a href="namespaceotus__hw5.html#ac55c268c2a03622046be8546b35f5c91">otus_hw5::shape_ptr_coll_t</a></div><div class="ttdeci">SmartPtrCollection&lt; shape_ptr_t &gt; shape_ptr_coll_t</div><div class="ttdef"><b>Определения</b> editor.h:63</div></div>
+<div class="ttc" id="anamespaceotus__hw5_html_ad397d90d5fbe6287369835a345de2619"><div class="ttname"><a href="namespaceotus__hw5.html#ad397d90d5fbe6287369835a345de2619">otus_hw5::view_ptr_t</a></div><div class="ttdeci">std::shared_ptr&lt; IDocView &gt; view_ptr_t</div><div class="ttdef"><b>Определения</b> editor.h:53</div></div>
+<div class="ttc" id="astructotus__hw5_1_1IDocument_html"><div class="ttname"><a href="structotus__hw5_1_1IDocument.html">otus_hw5::IDocument</a></div><div class="ttdoc">Интерфейс Документа</div><div class="ttdef"><b>Определения</b> editor.h:161</div></div>
+<div class="ttc" id="astructotus__hw5_1_1ISerializable_html"><div class="ttname"><a href="structotus__hw5_1_1ISerializable.html">otus_hw5::ISerializable</a></div><div class="ttdoc">Интерфейс сериализуемого объекта</div><div class="ttdef"><b>Определения</b> editor.h:153</div></div>
+<div class="ttc" id="astructotus__hw5_1_1ISubject_html"><div class="ttname"><a href="structotus__hw5_1_1ISubject.html">otus_hw5::ISubject</a></div><div class="ttdoc">Интерфейс наблюдаемого объекта в паттерне Наблюдатель</div><div class="ttdef"><b>Определения</b> editor.h:129</div></div>
+<div class="ttc" id="asubject_8h_html"><div class="ttname"><a href="subject_8h.html">subject.h</a></div><div class="ttdoc">Наблюдаемый объект - шаблон базовой реализации</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

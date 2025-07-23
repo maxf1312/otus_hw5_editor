@@ -1,0 +1,12 @@
+<map id="TEST" name="TEST">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,60,31"/>
+<area shape="rect" id="Node000002" href="$namespaceotus__hw5.html#adaa378043f8bf3fd2b3c55a97bf96ef1" title="глобальный доступ к синглтону конфигурации" alt="" coords="500,7,643,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="60,15,225,12,452,13,485,14,485,19,452,18,226,18,60,20"/>
+<area shape="rect" id="Node000004" href="$namespaceotus__hw5.html#aad15de1514f55e9f681423bcddf54220" title="глобальный доступ к синглтону редактора" alt="" coords="108,31,248,56"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="60,20,93,26,92,31,60,25"/>
+<area shape="rect" id="Node000003" href="$classotus__hw5_1_1Config.html#a6c9ea9dcf96c700535aaccf57ebc5a79" title=" " alt="" coords="691,7,866,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="643,17,675,17,675,22,643,22"/>
+<area shape="rect" id="Node000005" href="$classotus__hw5_1_1SimpleEditor.html#a8cba135b866de21a8e134a8bba67a5c4" title=" " alt="" coords="296,27,452,68"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="249,42,280,43,280,48,248,48"/>
+<area shape="poly" id="edge5_Node000005_Node000002" title=" " alt="" coords="453,34,485,29,485,34,453,39"/>
+</map>

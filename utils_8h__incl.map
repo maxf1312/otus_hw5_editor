@@ -1,0 +1,19 @@
+<map id="utils.h" name="utils.h">
+<area shape="rect" id="Node000001" title="утилиты" alt="" coords="180,5,235,31"/>
+<area shape="rect" id="Node000002" href="$editor_8h.html" title="Описание всех интерфейсов" alt="" coords="176,79,239,105"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="210,31,210,63,205,63,205,31"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,153,87,178"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="181,108,88,148,86,144,179,103"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="111,153,149,178"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="196,107,156,144,152,140,192,103"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="174,153,241,178"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="210,105,210,137,205,137,205,105"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="265,153,318,178"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="223,103,267,140,264,144,220,107"/>
+<area shape="rect" id="Node000007" href="$smartptrcoll_8h.html" title="Коллекция указателей" alt="" coords="342,153,441,178"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="240,103,347,144,345,149,238,108"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="317,226,375,252"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="386,180,364,215,359,212,382,177"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="398,226,472,252"/>
+<area shape="poly" id="edge8_Node000007_Node000009" title=" " alt="" coords="401,177,422,211,418,214,396,180"/>
+</map>

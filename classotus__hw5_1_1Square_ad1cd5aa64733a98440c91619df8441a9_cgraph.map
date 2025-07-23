@@ -1,0 +1,8 @@
+<map id="otus_hw5::Square::Square" name="otus_hw5::Square::Square">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,29,177,55"/>
+<area shape="rect" id="Node000002" href="$classotus__hw5_1_1Point.html#a20575a6efd6e0c9e3eb262688340d394" title=" " alt="" coords="225,29,374,55"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="177,40,210,40,210,45,177,45"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="265,31,258,21,263,11,276,5,299,3,324,5,337,12,335,17,323,10,299,8,278,10,266,15,264,20,270,27"/>
+<area shape="rect" id="Node000003" href="$classotus__hw5_1_1Shape.html#a2830abac7ad0a23ab6d79d25b672ce0a" title=" " alt="" coords="422,29,585,55"/>
+<area shape="poly" id="edge3_Node000002_Node000003" title=" " alt="" coords="375,40,407,40,407,45,375,45"/>
+</map>

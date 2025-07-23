@@ -1,0 +1,23 @@
+<map id="otus_hw5::Rectangle" name="otus_hw5::Rectangle">
+<area shape="rect" id="Node000001" title=" " alt="" coords="350,1358,480,1546"/>
+<area shape="rect" id="Node000002" href="$classotus__hw5_1_1Square.html" title=" " alt="" coords="311,1120,425,1309"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="392,1323,399,1358,394,1359,387,1324"/>
+<area shape="rect" id="Node000003" href="$classotus__hw5_1_1Point.html" title=" " alt="" coords="244,883,346,1071"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="331,1084,342,1120,337,1122,326,1086"/>
+<area shape="rect" id="Node000004" href="$classotus__hw5_1_1Shape.html" title=" " alt="" coords="177,509,287,820"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="269,834,279,882,273,883,264,835"/>
+<area shape="rect" id="Node000005" href="$structotus__hw5_1_1IShape.html" title="Интерфейс объекта Фигура" alt="" coords="147,162,261,431"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="218,446,223,509,218,510,213,447"/>
+<area shape="rect" id="Node000006" href="$structotus__hw5_1_1ISerializable.html" title="Интерфейс сериализуемого объекта" alt="" coords="133,5,276,112"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="207,127,207,162,202,162,202,127"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="286,263,368,330"/>
+<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="316,330,294,388,272,456,263,494,258,492,267,455,289,386,311,328"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="5,263,59,330"/>
+<area shape="poly" id="edge7_Node000004_Node000008" title=" " alt="" coords="41,329,53,378,73,430,119,510,169,582,165,585,114,513,68,432,48,379,36,330"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="83,263,123,330"/>
+<area shape="poly" id="edge8_Node000004_Node000009" title=" " alt="" coords="112,329,137,431,173,526,168,528,132,432,106,330"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="392,263,427,330"/>
+<area shape="poly" id="edge11_Node000001_Node000010" title=" " alt="" coords="420,329,448,473,460,567,465,663,465,1216,461,1280,449,1342,444,1342,455,1279,460,1216,460,663,455,568,443,474,415,330"/>
+<area shape="poly" id="edge10_Node000002_Node000010" title=" " alt="" coords="411,329,376,1104,370,1103,405,329"/>
+<area shape="poly" id="edge9_Node000004_Node000010" title=" " alt="" coords="413,330,406,381,397,408,382,433,369,443,356,447,343,449,331,457,298,499,294,495,327,453,341,444,355,441,367,438,378,430,392,406,401,380,408,329"/>
+</map>

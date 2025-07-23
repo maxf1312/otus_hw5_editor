@@ -1,0 +1,7 @@
+<map id="Иерархия классов. Графический вид." name="Иерархия классов. Графический вид.">
+<area shape="rect" id="Node000000" href="$structotus__hw5_1_1IDocStorage.html" title="Интерфейс объекта Хранилище документов, по сути предоставляет унифицированный интерфейс к STL&#45;потоку." alt="" coords="5,5,161,31"/>
+<area shape="rect" id="Node000001" href="$classotus__hw5_1_1StreamDocStorage.html" title="Объект Хранилище документов для STL&#45;потоков, хранит ссылки на потоки." alt="" coords="209,5,402,31"/>
+<area shape="poly" id="edge5_Node000000_Node000001" title=" " alt="" coords="176,16,208,16,208,21,176,21"/>
+<area shape="rect" id="Node000002" href="$classotus__hw5_1_1FileDocStorage.html" title="Объект Хранилище документов для STL&#45;файла." alt="" coords="450,5,622,31"/>
+<area shape="poly" id="edge6_Node000001_Node000002" title=" " alt="" coords="417,16,450,16,450,21,417,21"/>
+</map>

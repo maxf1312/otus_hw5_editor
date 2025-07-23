@@ -1,0 +1,7 @@
+<map id="mydbgtrace.h" name="mydbgtrace.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="62,5,160,31"/>
+<area shape="rect" id="Node000002" href="$display_8cpp.html" title="Реализация дисплеев" alt="" coords="5,79,91,105"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="92,44,61,80,57,77,88,41"/>
+<area shape="rect" id="Node000003" href="$docserializer_8cpp.html" title="Реализация сериализаторов" alt="" coords="115,79,232,105"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="133,41,165,77,161,80,129,44"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="otus_hw5::IEditor" name="otus_hw5::IEditor">
+<area shape="rect" id="Node000001" title="Абстрактный интерфейс графического редактора, представляет собой Контроллер MVC + вместе с IConfig гл..." alt="" coords="5,5,152,356"/>
+<area shape="rect" id="Node000002" href="$classotus__hw5_1_1SimpleEditor.html" title="Реализация редактора." alt="" coords="5,404,152,776"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="82,371,82,404,76,404,76,371"/>
+</map>

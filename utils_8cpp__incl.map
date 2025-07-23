@@ -1,0 +1,26 @@
+<map id="utils.cpp" name="utils.cpp">
+<area shape="rect" id="Node000001" title="Реализация утилит" alt="" coords="166,5,236,31"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,79,77,105"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="175,34,83,75,81,70,173,29"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="100,79,211,105"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="196,33,174,67,169,64,191,30"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="168,226,221,252"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="209,31,225,78,227,115,223,152,207,212,202,211,218,151,222,115,220,80,204,32"/>
+<area shape="rect" id="Node000005" href="$utils_8h.html" title="утилиты" alt="" coords="293,79,349,105"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="223,29,289,68,286,73,220,34"/>
+<area shape="rect" id="Node000006" href="$editor_8h.html" title="Описание всех интерфейсов" alt="" coords="296,153,359,178"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="325,105,328,137,322,137,319,105"/>
+<area shape="poly" id="edge9_Node000006_Node000004" title=" " alt="" coords="306,181,232,221,229,216,304,177"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="246,226,327,252"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="323,180,303,214,299,211,319,177"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="351,226,390,252"/>
+<area shape="poly" id="edge7_Node000006_Node000008" title=" " alt="" coords="337,177,358,211,353,214,332,180"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="414,226,481,252"/>
+<area shape="poly" id="edge8_Node000006_Node000009" title=" " alt="" coords="349,177,416,216,413,220,347,181"/>
+<area shape="rect" id="Node000010" href="$smartptrcoll_8h.html" title="Коллекция указателей" alt="" coords="506,226,605,252"/>
+<area shape="poly" id="edge10_Node000006_Node000010" title=" " alt="" coords="361,174,503,219,502,224,359,179"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="482,300,539,326"/>
+<area shape="poly" id="edge11_Node000010_Node000011" title=" " alt="" coords="550,254,528,288,524,285,546,251"/>
+<area shape="rect" id="Node000012" title=" " alt="" coords="562,300,637,326"/>
+<area shape="poly" id="edge12_Node000010_Node000012" title=" " alt="" coords="565,251,586,285,582,288,561,254"/>
+</map>

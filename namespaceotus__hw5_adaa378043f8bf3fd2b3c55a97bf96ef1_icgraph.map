@@ -1,0 +1,28 @@
+<map id="otus_hw5::the_config" name="otus_hw5::the_config">
+<area shape="rect" id="Node000001" title="глобальный доступ к синглтону конфигурации" alt="" coords="500,185,643,210"/>
+<area shape="rect" id="Node000002" href="$classotus__hw5_1_1SimpleEditor.html#ab77a23f5af19f773d8f3b7d3d439ef28" title=" " alt="" coords="296,5,452,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="550,174,508,121,480,92,451,66,422,49,425,44,454,62,484,89,512,117,554,171"/>
+<area shape="rect" id="Node000003" href="$classotus__hw5_1_1SimpleEditor.html#a8cba135b866de21a8e134a8bba67a5c4" title=" " alt="" coords="296,120,452,161"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="509,182,446,164,448,159,511,177"/>
+<area shape="rect" id="Node000006" href="$test__editor_8cpp.html#ae4e660ee6ad577311c92ff5fb98b095e" title=" " alt="" coords="5,38,60,64"/>
+<area shape="poly" id="edge11_Node000001_Node000006" title=" " alt="" coords="545,176,503,141,451,111,397,92,341,77,229,60,130,53,60,53,60,47,130,48,230,54,342,72,399,87,453,106,506,137,548,172"/>
+<area shape="rect" id="Node000007" href="$test__editor_8cpp.html#ac16d133e0f78148578d42eacc8069053" title=" " alt="" coords="5,186,60,212"/>
+<area shape="poly" id="edge12_Node000001_Node000007" title=" " alt="" coords="485,201,60,202,60,196,485,195"/>
+<area shape="rect" id="Node000008" href="$test__editor_8cpp.html#a257f15cb34484796fad78c0220830d99" title=" " alt="" coords="5,236,60,261"/>
+<area shape="poly" id="edge13_Node000001_Node000008" title=" " alt="" coords="485,208,61,248,60,243,485,203"/>
+<area shape="rect" id="Node000009" href="$test__editor_8cpp.html#a08d6bf2f9f4f6a8e895d2dce40fc18b2" title=" " alt="" coords="5,286,60,312"/>
+<area shape="poly" id="edge14_Node000001_Node000009" title=" " alt="" coords="508,218,453,231,226,273,60,298,60,293,225,268,452,226,507,212"/>
+<area shape="rect" id="Node000011" href="$test__editor_8cpp.html#a286edcb4812ade5add226ecd71c364d7" title=" " alt="" coords="5,336,60,361"/>
+<area shape="poly" id="edge15_Node000001_Node000011" title=" " alt="" coords="540,221,499,244,453,265,341,300,228,324,130,340,60,348,60,343,129,335,227,319,340,295,451,261,497,240,537,217"/>
+<area shape="rect" id="Node000004" href="$namespaceotus__hw5.html#aad15de1514f55e9f681423bcddf54220" title="глобальный доступ к синглтону редактора" alt="" coords="108,134,248,160"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="281,146,249,147,248,142,280,141"/>
+<area shape="rect" id="Node000005" href="$main_8cpp.html#a2c3f6775325c30275d11c6abee2db6a0" title=" " alt="" coords="8,137,57,162"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="92,151,58,152,58,147,92,146"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="142,128,106,104,52,67,55,62,109,99,145,123"/>
+<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="127,168,61,192,59,187,125,163"/>
+<area shape="poly" id="edge7_Node000004_Node000008" title=" " alt="" coords="147,171,54,237,51,233,144,167"/>
+<area shape="poly" id="edge8_Node000004_Node000009" title=" " alt="" coords="157,173,62,276,50,288,46,284,58,272,153,170"/>
+<area shape="rect" id="Node000010" href="$test__editor_8cpp.html#a5108a29d10c0ea28f82e254a6b0b90cc" title=" " alt="" coords="5,88,60,113"/>
+<area shape="poly" id="edge9_Node000004_Node000010" title=" " alt="" coords="120,131,59,111,61,106,122,126"/>
+<area shape="poly" id="edge10_Node000004_Node000011" title=" " alt="" coords="164,175,121,245,62,326,51,337,47,333,58,323,117,242,160,172"/>
+</map>

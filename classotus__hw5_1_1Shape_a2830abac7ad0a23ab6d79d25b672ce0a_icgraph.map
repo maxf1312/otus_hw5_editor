@@ -1,0 +1,17 @@
+<map id="otus_hw5::Shape::Shape" name="otus_hw5::Shape::Shape">
+<area shape="rect" id="Node000001" title=" " alt="" coords="422,169,585,195"/>
+<area shape="rect" id="Node000002" href="$classotus__hw5_1_1Point.html#a20575a6efd6e0c9e3eb262688340d394" title=" " alt="" coords="225,132,374,158"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="414,169,373,161,374,156,415,163"/>
+<area shape="rect" id="Node000006" href="$classotus__hw5_1_1Point.html#aca8fcb8f9741057df80affe6e9d8d456" title=" " alt="" coords="16,219,166,244"/>
+<area shape="poly" id="edge8_Node000001_Node000006" title=" " alt="" coords="407,196,166,225,166,220,406,191"/>
+<area shape="poly" id="edge5_Node000002_Node000002" title=" " alt="" coords="335,120,323,113,299,111,278,113,266,117,264,123,270,130,265,133,258,123,263,114,276,107,299,105,324,108,337,115"/>
+<area shape="rect" id="Node000003" href="$classotus__hw5_1_1Circle.html#a9d40be74c447586552cc9cc7344d6605" title=" " alt="" coords="13,5,169,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="273,123,230,83,175,46,147,34,150,29,178,41,233,79,277,119"/>
+<area shape="rect" id="Node000004" href="$classotus__hw5_1_1Ellipse.html#aa75df8bf8ac79f6f54126a31c1962070" title=" " alt="" coords="27,55,155,96"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="243,129,154,99,155,94,245,124"/>
+<area shape="rect" id="Node000005" href="$classotus__hw5_1_1Line.html#a0326e65a9e7288666adae1f708774523" title=" " alt="" coords="21,120,161,146"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="209,142,161,140,161,134,209,137"/>
+<area shape="poly" id="edge6_Node000002_Node000006" title=" " alt="" coords="263,168,178,210,146,221,145,216,176,205,261,163"/>
+<area shape="rect" id="Node000007" href="$classotus__hw5_1_1Square.html#ad1cd5aa64733a98440c91619df8441a9" title=" " alt="" coords="5,169,177,195"/>
+<area shape="poly" id="edge7_Node000002_Node000007" title=" " alt="" coords="210,164,167,171,166,166,209,158"/>
+</map>

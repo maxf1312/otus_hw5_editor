@@ -1,0 +1,896 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.13.2"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>editor: Класс otus_hw5::Document</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">editor<span id="projectnumber">&#160;1.0.0</span>
+   </div>
+   <div id="projectbrief">vector graphics editor framework made for homework 5</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.13.2 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespaceotus__hw5.html">otus_hw5</a></li><li class="navelem"><a class="el" href="classotus__hw5_1_1Document.html">Document</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="#pro-types">Защищенные типы</a> &#124;
+<a href="#pro-attribs">Защищенные данные</a> &#124;
+<a href="classotus__hw5_1_1Document-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle"><div class="title">Класс otus_hw5::Document</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="document_8h_source.html">document.h</a>&gt;</code></p>
+<div class="dynheader">
+Граф наследования:otus_hw5::Document:</div>
+<div class="dyncontent">
+<div class="center"><img src="classotus__hw5_1_1Document__inherit__graph.png" border="0" usemap="#aotus__hw5_1_1Document_inherit__map" alt="Inheritance graph"/></div>
+<map name="aotus__hw5_1_1Document_inherit__map" id="aotus__hw5_1_1Document_inherit__map">
+<area shape="rect" title=" " alt="" coords="170,303,302,593"/>
+<area shape="rect" href="structotus__hw5_1_1IDocument.html" title="Интерфейс Документа" alt="" coords="5,5,141,255"/>
+<area shape="poly" title=" " alt="" coords="146,267,173,318,168,320,141,269"/>
+<area shape="rect" href="structotus__hw5_1_1ISerializable.html" title="Интерфейс сериализуемого объекта" alt="" coords="164,76,307,184"/>
+<area shape="poly" title=" " alt="" coords="238,199,238,303,233,303,233,199"/>
+<area shape="rect" title=" " alt="" coords="331,89,488,171"/>
+<area shape="poly" title=" " alt="" coords="383,185,304,328,299,326,378,182"/>
+</map>
+</div>
+<div class="dynheader">
+Граф связей класса otus_hw5::Document:</div>
+<div class="dyncontent">
+<div class="center"><img src="classotus__hw5_1_1Document__coll__graph.png" border="0" usemap="#aotus__hw5_1_1Document_coll__map" alt="Collaboration graph"/></div>
+<map name="aotus__hw5_1_1Document_coll__map" id="aotus__hw5_1_1Document_coll__map">
+<area shape="rect" title=" " alt="" coords="343,619,475,889"/>
+<area shape="rect" href="structotus__hw5_1_1IDocument.html" title="Интерфейс Документа" alt="" coords="5,279,141,528"/>
+<area shape="poly" title=" " alt="" coords="142,539,154,555,199,602,249,644,345,712,342,716,246,649,195,606,150,558,137,542"/>
+<area shape="rect" href="structotus__hw5_1_1ISerializable.html" title="Интерфейс сериализуемого объекта" alt="" coords="164,350,307,457"/>
+<area shape="poly" title=" " alt="" coords="271,469,346,620,341,622,266,472"/>
+<area shape="rect" title=" " alt="" coords="331,363,488,444"/>
+<area shape="poly" title=" " alt="" coords="412,459,412,619,406,619,406,459"/>
+<area shape="rect" href="classotus__hw5_1_1SmartPtrCollection.html" title=" " alt="" coords="512,251,693,556"/>
+<area shape="poly" title=" " alt="" coords="521,557,485,621,481,619,516,555"/>
+<area shape="rect" href="classotus__hw5_1_1SmartPtrCollection.html" title="Шаблон для коллекции умных указателей. Для удобства реализации коллекций внутри объектов" alt="" coords="512,5,693,188"/>
+<area shape="poly" title=" " alt="" coords="605,204,605,252,600,252,600,204"/>
+<area shape="rect" title=" " alt="" coords="717,371,864,437"/>
+<area shape="poly" title=" " alt="" coords="780,438,751,497,731,529,707,558,656,606,600,649,543,686,491,715,488,711,540,681,597,644,653,602,703,555,726,526,746,494,775,436"/>
+</map>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:aa9dd0b0db189d31f2b19dac055f5fc05" id="r_aa9dd0b0db189d31f2b19dac055f5fc05"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa9dd0b0db189d31f2b19dac055f5fc05">Document</a> ()</td></tr>
+<tr class="separator:aa9dd0b0db189d31f2b19dac055f5fc05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0fafa4651062a841c1b8c3cc695d6db9" id="r_a0fafa4651062a841c1b8c3cc695d6db9"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0fafa4651062a841c1b8c3cc695d6db9">~Document</a> () override</td></tr>
+<tr class="separator:a0fafa4651062a841c1b8c3cc695d6db9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aabe85cbc75eb6ff9ba6b44bfef057896" id="r_aabe85cbc75eb6ff9ba6b44bfef057896"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aabe85cbc75eb6ff9ba6b44bfef057896">deserialize</a> (<a class="el" href="namespaceotus__hw5.html#aa518e14958ecdd58bb16eeec0f3cb482">docstg_ptr_t</a> const &amp;stg, <a class="el" href="namespaceotus__hw5.html#a6f32fdb97469b31771dd67c1a2f0476e">docser_ptr_t</a> const &amp;serializer) override</td></tr>
+<tr class="separator:aabe85cbc75eb6ff9ba6b44bfef057896"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe552e0a5863db5004bd6089d1230da8" id="r_abe552e0a5863db5004bd6089d1230da8"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abe552e0a5863db5004bd6089d1230da8">serialize</a> (<a class="el" href="namespaceotus__hw5.html#aa518e14958ecdd58bb16eeec0f3cb482">docstg_ptr_t</a> &amp;stg, <a class="el" href="namespaceotus__hw5.html#a6f32fdb97469b31771dd67c1a2f0476e">docser_ptr_t</a> const &amp;serializer) override</td></tr>
+<tr class="separator:abe552e0a5863db5004bd6089d1230da8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a341456e7fa3cabce4bd56d74fbf8f103" id="r_a341456e7fa3cabce4bd56d74fbf8f103"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a341456e7fa3cabce4bd56d74fbf8f103">import_from</a> (<a class="el" href="namespaceotus__hw5.html#aa518e14958ecdd58bb16eeec0f3cb482">docstg_ptr_t</a> const &amp;stg, <a class="el" href="namespaceotus__hw5.html#a6f32fdb97469b31771dd67c1a2f0476e">docser_ptr_t</a> const &amp;serializer) override</td></tr>
+<tr class="separator:a341456e7fa3cabce4bd56d74fbf8f103"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8f6b6623e050af56b165f227532b6a4" id="r_af8f6b6623e050af56b165f227532b6a4"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af8f6b6623e050af56b165f227532b6a4">export_to</a> (<a class="el" href="namespaceotus__hw5.html#aa518e14958ecdd58bb16eeec0f3cb482">docstg_ptr_t</a> &amp;stg, <a class="el" href="namespaceotus__hw5.html#a6f32fdb97469b31771dd67c1a2f0476e">docser_ptr_t</a> const &amp;serializer) override</td></tr>
+<tr class="separator:af8f6b6623e050af56b165f227532b6a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9190029f2d5459c07646517492355efa" id="r_a9190029f2d5459c07646517492355efa"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespaceotus__hw5.html#a1d8495f6a147cb71a4de3cee224ce21c">shape_ptr_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9190029f2d5459c07646517492355efa">add_shape</a> (<a class="el" href="namespaceotus__hw5.html#a1d8495f6a147cb71a4de3cee224ce21c">shape_ptr_t</a> &amp;&amp;shp) override</td></tr>
+<tr class="separator:a9190029f2d5459c07646517492355efa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c0766274a519c69c2965b517d336c1a" id="r_a9c0766274a519c69c2965b517d336c1a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9c0766274a519c69c2965b517d336c1a">remove_shape</a> (<a class="el" href="namespaceotus__hw5.html#a1d8495f6a147cb71a4de3cee224ce21c">shape_ptr_t</a> const &amp;shp) override</td></tr>
+<tr class="separator:a9c0766274a519c69c2965b517d336c1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb6ea7399db50960319fcd9a17c1ce21" id="r_abb6ea7399db50960319fcd9a17c1ce21"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespaceotus__hw5.html#ac55c268c2a03622046be8546b35f5c91">shape_ptr_coll_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abb6ea7399db50960319fcd9a17c1ce21">shapes</a> () override</td></tr>
+<tr class="separator:abb6ea7399db50960319fcd9a17c1ce21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34d99882d41b15f4211ffe297854a456" id="r_a34d99882d41b15f4211ffe297854a456"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a34d99882d41b15f4211ffe297854a456">add_view</a> (<a class="el" href="namespaceotus__hw5.html#ad397d90d5fbe6287369835a345de2619">view_ptr_t</a> v) override</td></tr>
+<tr class="separator:a34d99882d41b15f4211ffe297854a456"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a487a334371a379d51ac9b84d713d7944" id="r_a487a334371a379d51ac9b84d713d7944"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a487a334371a379d51ac9b84d713d7944">remove_view</a> (<a class="el" href="namespaceotus__hw5.html#ad397d90d5fbe6287369835a345de2619">view_ptr_t</a> v) override</td></tr>
+<tr class="separator:a487a334371a379d51ac9b84d713d7944"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acef5caa58cf0aa5ef14a4be0afd8941a" id="r_acef5caa58cf0aa5ef14a4be0afd8941a"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="structotus__hw5_1_1ISubject.html">ISubject</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acef5caa58cf0aa5ef14a4be0afd8941a">as_subject</a> () override</td></tr>
+<tr class="separator:acef5caa58cf0aa5ef14a4be0afd8941a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a226c7ec687c433a67b1054b8030c724e" id="r_a226c7ec687c433a67b1054b8030c724e"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="structotus__hw5_1_1ISerializable.html">ISerializable</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a226c7ec687c433a67b1054b8030c724e">as_serializable</a> () override</td></tr>
+<tr class="separator:a226c7ec687c433a67b1054b8030c724e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82a6bf9d127c8cdab9d5ccf80d213994" id="r_a82a6bf9d127c8cdab9d5ccf80d213994"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a82a6bf9d127c8cdab9d5ccf80d213994">on_subscribe</a> (<a class="el" href="namespaceotus__hw5.html#aa2fada0cbdf5c3c9d65d26fe0774ddcd">observer_ptr_t</a>)</td></tr>
+<tr class="separator:a82a6bf9d127c8cdab9d5ccf80d213994"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aedd9e390740256a9d39f8b5742eb8485" id="r_aedd9e390740256a9d39f8b5742eb8485"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aedd9e390740256a9d39f8b5742eb8485">on_unsubscribe</a> (<a class="el" href="namespaceotus__hw5.html#aa2fada0cbdf5c3c9d65d26fe0774ddcd">observer_ptr_t</a>)</td></tr>
+<tr class="separator:aedd9e390740256a9d39f8b5742eb8485"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc96049dd1e3cfead1dc2a4683ef32f1" id="r_afc96049dd1e3cfead1dc2a4683ef32f1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afc96049dd1e3cfead1dc2a4683ef32f1">on_set_changed</a> (bool)</td></tr>
+<tr class="separator:afc96049dd1e3cfead1dc2a4683ef32f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39584156c9364c541b538483958f8a9e" id="r_a39584156c9364c541b538483958f8a9e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a39584156c9364c541b538483958f8a9e">on_notify_all</a> ()</td></tr>
+<tr class="separator:a39584156c9364c541b538483958f8a9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_structotus__hw5_1_1IDocument"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_structotus__hw5_1_1IDocument')"><img src="closed.png" alt="-"/>&#160;Открытые члены унаследованные от <a class="el" href="structotus__hw5_1_1IDocument.html">otus_hw5::IDocument</a></td></tr>
+<tr class="memitem:a9a593345f0fa1cc9b8e3c7e3d20796e6 inherit pub_methods_structotus__hw5_1_1IDocument" id="r_a9a593345f0fa1cc9b8e3c7e3d20796e6"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structotus__hw5_1_1IDocument.html#a9a593345f0fa1cc9b8e3c7e3d20796e6">~IDocument</a> ()=default</td></tr>
+<tr class="separator:a9a593345f0fa1cc9b8e3c7e3d20796e6 inherit pub_methods_structotus__hw5_1_1IDocument"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_structotus__hw5_1_1ISerializable"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_structotus__hw5_1_1ISerializable')"><img src="closed.png" alt="-"/>&#160;Открытые члены унаследованные от <a class="el" href="structotus__hw5_1_1ISerializable.html">otus_hw5::ISerializable</a></td></tr>
+<tr class="memitem:a2327ef96f49e3550a0e2913adc5dbaa1 inherit pub_methods_structotus__hw5_1_1ISerializable" id="r_a2327ef96f49e3550a0e2913adc5dbaa1"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structotus__hw5_1_1ISerializable.html#a2327ef96f49e3550a0e2913adc5dbaa1">~ISerializable</a> ()=default</td></tr>
+<tr class="separator:a2327ef96f49e3550a0e2913adc5dbaa1 inherit pub_methods_structotus__hw5_1_1ISerializable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-types" name="pro-types"></a>
+Защищенные типы</h2></td></tr>
+<tr class="memitem:a25cba15aaa1591018021dee485f9a582" id="r_a25cba15aaa1591018021dee485f9a582"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a25cba15aaa1591018021dee485f9a582">shape_cont_t</a> = std::vector&lt;<a class="el" href="namespaceotus__hw5.html#a1d8495f6a147cb71a4de3cee224ce21c">shape_ptr_t</a>&gt;</td></tr>
+<tr class="separator:a25cba15aaa1591018021dee485f9a582"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11881c0c27460b3e5d14d76413a35134" id="r_a11881c0c27460b3e5d14d76413a35134"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a11881c0c27460b3e5d14d76413a35134">subject_t</a> = <a class="el" href="classotus__hw5_1_1Subject.html">Subject</a>&lt;<a class="el" href="classotus__hw5_1_1Document.html">Document</a>&gt;</td></tr>
+<tr class="separator:a11881c0c27460b3e5d14d76413a35134"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe13da99464c4032cba4a7753b1d7a1e" id="r_afe13da99464c4032cba4a7753b1d7a1e"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afe13da99464c4032cba4a7753b1d7a1e">subject_ptr_t</a> = std::shared_ptr&lt;<a class="el" href="#a11881c0c27460b3e5d14d76413a35134">subject_t</a>&gt;</td></tr>
+<tr class="separator:afe13da99464c4032cba4a7753b1d7a1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
+Защищенные данные</h2></td></tr>
+<tr class="memitem:a7511931bdbc0e233c4f4f34f5f42b6fe" id="r_a7511931bdbc0e233c4f4f34f5f42b6fe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceotus__hw5.html#ac55c268c2a03622046be8546b35f5c91">shape_ptr_coll_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7511931bdbc0e233c4f4f34f5f42b6fe">shapes_</a></td></tr>
+<tr class="memdesc:a7511931bdbc0e233c4f4f34f5f42b6fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Список фигур  <br /></td></tr>
+<tr class="separator:a7511931bdbc0e233c4f4f34f5f42b6fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9404284bbe3338dbf3046c3acf93f610" id="r_a9404284bbe3338dbf3046c3acf93f610"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#afe13da99464c4032cba4a7753b1d7a1e">subject_ptr_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9404284bbe3338dbf3046c3acf93f610">subj_impl_</a></td></tr>
+<tr class="memdesc:a9404284bbe3338dbf3046c3acf93f610"><td class="mdescLeft">&#160;</td><td class="mdescRight">Реализация Наблюдаемого объекта  <br /></td></tr>
+<tr class="separator:a9404284bbe3338dbf3046c3acf93f610"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Определения типов</h2>
+<a id="a25cba15aaa1591018021dee485f9a582" name="a25cba15aaa1591018021dee485f9a582"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a25cba15aaa1591018021dee485f9a582">&#9670;&#160;</a></span>shape_cont_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#a25cba15aaa1591018021dee485f9a582">otus_hw5::Document::shape_cont_t</a> = std::vector&lt;<a class="el" href="namespaceotus__hw5.html#a1d8495f6a147cb71a4de3cee224ce21c">shape_ptr_t</a>&gt;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel protected">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afe13da99464c4032cba4a7753b1d7a1e" name="afe13da99464c4032cba4a7753b1d7a1e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe13da99464c4032cba4a7753b1d7a1e">&#9670;&#160;</a></span>subject_ptr_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#afe13da99464c4032cba4a7753b1d7a1e">otus_hw5::Document::subject_ptr_t</a> = std::shared_ptr&lt;<a class="el" href="#a11881c0c27460b3e5d14d76413a35134">subject_t</a>&gt;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel protected">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a11881c0c27460b3e5d14d76413a35134" name="a11881c0c27460b3e5d14d76413a35134"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a11881c0c27460b3e5d14d76413a35134">&#9670;&#160;</a></span>subject_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#a11881c0c27460b3e5d14d76413a35134">otus_hw5::Document::subject_t</a> = <a class="el" href="classotus__hw5_1_1Subject.html">Subject</a>&lt;<a class="el" href="classotus__hw5_1_1Document.html">Document</a>&gt;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel protected">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Конструктор(ы)</h2>
+<a id="aa9dd0b0db189d31f2b19dac055f5fc05" name="aa9dd0b0db189d31f2b19dac055f5fc05"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa9dd0b0db189d31f2b19dac055f5fc05">&#9670;&#160;</a></span>Document()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">otus_hw5::Document::Document </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0fafa4651062a841c1b8c3cc695d6db9" name="a0fafa4651062a841c1b8c3cc695d6db9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0fafa4651062a841c1b8c3cc695d6db9">&#9670;&#160;</a></span>~Document()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">otus_hw5::Document::~Document </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Методы</h2>
+<a id="a9190029f2d5459c07646517492355efa" name="a9190029f2d5459c07646517492355efa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9190029f2d5459c07646517492355efa">&#9670;&#160;</a></span>add_shape()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceotus__hw5.html#a1d8495f6a147cb71a4de3cee224ce21c">shape_ptr_t</a> &amp; otus_hw5::Document::add_shape </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceotus__hw5.html#a1d8495f6a147cb71a4de3cee224ce21c">shape_ptr_t</a> &amp;&amp;</td>          <td class="paramname"><span class="paramname"><em>shp</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Замещает <a class="el" href="structotus__hw5_1_1IDocument.html#acb8a3c46caaa7d9e95179efc5b7d96af">otus_hw5::IDocument</a>.</p>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="classotus__hw5_1_1Document_a9190029f2d5459c07646517492355efa_cgraph.png" border="0" usemap="#aclassotus__hw5_1_1Document_a9190029f2d5459c07646517492355efa_cgraph" alt=""/></div>
+<map name="aclassotus__hw5_1_1Document_a9190029f2d5459c07646517492355efa_cgraph" id="aclassotus__hw5_1_1Document_a9190029f2d5459c07646517492355efa_cgraph">
+<area shape="rect" title=" " alt="" coords="5,95,148,135"/>
+<area shape="rect" href="classotus__hw5_1_1Document.html#acef5caa58cf0aa5ef14a4be0afd8941a" title=" " alt="" coords="196,5,338,46"/>
+<area shape="poly" title=" " alt="" coords="121,92,207,51,209,55,123,96"/>
+<area shape="rect" href="structotus__hw5_1_1ISubject.html#ab9c7e3f8497af30e13741e7ec98c3a63" title=" " alt="" coords="201,95,332,135"/>
+<area shape="poly" title=" " alt="" coords="148,112,186,112,186,118,148,118"/>
+<area shape="rect" href="structotus__hw5_1_1ISubject.html#aa4804ef4f12469a3b29bb78a535a1c16" title=" " alt="" coords="201,184,332,225"/>
+<area shape="poly" title=" " alt="" coords="123,134,209,175,207,179,121,138"/>
+<area shape="poly" title=" " alt="" coords="230,95,229,85,235,76,248,70,267,68,288,70,300,77,298,81,286,76,267,73,249,75,238,80,234,86,236,93"/>
+<area shape="poly" title=" " alt="" coords="230,184,229,174,235,165,248,159,267,157,288,160,300,166,298,171,286,165,267,163,249,165,238,169,234,175,236,183"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a34d99882d41b15f4211ffe297854a456" name="a34d99882d41b15f4211ffe297854a456"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a34d99882d41b15f4211ffe297854a456">&#9670;&#160;</a></span>add_view()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void otus_hw5::Document::add_view </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceotus__hw5.html#ad397d90d5fbe6287369835a345de2619">view_ptr_t</a></td>          <td class="paramname"><span class="paramname"><em>v</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Замещает <a class="el" href="structotus__hw5_1_1IDocument.html#a719800384ef3717b8b173e61e1c380c5">otus_hw5::IDocument</a>.</p>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="classotus__hw5_1_1Document_a34d99882d41b15f4211ffe297854a456_cgraph.png" border="0" usemap="#aclassotus__hw5_1_1Document_a34d99882d41b15f4211ffe297854a456_cgraph" alt=""/></div>
+<map name="aclassotus__hw5_1_1Document_a34d99882d41b15f4211ffe297854a456_cgraph" id="aclassotus__hw5_1_1Document_a34d99882d41b15f4211ffe297854a456_cgraph">
+<area shape="rect" title=" " alt="" coords="5,51,148,91"/>
+<area shape="rect" href="classotus__hw5_1_1Document.html#acef5caa58cf0aa5ef14a4be0afd8941a" title=" " alt="" coords="196,5,338,46"/>
+<area shape="poly" title=" " alt="" coords="148,51,180,44,181,49,149,57"/>
+<area shape="rect" href="structotus__hw5_1_1ISubject.html#a4effc4c09e9278ca75f80bf26295ac7d" title=" " alt="" coords="201,95,332,135"/>
+<area shape="poly" title=" " alt="" coords="149,85,187,94,186,99,148,90"/>
+<area shape="poly" title=" " alt="" coords="230,95,229,85,235,76,248,70,267,68,288,70,300,77,298,81,286,76,267,73,249,75,238,80,234,86,236,93"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a226c7ec687c433a67b1054b8030c724e" name="a226c7ec687c433a67b1054b8030c724e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a226c7ec687c433a67b1054b8030c724e">&#9670;&#160;</a></span>as_serializable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="structotus__hw5_1_1ISerializable.html">ISerializable</a> &amp; otus_hw5::Document::as_serializable </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Замещает <a class="el" href="structotus__hw5_1_1IDocument.html#afcec1396b91fa8f46f4b9ccd80d6e7aa">otus_hw5::IDocument</a>.</p>
+
+</div>
+</div>
+<a id="acef5caa58cf0aa5ef14a4be0afd8941a" name="acef5caa58cf0aa5ef14a4be0afd8941a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acef5caa58cf0aa5ef14a4be0afd8941a">&#9670;&#160;</a></span>as_subject()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structotus__hw5_1_1ISubject.html">ISubject</a> &amp; otus_hw5::Document::as_subject </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Замещает <a class="el" href="structotus__hw5_1_1IDocument.html#a863308b8a9daf8d363ae229acd21167d">otus_hw5::IDocument</a>.</p>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="classotus__hw5_1_1Document_acef5caa58cf0aa5ef14a4be0afd8941a_icgraph.png" border="0" usemap="#aclassotus__hw5_1_1Document_acef5caa58cf0aa5ef14a4be0afd8941a_icgraph" alt=""/></div>
+<map name="aclassotus__hw5_1_1Document_acef5caa58cf0aa5ef14a4be0afd8941a_icgraph" id="aclassotus__hw5_1_1Document_acef5caa58cf0aa5ef14a4be0afd8941a_icgraph">
+<area shape="rect" title=" " alt="" coords="196,104,338,145"/>
+<area shape="rect" href="classotus__hw5_1_1Document.html#a9190029f2d5459c07646517492355efa" title=" " alt="" coords="5,5,148,46"/>
+<area shape="poly" title=" " alt="" coords="215,98,146,61,122,49,124,44,149,57,217,94"/>
+<area shape="rect" href="classotus__hw5_1_1Document.html#a34d99882d41b15f4211ffe297854a456" title=" " alt="" coords="5,71,148,111"/>
+<area shape="poly" title=" " alt="" coords="180,112,148,106,148,101,181,107"/>
+<area shape="rect" href="classotus__hw5_1_1Document.html#a9c0766274a519c69c2965b517d336c1a" title=" " alt="" coords="5,136,148,177"/>
+<area shape="poly" title=" " alt="" coords="181,142,148,147,148,142,180,136"/>
+<area shape="rect" href="classotus__hw5_1_1Document.html#a487a334371a379d51ac9b84d713d7944" title=" " alt="" coords="5,201,148,242"/>
+<area shape="poly" title=" " alt="" coords="216,155,149,191,124,203,122,198,146,186,214,150"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aabe85cbc75eb6ff9ba6b44bfef057896" name="aabe85cbc75eb6ff9ba6b44bfef057896"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aabe85cbc75eb6ff9ba6b44bfef057896">&#9670;&#160;</a></span>deserialize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void otus_hw5::Document::deserialize </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceotus__hw5.html#aa518e14958ecdd58bb16eeec0f3cb482">docstg_ptr_t</a> const &amp;</td>          <td class="paramname"><span class="paramname"><em>stg</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespaceotus__hw5.html#a6f32fdb97469b31771dd67c1a2f0476e">docser_ptr_t</a> const &amp;</td>          <td class="paramname"><span class="paramname"><em>serializer</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Замещает <a class="el" href="structotus__hw5_1_1ISerializable.html#aabde9dafb8001543ac50d1e7c1e04675">otus_hw5::ISerializable</a>.</p>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="classotus__hw5_1_1Document_aabe85cbc75eb6ff9ba6b44bfef057896_icgraph.png" border="0" usemap="#aclassotus__hw5_1_1Document_aabe85cbc75eb6ff9ba6b44bfef057896_icgraph" alt=""/></div>
+<map name="aclassotus__hw5_1_1Document_aabe85cbc75eb6ff9ba6b44bfef057896_icgraph" id="aclassotus__hw5_1_1Document_aabe85cbc75eb6ff9ba6b44bfef057896_icgraph">
+<area shape="rect" title=" " alt="" coords="196,5,338,46"/>
+<area shape="rect" href="classotus__hw5_1_1Document.html#a341456e7fa3cabce4bd56d74fbf8f103" title=" " alt="" coords="5,5,148,46"/>
+<area shape="poly" title=" " alt="" coords="180,28,148,28,148,23,180,23"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="af8f6b6623e050af56b165f227532b6a4" name="af8f6b6623e050af56b165f227532b6a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af8f6b6623e050af56b165f227532b6a4">&#9670;&#160;</a></span>export_to()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void otus_hw5::Document::export_to </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceotus__hw5.html#aa518e14958ecdd58bb16eeec0f3cb482">docstg_ptr_t</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>stg</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespaceotus__hw5.html#a6f32fdb97469b31771dd67c1a2f0476e">docser_ptr_t</a> const &amp;</td>          <td class="paramname"><span class="paramname"><em>serializer</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Замещает <a class="el" href="structotus__hw5_1_1IDocument.html#acdd0114d19642912d79aa282890e5a59">otus_hw5::IDocument</a>.</p>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="classotus__hw5_1_1Document_af8f6b6623e050af56b165f227532b6a4_cgraph.png" border="0" usemap="#aclassotus__hw5_1_1Document_af8f6b6623e050af56b165f227532b6a4_cgraph" alt=""/></div>
+<map name="aclassotus__hw5_1_1Document_af8f6b6623e050af56b165f227532b6a4_cgraph" id="aclassotus__hw5_1_1Document_af8f6b6623e050af56b165f227532b6a4_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,148,46"/>
+<area shape="rect" href="classotus__hw5_1_1Document.html#abe552e0a5863db5004bd6089d1230da8" title=" " alt="" coords="196,5,338,46"/>
+<area shape="poly" title=" " alt="" coords="148,23,180,23,180,28,148,28"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a341456e7fa3cabce4bd56d74fbf8f103" name="a341456e7fa3cabce4bd56d74fbf8f103"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a341456e7fa3cabce4bd56d74fbf8f103">&#9670;&#160;</a></span>import_from()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void otus_hw5::Document::import_from </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceotus__hw5.html#aa518e14958ecdd58bb16eeec0f3cb482">docstg_ptr_t</a> const &amp;</td>          <td class="paramname"><span class="paramname"><em>stg</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespaceotus__hw5.html#a6f32fdb97469b31771dd67c1a2f0476e">docser_ptr_t</a> const &amp;</td>          <td class="paramname"><span class="paramname"><em>serializer</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Замещает <a class="el" href="structotus__hw5_1_1IDocument.html#ad361c9408e8d574a55c04ce569f53b77">otus_hw5::IDocument</a>.</p>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="classotus__hw5_1_1Document_a341456e7fa3cabce4bd56d74fbf8f103_cgraph.png" border="0" usemap="#aclassotus__hw5_1_1Document_a341456e7fa3cabce4bd56d74fbf8f103_cgraph" alt=""/></div>
+<map name="aclassotus__hw5_1_1Document_a341456e7fa3cabce4bd56d74fbf8f103_cgraph" id="aclassotus__hw5_1_1Document_a341456e7fa3cabce4bd56d74fbf8f103_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,148,46"/>
+<area shape="rect" href="classotus__hw5_1_1Document.html#aabe85cbc75eb6ff9ba6b44bfef057896" title=" " alt="" coords="196,5,338,46"/>
+<area shape="poly" title=" " alt="" coords="148,23,180,23,180,28,148,28"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a39584156c9364c541b538483958f8a9e" name="a39584156c9364c541b538483958f8a9e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39584156c9364c541b538483958f8a9e">&#9670;&#160;</a></span>on_notify_all()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void otus_hw5::Document::on_notify_all </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afc96049dd1e3cfead1dc2a4683ef32f1" name="afc96049dd1e3cfead1dc2a4683ef32f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc96049dd1e3cfead1dc2a4683ef32f1">&#9670;&#160;</a></span>on_set_changed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void otus_hw5::Document::on_set_changed </td>
+          <td>(</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a82a6bf9d127c8cdab9d5ccf80d213994" name="a82a6bf9d127c8cdab9d5ccf80d213994"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a82a6bf9d127c8cdab9d5ccf80d213994">&#9670;&#160;</a></span>on_subscribe()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void otus_hw5::Document::on_subscribe </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceotus__hw5.html#aa2fada0cbdf5c3c9d65d26fe0774ddcd">observer_ptr_t</a></td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aedd9e390740256a9d39f8b5742eb8485" name="aedd9e390740256a9d39f8b5742eb8485"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aedd9e390740256a9d39f8b5742eb8485">&#9670;&#160;</a></span>on_unsubscribe()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void otus_hw5::Document::on_unsubscribe </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceotus__hw5.html#aa2fada0cbdf5c3c9d65d26fe0774ddcd">observer_ptr_t</a></td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9c0766274a519c69c2965b517d336c1a" name="a9c0766274a519c69c2965b517d336c1a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c0766274a519c69c2965b517d336c1a">&#9670;&#160;</a></span>remove_shape()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void otus_hw5::Document::remove_shape </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceotus__hw5.html#a1d8495f6a147cb71a4de3cee224ce21c">shape_ptr_t</a> const &amp;</td>          <td class="paramname"><span class="paramname"><em>shp</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Замещает <a class="el" href="structotus__hw5_1_1IDocument.html#a85558dbdd676e844910ce2f6b9024c69">otus_hw5::IDocument</a>.</p>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="classotus__hw5_1_1Document_a9c0766274a519c69c2965b517d336c1a_cgraph.png" border="0" usemap="#aclassotus__hw5_1_1Document_a9c0766274a519c69c2965b517d336c1a_cgraph" alt=""/></div>
+<map name="aclassotus__hw5_1_1Document_a9c0766274a519c69c2965b517d336c1a_cgraph" id="aclassotus__hw5_1_1Document_a9c0766274a519c69c2965b517d336c1a_cgraph">
+<area shape="rect" title=" " alt="" coords="5,95,148,135"/>
+<area shape="rect" href="classotus__hw5_1_1Document.html#acef5caa58cf0aa5ef14a4be0afd8941a" title=" " alt="" coords="196,5,338,46"/>
+<area shape="poly" title=" " alt="" coords="121,92,207,51,209,55,123,96"/>
+<area shape="rect" href="structotus__hw5_1_1ISubject.html#ab9c7e3f8497af30e13741e7ec98c3a63" title=" " alt="" coords="201,95,332,135"/>
+<area shape="poly" title=" " alt="" coords="148,112,186,112,186,118,148,118"/>
+<area shape="rect" href="structotus__hw5_1_1ISubject.html#aa4804ef4f12469a3b29bb78a535a1c16" title=" " alt="" coords="201,184,332,225"/>
+<area shape="poly" title=" " alt="" coords="123,134,209,175,207,179,121,138"/>
+<area shape="poly" title=" " alt="" coords="230,95,229,85,235,76,248,70,267,68,288,70,300,77,298,81,286,76,267,73,249,75,238,80,234,86,236,93"/>
+<area shape="poly" title=" " alt="" coords="230,184,229,174,235,165,248,159,267,157,288,160,300,166,298,171,286,165,267,163,249,165,238,169,234,175,236,183"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a487a334371a379d51ac9b84d713d7944" name="a487a334371a379d51ac9b84d713d7944"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a487a334371a379d51ac9b84d713d7944">&#9670;&#160;</a></span>remove_view()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void otus_hw5::Document::remove_view </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceotus__hw5.html#ad397d90d5fbe6287369835a345de2619">view_ptr_t</a></td>          <td class="paramname"><span class="paramname"><em>v</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Замещает <a class="el" href="structotus__hw5_1_1IDocument.html#adb6a26529a1045e035cfdc527146adb4">otus_hw5::IDocument</a>.</p>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="classotus__hw5_1_1Document_a487a334371a379d51ac9b84d713d7944_cgraph.png" border="0" usemap="#aclassotus__hw5_1_1Document_a487a334371a379d51ac9b84d713d7944_cgraph" alt=""/></div>
+<map name="aclassotus__hw5_1_1Document_a487a334371a379d51ac9b84d713d7944_cgraph" id="aclassotus__hw5_1_1Document_a487a334371a379d51ac9b84d713d7944_cgraph">
+<area shape="rect" title=" " alt="" coords="5,51,148,91"/>
+<area shape="rect" href="classotus__hw5_1_1Document.html#acef5caa58cf0aa5ef14a4be0afd8941a" title=" " alt="" coords="196,5,338,46"/>
+<area shape="poly" title=" " alt="" coords="148,51,180,44,181,49,149,57"/>
+<area shape="rect" href="structotus__hw5_1_1ISubject.html#ae693f19a26ac76cee8b7bfa328f7b8ab" title=" " alt="" coords="201,95,332,135"/>
+<area shape="poly" title=" " alt="" coords="149,85,187,94,186,99,148,90"/>
+<area shape="poly" title=" " alt="" coords="230,95,229,85,235,76,248,70,267,68,288,70,300,77,298,81,286,76,267,73,249,75,238,80,234,86,236,93"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="abe552e0a5863db5004bd6089d1230da8" name="abe552e0a5863db5004bd6089d1230da8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe552e0a5863db5004bd6089d1230da8">&#9670;&#160;</a></span>serialize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void otus_hw5::Document::serialize </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceotus__hw5.html#aa518e14958ecdd58bb16eeec0f3cb482">docstg_ptr_t</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>stg</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespaceotus__hw5.html#a6f32fdb97469b31771dd67c1a2f0476e">docser_ptr_t</a> const &amp;</td>          <td class="paramname"><span class="paramname"><em>serializer</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Замещает <a class="el" href="structotus__hw5_1_1ISerializable.html#a9a99f1098d19ef179ad68d7531461da1">otus_hw5::ISerializable</a>.</p>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="classotus__hw5_1_1Document_abe552e0a5863db5004bd6089d1230da8_icgraph.png" border="0" usemap="#aclassotus__hw5_1_1Document_abe552e0a5863db5004bd6089d1230da8_icgraph" alt=""/></div>
+<map name="aclassotus__hw5_1_1Document_abe552e0a5863db5004bd6089d1230da8_icgraph" id="aclassotus__hw5_1_1Document_abe552e0a5863db5004bd6089d1230da8_icgraph">
+<area shape="rect" title=" " alt="" coords="196,5,338,46"/>
+<area shape="rect" href="classotus__hw5_1_1Document.html#af8f6b6623e050af56b165f227532b6a4" title=" " alt="" coords="5,5,148,46"/>
+<area shape="poly" title=" " alt="" coords="180,28,148,28,148,23,180,23"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="abb6ea7399db50960319fcd9a17c1ce21" name="abb6ea7399db50960319fcd9a17c1ce21"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb6ea7399db50960319fcd9a17c1ce21">&#9670;&#160;</a></span>shapes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceotus__hw5.html#ac55c268c2a03622046be8546b35f5c91">shape_ptr_coll_t</a> &amp; otus_hw5::Document::shapes </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Замещает <a class="el" href="structotus__hw5_1_1IDocument.html#af74baadd9811619281345a6bf51248d9">otus_hw5::IDocument</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Данные класса</h2>
+<a id="a7511931bdbc0e233c4f4f34f5f42b6fe" name="a7511931bdbc0e233c4f4f34f5f42b6fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7511931bdbc0e233c4f4f34f5f42b6fe">&#9670;&#160;</a></span>shapes_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceotus__hw5.html#ac55c268c2a03622046be8546b35f5c91">shape_ptr_coll_t</a> otus_hw5::Document::shapes_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel protected">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Список фигур </p>
+
+</div>
+</div>
+<a id="a9404284bbe3338dbf3046c3acf93f610" name="a9404284bbe3338dbf3046c3acf93f610"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9404284bbe3338dbf3046c3acf93f610">&#9670;&#160;</a></span>subj_impl_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#afe13da99464c4032cba4a7753b1d7a1e">subject_ptr_t</a> otus_hw5::Document::subj_impl_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel protected">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Реализация Наблюдаемого объекта </p>
+
+</div>
+</div>
+<hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li><a class="el" href="document_8h_source.html">document.h</a></li>
+<li><a class="el" href="document_8cpp.html">document.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

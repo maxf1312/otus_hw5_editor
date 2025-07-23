@@ -1,0 +1,15 @@
+<map id="otus_hw5::Shape" name="otus_hw5::Shape">
+<area shape="rect" id="Node000001" title=" " alt="" coords="236,509,346,820"/>
+<area shape="rect" id="Node000002" href="$structotus__hw5_1_1IShape.html" title="Интерфейс объекта Фигура" alt="" coords="20,162,134,431"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="143,421,148,430,239,578,234,581,144,433,138,423"/>
+<area shape="rect" id="Node000003" href="$structotus__hw5_1_1ISerializable.html" title="Интерфейс сериализуемого объекта" alt="" coords="5,5,148,112"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="79,127,79,162,74,162,74,127"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="158,263,241,330"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="210,329,251,492,246,494,205,330"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="264,263,318,330"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="294,330,294,492,289,492,289,330"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="342,263,382,330"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="358,330,327,493,322,492,353,329"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="406,263,441,330"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="421,330,411,379,397,432,356,537,351,535,391,430,406,377,416,329"/>
+</map>
